@@ -1,7 +1,8 @@
 /*
  * Copyright (c) 2017 Intel Corporation
- *
  * SPDX-License-Identifier: Apache-2.0
+ *
+ *  Description: Early LED Matrix tests.
  */
 
 #include <zephyr.h>
