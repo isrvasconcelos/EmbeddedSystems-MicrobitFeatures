@@ -18,10 +18,8 @@
 static struct device *pwm;
 static struct device *gpio;
 
-static void button_pressed(struct device *dev, struct gpio_callback *cb,
-			   u32_t pins)
+static void button_pressed(struct device *dev, struct gpio_callback *cb, u32_t pins)
 {
-
 	if (pins & BIT(SW0_GPIO_PIN)) {
 		printk("A pressed\n");
 
