@@ -20,4 +20,4 @@ void main(void)
 	/* Show some scrolling text ("Hello Zephyr!") */
 	mb_display_print(disp, MB_DISPLAY_MODE_DEFAULT | MB_DISPLAY_FLAG_LOOP,
 			 K_MSEC(500), "ECOM042.2017.2");
-}
+}g
