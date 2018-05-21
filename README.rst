@@ -1,21 +1,26 @@
-.. _microbit_display:
+.. _microbit_sound:
 
-BBC micro:bit display
-#####################
+BBC micro:bit sound
+###################
 
 Overview
 ********
-A simple example that demonstrates how to use the 5x5 LED matrix display
-on the BBC micro:bit board.
+
+This is simple example demonstrating how to use a piezo buzzer connected
+to port P0 on the edge connector of the BBC micro:bit board. Note that
+the buzzer is not part of the main micro:bit board, rather it it needs
+to be separately acquired and connected. A well working example is the
+MI:Power board that has a piezo buzzer in addition to a coin-cell
+battery. Resellers of this board can be fairly easily found using online
+search.
 
 Building
 ********
 
-This project outputs various things on the BBC micro:bit display. It can
-be built as follows:
+The sample can be built as follows:
 
 .. zephyr-app-commands::
-   :zephyr-app: samples/boards/microbit/display
+   :zephyr-app: samples/boards/microbit/sound
    :board: bbc_microbit
    :goals: build
    :compact:
@@ -23,6 +28,6 @@ be built as follows:
 Sample Output
 =============
 
-The sample app displays a countdown of the characters 9-0, iterates
-through all pixels one-by-one, displays a smiley face, some animations,
-and finally the text "Hello Zephyr!" by scrolling.
+This sample outputs sounds through a connected piezo buzzer based on
+button presses of the two main buttons. For each press the current
+output frequency will be printed on the 5x5 LED display.
