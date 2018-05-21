@@ -40,24 +40,36 @@ typedef struct {
 static event_t current_event = IDLE;
 static state_t current_state = Q1;
 
-void s1_display() {
-	printk("S1\n");
+
+void s1_display() { /* Show some scrolling text ("ECOM042.2017.2") */
+
+	struct mb_display *disp = mb_display_get();
+	mb_display_print(disp, MB_DISPLAY_MODE_DEFAULT | MB_DISPLAY_FLAG_LOOP, 
+		K_MSEC(500), "ECOM042.2017.2");
 }
 
 void s2_accelerometer() {
-	printk("S2\n");
+	struct mb_display *disp = mb_display_get();
+	mb_display_print(disp, MB_DISPLAY_MODE_SINGLE,
+		K_SECONDS(1), "2");
 }
 
 void s3_compass() {
-	printk("S3\n");
+	struct mb_display *disp = mb_display_get();
+	mb_display_print(disp, MB_DISPLAY_MODE_SINGLE,
+		K_SECONDS(1), "3");
 }
 
 void s4_temperature() {
-	printk("S4\n");
+	struct mb_display *disp = mb_display_get();
+	mb_display_print(disp, MB_DISPLAY_MODE_SINGLE,
+		K_SECONDS(1), "4");
 }
 
 void s5_bluetooth() {
-	printk("S5\n");
+	struct mb_display *disp = mb_display_get();
+	mb_display_print(disp, MB_DISPLAY_MODE_SINGLE,
+		K_SECONDS(1), "5");
 }
 
 mstate_t machine[] = {
