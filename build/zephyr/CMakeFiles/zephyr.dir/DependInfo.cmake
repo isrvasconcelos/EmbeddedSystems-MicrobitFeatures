@@ -67,6 +67,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/israel/zephyr/drivers/display/mb_display.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_display.c.obj"
   "/home/israel/zephyr/drivers/display/mb_font.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_font.c.obj"
   "/home/israel/zephyr/drivers/gpio/gpio_nrf5.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.obj"
+  "/home/israel/zephyr/drivers/pwm/pwm_nrf5_sw.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.obj"
   "/home/israel/zephyr/drivers/serial/uart_nrf5.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/serial/uart_nrf5.c.obj"
   "/home/israel/zephyr/drivers/timer/nrf_rtc_timer.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/timer/nrf_rtc_timer.c.obj"
   "/home/israel/zephyr/drivers/timer/sys_clock_init.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/timer/sys_clock_init.c.obj"

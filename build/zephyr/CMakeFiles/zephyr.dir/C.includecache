@@ -362,6 +362,14 @@ gpio_utils.h
 
 /home/israel/zephyr/drivers/gpio/gpio_utils.h
 
+/home/israel/zephyr/drivers/pwm/pwm_nrf5_sw.c
+soc.h
+-
+pwm.h
+/home/israel/zephyr/drivers/pwm/pwm.h
+logging/sys_log.h
+-
+
 /home/israel/zephyr/drivers/serial/uart_nrf5.c
 kernel.h
 -
@@ -1232,6 +1240,10 @@ logging/event_logger.h
 kernel.h
 -
 
+/home/israel/zephyr/include/logging/sys_log.h
+misc/printk.h
+-
+
 /home/israel/zephyr/include/mgmt/serial.h
 zephyr/types.h
 -
@@ -1264,6 +1276,18 @@ stdbool.h
 
 /home/israel/zephyr/include/misc/util.h
 zephyr/types.h
+-
+
+/home/israel/zephyr/include/pwm.h
+errno.h
+-
+zephyr/types.h
+-
+stddef.h
+-
+device.h
+-
+syscalls/pwm.h
 -
 
 /home/israel/zephyr/include/random/rand32.h
@@ -1481,6 +1505,12 @@ syscall_macros.h
 -
 
 zephyr/include/generated/syscalls/kernel.h
+syscall_list.h
+-
+syscall_macros.h
+-
+
+zephyr/include/generated/syscalls/pwm.h
 syscall_list.h
 -
 syscall_macros.h
