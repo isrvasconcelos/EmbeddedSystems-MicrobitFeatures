@@ -29,14 +29,14 @@ The CXX compiler identification is GNU, found in "/home/israel/Dropbox/Ufal/2017
 Performing C SOURCE FILE Test toolchain_is_ok succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_39e92/fast"
-/usr/bin/make -f CMakeFiles/cmTC_39e92.dir/build.make CMakeFiles/cmTC_39e92.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_883fd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_883fd.dir/build.make CMakeFiles/cmTC_883fd.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_39e92.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dtoolchain_is_ok -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -o CMakeFiles/cmTC_39e92.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_39e92
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39e92.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dtoolchain_is_ok -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_39e92.dir/src.c.obj  -o cmTC_39e92 
+Building C object CMakeFiles/cmTC_883fd.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dtoolchain_is_ok -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -o CMakeFiles/cmTC_883fd.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_883fd
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_883fd.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dtoolchain_is_ok -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_883fd.dir/src.c.obj  -o cmTC_883fd 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -45,14 +45,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_nostartfiles succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_61e48/fast"
-/usr/bin/make -f CMakeFiles/cmTC_61e48.dir/build.make CMakeFiles/cmTC_61e48.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_d0305/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d0305.dir/build.make CMakeFiles/cmTC_d0305.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_61e48.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_nostartfiles -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -nostartfiles   -o CMakeFiles/cmTC_61e48.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_61e48
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61e48.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_nostartfiles -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -nostartfiles    CMakeFiles/cmTC_61e48.dir/src.c.obj  -o cmTC_61e48 
+Building C object CMakeFiles/cmTC_d0305.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_nostartfiles -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -nostartfiles   -o CMakeFiles/cmTC_d0305.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d0305
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0305.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_nostartfiles -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -nostartfiles    CMakeFiles/cmTC_d0305.dir/src.c.obj  -o cmTC_d0305 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -61,14 +61,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_nodefaultlibs succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9a20c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9a20c.dir/build.make CMakeFiles/cmTC_9a20c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_a6c33/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a6c33.dir/build.make CMakeFiles/cmTC_a6c33.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9a20c.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_nodefaultlibs -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -nodefaultlibs   -o CMakeFiles/cmTC_9a20c.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_9a20c
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a20c.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_nodefaultlibs -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -nodefaultlibs    CMakeFiles/cmTC_9a20c.dir/src.c.obj  -o cmTC_9a20c 
+Building C object CMakeFiles/cmTC_a6c33.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_nodefaultlibs -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -nodefaultlibs   -o CMakeFiles/cmTC_a6c33.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a6c33
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6c33.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_nodefaultlibs -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -nodefaultlibs    CMakeFiles/cmTC_a6c33.dir/src.c.obj  -o cmTC_a6c33 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -77,14 +77,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_nostdlib succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_469ab/fast"
-/usr/bin/make -f CMakeFiles/cmTC_469ab.dir/build.make CMakeFiles/cmTC_469ab.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_7ae37/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7ae37.dir/build.make CMakeFiles/cmTC_7ae37.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_469ab.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_nostdlib -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -nostdlib   -o CMakeFiles/cmTC_469ab.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_469ab
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_469ab.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_nostdlib -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -nostdlib    CMakeFiles/cmTC_469ab.dir/src.c.obj  -o cmTC_469ab 
+Building C object CMakeFiles/cmTC_7ae37.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_nostdlib -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -nostdlib   -o CMakeFiles/cmTC_7ae37.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7ae37
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ae37.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_nostdlib -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -nostdlib    CMakeFiles/cmTC_7ae37.dir/src.c.obj  -o cmTC_7ae37 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -93,14 +93,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_static succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_abcea/fast"
-/usr/bin/make -f CMakeFiles/cmTC_abcea.dir/build.make CMakeFiles/cmTC_abcea.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_5f686/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5f686.dir/build.make CMakeFiles/cmTC_5f686.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_abcea.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_static -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -static   -o CMakeFiles/cmTC_abcea.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_abcea
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abcea.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_static -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -static    CMakeFiles/cmTC_abcea.dir/src.c.obj  -o cmTC_abcea 
+Building C object CMakeFiles/cmTC_5f686.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_static -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -static   -o CMakeFiles/cmTC_5f686.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_5f686
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f686.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_static -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -static    CMakeFiles/cmTC_5f686.dir/src.c.obj  -o cmTC_5f686 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -109,14 +109,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_no_pie succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8cd02/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8cd02.dir/build.make CMakeFiles/cmTC_8cd02.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_beefe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_beefe.dir/build.make CMakeFiles/cmTC_beefe.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8cd02.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_no_pie -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -no-pie   -o CMakeFiles/cmTC_8cd02.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_8cd02
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cd02.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_no_pie -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -no-pie    CMakeFiles/cmTC_8cd02.dir/src.c.obj  -o cmTC_8cd02 
+Building C object CMakeFiles/cmTC_beefe.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_no_pie -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -no-pie   -o CMakeFiles/cmTC_beefe.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_beefe
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_beefe.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_no_pie -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -no-pie    CMakeFiles/cmTC_beefe.dir/src.c.obj  -o cmTC_beefe 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -125,14 +125,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_fno_asynchronous_unwind_tables_C succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f56b4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f56b4.dir/build.make CMakeFiles/cmTC_f56b4.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_670b2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_670b2.dir/build.make CMakeFiles/cmTC_670b2.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f56b4.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_fno_asynchronous_unwind_tables_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -fno-asynchronous-unwind-tables -o CMakeFiles/cmTC_f56b4.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_f56b4
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f56b4.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_fno_asynchronous_unwind_tables_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_f56b4.dir/src.c.obj  -o cmTC_f56b4 
+Building C object CMakeFiles/cmTC_670b2.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_fno_asynchronous_unwind_tables_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -fno-asynchronous-unwind-tables -o CMakeFiles/cmTC_670b2.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_670b2
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_670b2.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_fno_asynchronous_unwind_tables_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_670b2.dir/src.c.obj  -o cmTC_670b2 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -141,14 +141,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_fno_pie_C succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_22f25/fast"
-/usr/bin/make -f CMakeFiles/cmTC_22f25.dir/build.make CMakeFiles/cmTC_22f25.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ea517/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ea517.dir/build.make CMakeFiles/cmTC_ea517.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_22f25.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_fno_pie_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -fno-pie -o CMakeFiles/cmTC_22f25.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_22f25
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22f25.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_fno_pie_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_22f25.dir/src.c.obj  -o cmTC_22f25 
+Building C object CMakeFiles/cmTC_ea517.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_fno_pie_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -fno-pie -o CMakeFiles/cmTC_ea517.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ea517
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea517.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_fno_pie_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_ea517.dir/src.c.obj  -o cmTC_ea517 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -157,14 +157,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_fno_pic_C succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7b342/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7b342.dir/build.make CMakeFiles/cmTC_7b342.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_e4dcd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e4dcd.dir/build.make CMakeFiles/cmTC_e4dcd.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7b342.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_fno_pic_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -fno-pic -o CMakeFiles/cmTC_7b342.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_7b342
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b342.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_fno_pic_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_7b342.dir/src.c.obj  -o cmTC_7b342 
+Building C object CMakeFiles/cmTC_e4dcd.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_fno_pic_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -fno-pic -o CMakeFiles/cmTC_e4dcd.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e4dcd
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4dcd.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_fno_pic_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_e4dcd.dir/src.c.obj  -o cmTC_e4dcd 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -173,14 +173,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_fno_strict_overflow_C succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2ddc5/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2ddc5.dir/build.make CMakeFiles/cmTC_2ddc5.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_84442/fast"
+/usr/bin/make -f CMakeFiles/cmTC_84442.dir/build.make CMakeFiles/cmTC_84442.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2ddc5.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_fno_strict_overflow_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -fno-strict-overflow -o CMakeFiles/cmTC_2ddc5.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_2ddc5
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ddc5.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_fno_strict_overflow_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_2ddc5.dir/src.c.obj  -o cmTC_2ddc5 
+Building C object CMakeFiles/cmTC_84442.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_fno_strict_overflow_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -fno-strict-overflow -o CMakeFiles/cmTC_84442.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_84442
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84442.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_fno_strict_overflow_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_84442.dir/src.c.obj  -o cmTC_84442 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -189,14 +189,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_Wno_pointer_sign_C succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4824c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4824c.dir/build.make CMakeFiles/cmTC_4824c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_def1e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_def1e.dir/build.make CMakeFiles/cmTC_def1e.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4824c.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Wno_pointer_sign_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -Wno-pointer-sign -o CMakeFiles/cmTC_4824c.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_4824c
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4824c.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Wno_pointer_sign_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_4824c.dir/src.c.obj  -o cmTC_4824c 
+Building C object CMakeFiles/cmTC_def1e.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Wno_pointer_sign_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -Wno-pointer-sign -o CMakeFiles/cmTC_def1e.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_def1e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_def1e.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Wno_pointer_sign_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_def1e.dir/src.c.obj  -o cmTC_def1e 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -205,14 +205,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_Wno_unused_but_set_variable_C succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_00e2c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_00e2c.dir/build.make CMakeFiles/cmTC_00e2c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b1373/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b1373.dir/build.make CMakeFiles/cmTC_b1373.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_00e2c.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Wno_unused_but_set_variable_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -Wno-unused-but-set-variable -o CMakeFiles/cmTC_00e2c.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_00e2c
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00e2c.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Wno_unused_but_set_variable_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_00e2c.dir/src.c.obj  -o cmTC_00e2c 
+Building C object CMakeFiles/cmTC_b1373.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Wno_unused_but_set_variable_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -Wno-unused-but-set-variable -o CMakeFiles/cmTC_b1373.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b1373
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1373.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Wno_unused_but_set_variable_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_b1373.dir/src.c.obj  -o cmTC_b1373 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -221,14 +221,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_fno_reorder_functions_C succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3d3e9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3d3e9.dir/build.make CMakeFiles/cmTC_3d3e9.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_0cc77/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0cc77.dir/build.make CMakeFiles/cmTC_0cc77.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3d3e9.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_fno_reorder_functions_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -fno-reorder-functions -o CMakeFiles/cmTC_3d3e9.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_3d3e9
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d3e9.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_fno_reorder_functions_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_3d3e9.dir/src.c.obj  -o cmTC_3d3e9 
+Building C object CMakeFiles/cmTC_0cc77.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_fno_reorder_functions_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -fno-reorder-functions -o CMakeFiles/cmTC_0cc77.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_0cc77
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0cc77.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_fno_reorder_functions_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_0cc77.dir/src.c.obj  -o cmTC_0cc77 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -237,14 +237,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_fno_defer_pop_C succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_21e92/fast"
-/usr/bin/make -f CMakeFiles/cmTC_21e92.dir/build.make CMakeFiles/cmTC_21e92.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_25d1f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_25d1f.dir/build.make CMakeFiles/cmTC_25d1f.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_21e92.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_fno_defer_pop_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -fno-defer-pop -o CMakeFiles/cmTC_21e92.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_21e92
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21e92.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_fno_defer_pop_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_21e92.dir/src.c.obj  -o cmTC_21e92 
+Building C object CMakeFiles/cmTC_25d1f.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_fno_defer_pop_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -fno-defer-pop -o CMakeFiles/cmTC_25d1f.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_25d1f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25d1f.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_fno_defer_pop_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_25d1f.dir/src.c.obj  -o cmTC_25d1f 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -253,14 +253,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_Werror_implicit_int_C succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8b8c1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8b8c1.dir/build.make CMakeFiles/cmTC_8b8c1.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_997c6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_997c6.dir/build.make CMakeFiles/cmTC_997c6.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8b8c1.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Werror_implicit_int_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -Werror=implicit-int -o CMakeFiles/cmTC_8b8c1.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_8b8c1
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b8c1.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Werror_implicit_int_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_8b8c1.dir/src.c.obj  -o cmTC_8b8c1 
+Building C object CMakeFiles/cmTC_997c6.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Werror_implicit_int_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -Werror=implicit-int -o CMakeFiles/cmTC_997c6.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_997c6
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_997c6.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Werror_implicit_int_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_997c6.dir/src.c.obj  -o cmTC_997c6 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -269,14 +269,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_Wl__X succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b800a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b800a.dir/build.make CMakeFiles/cmTC_b800a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_11818/fast"
+/usr/bin/make -f CMakeFiles/cmTC_11818.dir/build.make CMakeFiles/cmTC_11818.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b800a.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Wl__X -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,-X   -o CMakeFiles/cmTC_b800a.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_b800a
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b800a.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Wl__X -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,-X    CMakeFiles/cmTC_b800a.dir/src.c.obj  -o cmTC_b800a 
+Building C object CMakeFiles/cmTC_11818.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Wl__X -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,-X   -o CMakeFiles/cmTC_11818.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_11818
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11818.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Wl__X -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,-X    CMakeFiles/cmTC_11818.dir/src.c.obj  -o cmTC_11818 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -285,14 +285,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_Wl__N succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_32c7d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_32c7d.dir/build.make CMakeFiles/cmTC_32c7d.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c5298/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c5298.dir/build.make CMakeFiles/cmTC_c5298.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_32c7d.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Wl__N -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,-N   -o CMakeFiles/cmTC_32c7d.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_32c7d
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32c7d.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Wl__N -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,-N    CMakeFiles/cmTC_32c7d.dir/src.c.obj  -o cmTC_32c7d 
+Building C object CMakeFiles/cmTC_c5298.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Wl__N -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,-N   -o CMakeFiles/cmTC_c5298.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c5298
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5298.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Wl__N -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,-N    CMakeFiles/cmTC_c5298.dir/src.c.obj  -o cmTC_c5298 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -301,14 +301,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_Wl___gc_sections succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_80e4e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_80e4e.dir/build.make CMakeFiles/cmTC_80e4e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_79c93/fast"
+/usr/bin/make -f CMakeFiles/cmTC_79c93.dir/build.make CMakeFiles/cmTC_79c93.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_80e4e.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Wl___gc_sections -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--gc-sections   -o CMakeFiles/cmTC_80e4e.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_80e4e
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80e4e.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Wl___gc_sections -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--gc-sections    CMakeFiles/cmTC_80e4e.dir/src.c.obj  -o cmTC_80e4e 
+Building C object CMakeFiles/cmTC_79c93.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Wl___gc_sections -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--gc-sections   -o CMakeFiles/cmTC_79c93.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_79c93
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79c93.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Wl___gc_sections -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--gc-sections    CMakeFiles/cmTC_79c93.dir/src.c.obj  -o cmTC_79c93 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -317,14 +317,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_Wl___build_id_none succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_83a8b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_83a8b.dir/build.make CMakeFiles/cmTC_83a8b.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_50663/fast"
+/usr/bin/make -f CMakeFiles/cmTC_50663.dir/build.make CMakeFiles/cmTC_50663.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_83a8b.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Wl___build_id_none -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--build-id=none   -o CMakeFiles/cmTC_83a8b.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_83a8b
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83a8b.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Wl___build_id_none -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--build-id=none    CMakeFiles/cmTC_83a8b.dir/src.c.obj  -o cmTC_83a8b 
+Building C object CMakeFiles/cmTC_50663.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Wl___build_id_none -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--build-id=none   -o CMakeFiles/cmTC_50663.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_50663
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50663.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Wl___build_id_none -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--build-id=none    CMakeFiles/cmTC_50663.dir/src.c.obj  -o cmTC_50663 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008000
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -333,14 +333,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_ffunction_sections_C succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d26c2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d26c2.dir/build.make CMakeFiles/cmTC_d26c2.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_da274/fast"
+/usr/bin/make -f CMakeFiles/cmTC_da274.dir/build.make CMakeFiles/cmTC_da274.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d26c2.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_ffunction_sections_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -ffunction-sections -o CMakeFiles/cmTC_d26c2.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_d26c2
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d26c2.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_ffunction_sections_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_d26c2.dir/src.c.obj  -o cmTC_d26c2 
+Building C object CMakeFiles/cmTC_da274.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_ffunction_sections_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -ffunction-sections -o CMakeFiles/cmTC_da274.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_da274
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da274.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_ffunction_sections_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_da274.dir/src.c.obj  -o cmTC_da274 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -349,14 +349,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_fdata_sections_C succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c8e9e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c8e9e.dir/build.make CMakeFiles/cmTC_c8e9e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_39d84/fast"
+/usr/bin/make -f CMakeFiles/cmTC_39d84.dir/build.make CMakeFiles/cmTC_39d84.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c8e9e.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_fdata_sections_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -fdata-sections -o CMakeFiles/cmTC_c8e9e.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_c8e9e
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8e9e.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_fdata_sections_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_c8e9e.dir/src.c.obj  -o cmTC_c8e9e 
+Building C object CMakeFiles/cmTC_39d84.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_fdata_sections_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files   -fdata-sections -o CMakeFiles/cmTC_39d84.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_39d84
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39d84.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_fdata_sections_C -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files    CMakeFiles/cmTC_39d84.dir/src.c.obj  -o cmTC_39d84 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
 
@@ -365,14 +365,14 @@ int main(void) { return 0; }
 Performing C SOURCE FILE Test check_Wl___print_memory_usage succeeded with the following output:
 Change Dir: /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_68d30/fast"
-/usr/bin/make -f CMakeFiles/cmTC_68d30.dir/build.make CMakeFiles/cmTC_68d30.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_984de/fast"
+/usr/bin/make -f CMakeFiles/cmTC_984de.dir/build.make CMakeFiles/cmTC_984de.dir/build
 make[1]: Entering directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_68d30.dir/src.c.obj
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Wl___print_memory_usage -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--print-memory-usage   -o CMakeFiles/cmTC_68d30.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_68d30
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68d30.dir/link.txt --verbose=1
-/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Wl___print_memory_usage -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--print-memory-usage    CMakeFiles/cmTC_68d30.dir/src.c.obj  -o cmTC_68d30 
+Building C object CMakeFiles/cmTC_984de.dir/src.c.obj
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc   -Dcheck_Wl___print_memory_usage -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--print-memory-usage   -o CMakeFiles/cmTC_984de.dir/src.c.obj   -c /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_984de
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_984de.dir/link.txt --verbose=1
+/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc  -Dcheck_Wl___print_memory_usage -nostartfiles -nostdlib -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include" -isystem "/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--print-memory-usage    CMakeFiles/cmTC_984de.dir/src.c.obj  -o cmTC_984de 
 Memory region         Used Size  Region Size  %age Used/opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/libexec/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/real-ld: warning: cannot find entry symbol _start; defaulting to 0000000000008024
 
 make[1]: Leaving directory `/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles/CMakeTmp'

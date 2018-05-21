@@ -15,6 +15,62 @@
 
 #include <display/mb_display.h>
 
+/***************************************************************************************/
+/** STATE MACHINE **/
+
+typedef enum {
+	Q1,
+	Q2,
+	Q3,
+	Q4,
+	Q5
+} state_t;
+
+typedef enum {
+	IDLE,
+	FORWARD,
+	BACKWARD
+} event_t;
+
+typedef struct {
+	state_t events[3];
+	void (*action)(void);
+} mstate_t;
+
+static event_t current_event = IDLE;
+static state_t current_state = Q1;
+
+void s1_display() {
+	printk("S1\n");
+}
+
+void s2_accelerometer() {
+	printk("S2\n");
+}
+
+void s3_compass() {
+	printk("S3\n");
+}
+
+void s4_temperature() {
+	printk("S4\n");
+}
+
+void s5_bluetooth() {
+	printk("S5\n");
+}
+
+mstate_t machine[] = {
+	{ .events={Q1, Q2, Q5}, .action=s1_display},
+	{ .events={Q2, Q3, Q1}, .action=s2_accelerometer},
+	{ .events={Q3, Q4, Q2}, .action=s3_compass},
+	{ .events={Q4, Q5, Q3}, .action=s4_temperature},
+	{ .events={Q5, Q1, Q4}, .action=s5_bluetooth}
+};
+
+/***************************************************************************************/
+/** PUSHBUTTON **/
+
 static struct device *pwm;
 static struct device *gpio;
 
@@ -22,10 +78,16 @@ static void button_pressed(struct device *dev, struct gpio_callback *cb, u32_t p
 {
 	if (pins & BIT(SW0_GPIO_PIN)) {
 		printk("A pressed\n");
+		current_event = BACKWARD;
+
 
 	} else {
 		printk("B pressed\n");
+		current_event = FORWARD;
 	}
+
+	current_state = machine[current_state].events[current_event];
+	machine[current_state].action();
 }
 
 static void configure_buttons(void) {
@@ -46,8 +108,10 @@ static void configure_buttons(void) {
 	gpio_pin_enable_callback(gpio, SW1_GPIO_PIN);
 }
 
+
+/***************************************************************************************/
+/** MAIN **/
 void main(void)
 {
-
 	configure_buttons();
 }
