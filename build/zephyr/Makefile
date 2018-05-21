@@ -854,6 +854,33 @@ drivers/gpio/gpio_nrf5.c.s:
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.s
 .PHONY : drivers/gpio/gpio_nrf5.c.s
 
+drivers/pwm/pwm_nrf5_sw.obj: drivers/pwm/pwm_nrf5_sw.c.obj
+
+.PHONY : drivers/pwm/pwm_nrf5_sw.obj
+
+# target to build an object file
+drivers/pwm/pwm_nrf5_sw.c.obj:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.obj
+.PHONY : drivers/pwm/pwm_nrf5_sw.c.obj
+
+drivers/pwm/pwm_nrf5_sw.i: drivers/pwm/pwm_nrf5_sw.c.i
+
+.PHONY : drivers/pwm/pwm_nrf5_sw.i
+
+# target to preprocess a source file
+drivers/pwm/pwm_nrf5_sw.c.i:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.i
+.PHONY : drivers/pwm/pwm_nrf5_sw.c.i
+
+drivers/pwm/pwm_nrf5_sw.s: drivers/pwm/pwm_nrf5_sw.c.s
+
+.PHONY : drivers/pwm/pwm_nrf5_sw.s
+
+# target to generate assembly for a file
+drivers/pwm/pwm_nrf5_sw.c.s:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.s
+.PHONY : drivers/pwm/pwm_nrf5_sw.c.s
+
 drivers/serial/uart_nrf5.obj: drivers/serial/uart_nrf5.c.obj
 
 .PHONY : drivers/serial/uart_nrf5.obj
@@ -1184,6 +1211,9 @@ help:
 	@echo "... drivers/gpio/gpio_nrf5.obj"
 	@echo "... drivers/gpio/gpio_nrf5.i"
 	@echo "... drivers/gpio/gpio_nrf5.s"
+	@echo "... drivers/pwm/pwm_nrf5_sw.obj"
+	@echo "... drivers/pwm/pwm_nrf5_sw.i"
+	@echo "... drivers/pwm/pwm_nrf5_sw.s"
 	@echo "... drivers/serial/uart_nrf5.obj"
 	@echo "... drivers/serial/uart_nrf5.i"
 	@echo "... drivers/serial/uart_nrf5.s"

@@ -1,5 +1,5 @@
 sample:
-  name: BB micro:bit Display
+  name: BBC micro:bit Sound
 tests:
   test:
     platform_whitelist: bbc_microbit

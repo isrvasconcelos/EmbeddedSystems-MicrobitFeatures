@@ -176,6 +176,7 @@ CMakeFiles/app.dir/src/main.c.obj: /home/israel/zephyr/include/misc/dlist.h
 CMakeFiles/app.dir/src/main.c.obj: /home/israel/zephyr/include/misc/printk.h
 CMakeFiles/app.dir/src/main.c.obj: /home/israel/zephyr/include/misc/slist.h
 CMakeFiles/app.dir/src/main.c.obj: /home/israel/zephyr/include/misc/util.h
+CMakeFiles/app.dir/src/main.c.obj: /home/israel/zephyr/include/pwm.h
 CMakeFiles/app.dir/src/main.c.obj: /home/israel/zephyr/include/random/rand32.h
 CMakeFiles/app.dir/src/main.c.obj: /home/israel/zephyr/include/sw_isr_table.h
 CMakeFiles/app.dir/src/main.c.obj: /home/israel/zephyr/include/sys_clock.h
@@ -201,4 +202,5 @@ CMakeFiles/app.dir/src/main.c.obj: zephyr/include/generated/syscall_list.h
 CMakeFiles/app.dir/src/main.c.obj: zephyr/include/generated/syscall_macros.h
 CMakeFiles/app.dir/src/main.c.obj: zephyr/include/generated/syscalls/gpio.h
 CMakeFiles/app.dir/src/main.c.obj: zephyr/include/generated/syscalls/kernel.h
+CMakeFiles/app.dir/src/main.c.obj: zephyr/include/generated/syscalls/pwm.h
 

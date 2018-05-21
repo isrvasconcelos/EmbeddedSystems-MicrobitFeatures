@@ -15,6 +15,8 @@ board.h
 -
 gpio.h
 -
+pwm.h
+-
 device.h
 -
 display/mb_display.h
@@ -686,6 +688,18 @@ stdbool.h
 zephyr/types.h
 -
 
+/home/israel/zephyr/include/pwm.h
+errno.h
+-
+zephyr/types.h
+-
+stddef.h
+-
+device.h
+-
+syscalls/pwm.h
+-
+
 /home/israel/zephyr/include/random/rand32.h
 zephyr/types.h
 -
@@ -863,6 +877,12 @@ syscall_macros.h
 -
 
 zephyr/include/generated/syscalls/kernel.h
+syscall_list.h
+-
+syscall_macros.h
+-
+
+zephyr/include/generated/syscalls/pwm.h
 syscall_list.h
 -
 syscall_macros.h

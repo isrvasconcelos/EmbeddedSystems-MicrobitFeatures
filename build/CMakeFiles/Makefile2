@@ -172,7 +172,7 @@ all: CMakeFiles/app.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
 .PHONY : CMakeFiles/app.dir/rule
@@ -512,7 +512,7 @@ all: zephyr/CMakeFiles/zephyr.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/zephyr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 35
 	$(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/zephyr.dir/rule
@@ -539,12 +539,12 @@ clean: zephyr/CMakeFiles/zephyr.dir/clean
 zephyr/CMakeFiles/syscall_macros_h_target.dir/all:
 	$(MAKE) -f zephyr/CMakeFiles/syscall_macros_h_target.dir/build.make zephyr/CMakeFiles/syscall_macros_h_target.dir/depend
 	$(MAKE) -f zephyr/CMakeFiles/syscall_macros_h_target.dir/build.make zephyr/CMakeFiles/syscall_macros_h_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num= "Built target syscall_macros_h_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=68 "Built target syscall_macros_h_target"
 .PHONY : zephyr/CMakeFiles/syscall_macros_h_target.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/syscall_macros_h_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/syscall_macros_h_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/syscall_macros_h_target.dir/rule
@@ -571,12 +571,12 @@ clean: zephyr/CMakeFiles/syscall_macros_h_target.dir/clean
 zephyr/CMakeFiles/syscall_list_h_target.dir/all:
 	$(MAKE) -f zephyr/CMakeFiles/syscall_list_h_target.dir/build.make zephyr/CMakeFiles/syscall_list_h_target.dir/depend
 	$(MAKE) -f zephyr/CMakeFiles/syscall_list_h_target.dir/build.make zephyr/CMakeFiles/syscall_list_h_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=66,67,68 "Built target syscall_list_h_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=66,67 "Built target syscall_list_h_target"
 .PHONY : zephyr/CMakeFiles/syscall_list_h_target.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/syscall_list_h_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/syscall_list_h_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/syscall_list_h_target.dir/rule
@@ -608,7 +608,7 @@ zephyr/CMakeFiles/linker_script.dir/all: zephyr/CMakeFiles/offsets_h.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/linker_script.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/linker_script.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/linker_script.dir/rule
@@ -636,7 +636,7 @@ zephyr/CMakeFiles/offsets.dir/all: zephyr/CMakeFiles/syscall_macros_h_target.dir
 zephyr/CMakeFiles/offsets.dir/all: zephyr/CMakeFiles/syscall_list_h_target.dir/all
 	$(MAKE) -f zephyr/CMakeFiles/offsets.dir/build.make zephyr/CMakeFiles/offsets.dir/depend
 	$(MAKE) -f zephyr/CMakeFiles/offsets.dir/build.make zephyr/CMakeFiles/offsets.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=40,41 "Built target offsets"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=40 "Built target offsets"
 .PHONY : zephyr/CMakeFiles/offsets.dir/all
 
 # Include target in all.
@@ -646,7 +646,7 @@ all: zephyr/CMakeFiles/offsets.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/offsets.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/offsets.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/offsets.dir/rule
@@ -673,12 +673,12 @@ clean: zephyr/CMakeFiles/offsets.dir/clean
 zephyr/CMakeFiles/offsets_h.dir/all: zephyr/CMakeFiles/offsets.dir/all
 	$(MAKE) -f zephyr/CMakeFiles/offsets_h.dir/build.make zephyr/CMakeFiles/offsets_h.dir/depend
 	$(MAKE) -f zephyr/CMakeFiles/offsets_h.dir/build.make zephyr/CMakeFiles/offsets_h.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=42 "Built target offsets_h"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=41 "Built target offsets_h"
 .PHONY : zephyr/CMakeFiles/offsets_h.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/CMakeFiles/offsets_h.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/offsets_h.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
 .PHONY : zephyr/CMakeFiles/offsets_h.dir/rule
@@ -1464,7 +1464,7 @@ zephyr/subsys/bluetooth/common/preinstall:
 zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/all: zephyr/CMakeFiles/offsets_h.dir/all
 	$(MAKE) -f zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/build.make zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/depend
 	$(MAKE) -f zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/build.make zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=43 "Built target subsys__bluetooth__common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=42,43 "Built target subsys__bluetooth__common"
 .PHONY : zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/all
 
 # Include target in all.
@@ -1519,7 +1519,7 @@ zephyr/subsys/bluetooth/host/preinstall:
 zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/all: zephyr/CMakeFiles/offsets_h.dir/all
 	$(MAKE) -f zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/build.make zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/depend
 	$(MAKE) -f zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/build.make zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=62,63 "Built target subsys__bluetooth__host"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=61,62,63 "Built target subsys__bluetooth__host"
 .PHONY : zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/all
 
 # Include target in all.
@@ -1574,7 +1574,7 @@ zephyr/subsys/bluetooth/controller/preinstall:
 zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/all: zephyr/CMakeFiles/offsets_h.dir/all
 	$(MAKE) -f zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/build.make zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/depend
 	$(MAKE) -f zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/build.make zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61 "Built target subsys__bluetooth__controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60 "Built target subsys__bluetooth__controller"
 .PHONY : zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/all
 
 # Include target in all.
@@ -1584,7 +1584,7 @@ all: zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller
 
 # Build rule for subdir invocation for target.
 zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 22
 	$(MAKE) -f CMakeFiles/Makefile2 zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
 .PHONY : zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/rule
@@ -1659,7 +1659,7 @@ all: zephyr/subsys/net/CMakeFiles/subsys__net.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/subsys/net/CMakeFiles/subsys__net.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 zephyr/subsys/net/CMakeFiles/subsys__net.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
 .PHONY : zephyr/subsys/net/CMakeFiles/subsys__net.dir/rule
@@ -1742,6 +1742,7 @@ zephyr/drivers/all: zephyr/drivers/display/all
 zephyr/drivers/all: zephyr/drivers/interrupt_controller/all
 zephyr/drivers/all: zephyr/drivers/clock_control/all
 zephyr/drivers/all: zephyr/drivers/gpio/all
+zephyr/drivers/all: zephyr/drivers/pwm/all
 zephyr/drivers/all: zephyr/drivers/serial/all
 zephyr/drivers/all: zephyr/drivers/bluetooth/all
 zephyr/drivers/all: zephyr/drivers/timer/all
@@ -1754,6 +1755,7 @@ zephyr/drivers/clean: zephyr/drivers/display/clean
 zephyr/drivers/clean: zephyr/drivers/interrupt_controller/clean
 zephyr/drivers/clean: zephyr/drivers/clock_control/clean
 zephyr/drivers/clean: zephyr/drivers/gpio/clean
+zephyr/drivers/clean: zephyr/drivers/pwm/clean
 zephyr/drivers/clean: zephyr/drivers/serial/clean
 zephyr/drivers/clean: zephyr/drivers/bluetooth/clean
 zephyr/drivers/clean: zephyr/drivers/timer/clean
@@ -1766,6 +1768,7 @@ zephyr/drivers/preinstall: zephyr/drivers/display/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/interrupt_controller/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/clock_control/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/gpio/preinstall
+zephyr/drivers/preinstall: zephyr/drivers/pwm/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/serial/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/bluetooth/preinstall
 zephyr/drivers/preinstall: zephyr/drivers/timer/preinstall
@@ -1861,6 +1864,24 @@ zephyr/drivers/gpio/clean:
 zephyr/drivers/gpio/preinstall:
 
 .PHONY : zephyr/drivers/gpio/preinstall
+
+#=============================================================================
+# Directory level rules for directory zephyr/drivers/pwm
+
+# Convenience name for "all" pass in the directory.
+zephyr/drivers/pwm/all:
+
+.PHONY : zephyr/drivers/pwm/all
+
+# Convenience name for "clean" pass in the directory.
+zephyr/drivers/pwm/clean:
+
+.PHONY : zephyr/drivers/pwm/clean
+
+# Convenience name for "preinstall" pass in the directory.
+zephyr/drivers/pwm/preinstall:
+
+.PHONY : zephyr/drivers/pwm/preinstall
 
 #=============================================================================
 # Directory level rules for directory zephyr/drivers/serial
@@ -1987,7 +2008,7 @@ all: zephyr/kernel/CMakeFiles/kernel.dir/all
 
 # Build rule for subdir invocation for target.
 zephyr/kernel/CMakeFiles/kernel.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 zephyr/kernel/CMakeFiles/kernel.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
 .PHONY : zephyr/kernel/CMakeFiles/kernel.dir/rule
