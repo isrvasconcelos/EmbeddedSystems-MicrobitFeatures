@@ -12,6 +12,8 @@
 #include <gpio.h>
 #include <pwm.h>
 #include <device.h>
+#include <sensor.h>
+#include <stdio.h>
 
 #include <display/mb_display.h>
 
@@ -40,6 +42,8 @@ typedef struct {
 static event_t current_event = IDLE;
 static state_t current_state = Q1;
 
+static struct device *temp_dev;
+static struct sensor_value temp_value;
 
 void s1_display() { /* Show some scrolling text ("ECOM042.2017.2") */
 	struct mb_display *disp = mb_display_get();
@@ -60,9 +64,9 @@ void s3_compass() {
 }
 
 void s4_temperature() {
-	struct mb_display *disp = mb_display_get();
-	mb_display_print(disp, MB_DISPLAY_MODE_SINGLE,
-		K_SECONDS(1), "4");
+
+
+
 }
 
 void s5_bluetooth() {
@@ -120,9 +124,50 @@ static void configure_buttons(void) {
 }
 
 
+
+/***************************************************************************************/
+/** TEMPERATURE **/
+
+
+
+
 /***************************************************************************************/
 /** MAIN **/
 void main(void)
 {
 	configure_buttons();
+
+	printk("Thermometer Example! %s\n", CONFIG_ARCH);
+
+	temp_dev = device_get_binding("TEMP_0");
+	if (!temp_dev) {
+		printk("error: no temp device\n");
+		return;
+	}
+
+	printf("temp device is %p, name is %s\n",
+	       temp_dev, temp_dev->config->name);
+
+	while (1) {
+		int r;
+		
+
+		r = sensor_sample_fetch(temp_dev);
+		if (r) {
+			printf("sensor_sample_fetch failed return: %d\n", r);
+			break;
+		}
+
+		r = sensor_channel_get(temp_dev, SENSOR_CHAN_TEMP,
+				       &temp_value);
+		if (r) {
+			printf("sensor_channel_get failed return: %d\n", r);
+			break;
+		}
+
+		printf("Temperature is %gC\n",
+		       sensor_value_to_double(&temp_value));
+
+		k_sleep(5000);
+	}
 }

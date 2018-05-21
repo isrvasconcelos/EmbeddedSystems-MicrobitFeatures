@@ -881,6 +881,33 @@ drivers/pwm/pwm_nrf5_sw.c.s:
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.s
 .PHONY : drivers/pwm/pwm_nrf5_sw.c.s
 
+drivers/sensor/nrf5/temp_nrf5.obj: drivers/sensor/nrf5/temp_nrf5.c.obj
+
+.PHONY : drivers/sensor/nrf5/temp_nrf5.obj
+
+# target to build an object file
+drivers/sensor/nrf5/temp_nrf5.c.obj:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.obj
+.PHONY : drivers/sensor/nrf5/temp_nrf5.c.obj
+
+drivers/sensor/nrf5/temp_nrf5.i: drivers/sensor/nrf5/temp_nrf5.c.i
+
+.PHONY : drivers/sensor/nrf5/temp_nrf5.i
+
+# target to preprocess a source file
+drivers/sensor/nrf5/temp_nrf5.c.i:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.i
+.PHONY : drivers/sensor/nrf5/temp_nrf5.c.i
+
+drivers/sensor/nrf5/temp_nrf5.s: drivers/sensor/nrf5/temp_nrf5.c.s
+
+.PHONY : drivers/sensor/nrf5/temp_nrf5.s
+
+# target to generate assembly for a file
+drivers/sensor/nrf5/temp_nrf5.c.s:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.s
+.PHONY : drivers/sensor/nrf5/temp_nrf5.c.s
+
 drivers/serial/uart_nrf5.obj: drivers/serial/uart_nrf5.c.obj
 
 .PHONY : drivers/serial/uart_nrf5.obj
@@ -1214,6 +1241,9 @@ help:
 	@echo "... drivers/pwm/pwm_nrf5_sw.obj"
 	@echo "... drivers/pwm/pwm_nrf5_sw.i"
 	@echo "... drivers/pwm/pwm_nrf5_sw.s"
+	@echo "... drivers/sensor/nrf5/temp_nrf5.obj"
+	@echo "... drivers/sensor/nrf5/temp_nrf5.i"
+	@echo "... drivers/sensor/nrf5/temp_nrf5.s"
 	@echo "... drivers/serial/uart_nrf5.obj"
 	@echo "... drivers/serial/uart_nrf5.i"
 	@echo "... drivers/serial/uart_nrf5.s"

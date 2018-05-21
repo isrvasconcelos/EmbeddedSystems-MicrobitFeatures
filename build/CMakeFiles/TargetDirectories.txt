@@ -124,6 +124,10 @@
 /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/gpio/CMakeFiles/edit_cache.dir
 /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/pwm/CMakeFiles/rebuild_cache.dir
 /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/pwm/CMakeFiles/edit_cache.dir
+/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/sensor/CMakeFiles/rebuild_cache.dir
+/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/sensor/CMakeFiles/edit_cache.dir
+/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/sensor/nrf5/CMakeFiles/rebuild_cache.dir
+/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/sensor/nrf5/CMakeFiles/edit_cache.dir
 /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/serial/CMakeFiles/rebuild_cache.dir
 /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/serial/CMakeFiles/edit_cache.dir
 /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/bluetooth/CMakeFiles/rebuild_cache.dir

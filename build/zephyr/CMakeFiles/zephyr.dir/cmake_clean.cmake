@@ -31,6 +31,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/zephyr.dir/drivers/clock_control/nrf5_power_clock.c.obj"
   "CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.obj"
   "CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.obj"
+  "CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.obj"
   "CMakeFiles/zephyr.dir/drivers/serial/uart_nrf5.c.obj"
   "CMakeFiles/zephyr.dir/drivers/timer/sys_clock_init.c.obj"
   "CMakeFiles/zephyr.dir/drivers/timer/nrf_rtc_timer.c.obj"
