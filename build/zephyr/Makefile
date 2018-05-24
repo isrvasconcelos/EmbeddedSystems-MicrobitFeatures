@@ -854,6 +854,87 @@ drivers/gpio/gpio_nrf5.c.s:
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.s
 .PHONY : drivers/gpio/gpio_nrf5.c.s
 
+drivers/i2c/i2c_bitbang.obj: drivers/i2c/i2c_bitbang.c.obj
+
+.PHONY : drivers/i2c/i2c_bitbang.obj
+
+# target to build an object file
+drivers/i2c/i2c_bitbang.c.obj:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.obj
+.PHONY : drivers/i2c/i2c_bitbang.c.obj
+
+drivers/i2c/i2c_bitbang.i: drivers/i2c/i2c_bitbang.c.i
+
+.PHONY : drivers/i2c/i2c_bitbang.i
+
+# target to preprocess a source file
+drivers/i2c/i2c_bitbang.c.i:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.i
+.PHONY : drivers/i2c/i2c_bitbang.c.i
+
+drivers/i2c/i2c_bitbang.s: drivers/i2c/i2c_bitbang.c.s
+
+.PHONY : drivers/i2c/i2c_bitbang.s
+
+# target to generate assembly for a file
+drivers/i2c/i2c_bitbang.c.s:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.s
+.PHONY : drivers/i2c/i2c_bitbang.c.s
+
+drivers/i2c/i2c_gpio.obj: drivers/i2c/i2c_gpio.c.obj
+
+.PHONY : drivers/i2c/i2c_gpio.obj
+
+# target to build an object file
+drivers/i2c/i2c_gpio.c.obj:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.obj
+.PHONY : drivers/i2c/i2c_gpio.c.obj
+
+drivers/i2c/i2c_gpio.i: drivers/i2c/i2c_gpio.c.i
+
+.PHONY : drivers/i2c/i2c_gpio.i
+
+# target to preprocess a source file
+drivers/i2c/i2c_gpio.c.i:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.i
+.PHONY : drivers/i2c/i2c_gpio.c.i
+
+drivers/i2c/i2c_gpio.s: drivers/i2c/i2c_gpio.c.s
+
+.PHONY : drivers/i2c/i2c_gpio.s
+
+# target to generate assembly for a file
+drivers/i2c/i2c_gpio.c.s:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.s
+.PHONY : drivers/i2c/i2c_gpio.c.s
+
+drivers/i2c/i2c_nrf5.obj: drivers/i2c/i2c_nrf5.c.obj
+
+.PHONY : drivers/i2c/i2c_nrf5.obj
+
+# target to build an object file
+drivers/i2c/i2c_nrf5.c.obj:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.obj
+.PHONY : drivers/i2c/i2c_nrf5.c.obj
+
+drivers/i2c/i2c_nrf5.i: drivers/i2c/i2c_nrf5.c.i
+
+.PHONY : drivers/i2c/i2c_nrf5.i
+
+# target to preprocess a source file
+drivers/i2c/i2c_nrf5.c.i:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.i
+.PHONY : drivers/i2c/i2c_nrf5.c.i
+
+drivers/i2c/i2c_nrf5.s: drivers/i2c/i2c_nrf5.c.s
+
+.PHONY : drivers/i2c/i2c_nrf5.s
+
+# target to generate assembly for a file
+drivers/i2c/i2c_nrf5.c.s:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.s
+.PHONY : drivers/i2c/i2c_nrf5.c.s
+
 drivers/pwm/pwm_nrf5_sw.obj: drivers/pwm/pwm_nrf5_sw.c.obj
 
 .PHONY : drivers/pwm/pwm_nrf5_sw.obj
@@ -880,6 +961,33 @@ drivers/pwm/pwm_nrf5_sw.s: drivers/pwm/pwm_nrf5_sw.c.s
 drivers/pwm/pwm_nrf5_sw.c.s:
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.s
 .PHONY : drivers/pwm/pwm_nrf5_sw.c.s
+
+drivers/sensor/nrf5/temp_nrf5.obj: drivers/sensor/nrf5/temp_nrf5.c.obj
+
+.PHONY : drivers/sensor/nrf5/temp_nrf5.obj
+
+# target to build an object file
+drivers/sensor/nrf5/temp_nrf5.c.obj:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.obj
+.PHONY : drivers/sensor/nrf5/temp_nrf5.c.obj
+
+drivers/sensor/nrf5/temp_nrf5.i: drivers/sensor/nrf5/temp_nrf5.c.i
+
+.PHONY : drivers/sensor/nrf5/temp_nrf5.i
+
+# target to preprocess a source file
+drivers/sensor/nrf5/temp_nrf5.c.i:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.i
+.PHONY : drivers/sensor/nrf5/temp_nrf5.c.i
+
+drivers/sensor/nrf5/temp_nrf5.s: drivers/sensor/nrf5/temp_nrf5.c.s
+
+.PHONY : drivers/sensor/nrf5/temp_nrf5.s
+
+# target to generate assembly for a file
+drivers/sensor/nrf5/temp_nrf5.c.s:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.s
+.PHONY : drivers/sensor/nrf5/temp_nrf5.c.s
 
 drivers/serial/uart_nrf5.obj: drivers/serial/uart_nrf5.c.obj
 
@@ -1127,6 +1235,33 @@ misc/printk.c.s:
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/misc/printk.c.s
 .PHONY : misc/printk.c.s
 
+subsys/logging/sys_log.obj: subsys/logging/sys_log.c.obj
+
+.PHONY : subsys/logging/sys_log.obj
+
+# target to build an object file
+subsys/logging/sys_log.c.obj:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.obj
+.PHONY : subsys/logging/sys_log.c.obj
+
+subsys/logging/sys_log.i: subsys/logging/sys_log.c.i
+
+.PHONY : subsys/logging/sys_log.i
+
+# target to preprocess a source file
+subsys/logging/sys_log.c.i:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.i
+.PHONY : subsys/logging/sys_log.c.i
+
+subsys/logging/sys_log.s: subsys/logging/sys_log.c.s
+
+.PHONY : subsys/logging/sys_log.s
+
+# target to generate assembly for a file
+subsys/logging/sys_log.c.s:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr.dir/build.make zephyr/CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.s
+.PHONY : subsys/logging/sys_log.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1211,9 +1346,21 @@ help:
 	@echo "... drivers/gpio/gpio_nrf5.obj"
 	@echo "... drivers/gpio/gpio_nrf5.i"
 	@echo "... drivers/gpio/gpio_nrf5.s"
+	@echo "... drivers/i2c/i2c_bitbang.obj"
+	@echo "... drivers/i2c/i2c_bitbang.i"
+	@echo "... drivers/i2c/i2c_bitbang.s"
+	@echo "... drivers/i2c/i2c_gpio.obj"
+	@echo "... drivers/i2c/i2c_gpio.i"
+	@echo "... drivers/i2c/i2c_gpio.s"
+	@echo "... drivers/i2c/i2c_nrf5.obj"
+	@echo "... drivers/i2c/i2c_nrf5.i"
+	@echo "... drivers/i2c/i2c_nrf5.s"
 	@echo "... drivers/pwm/pwm_nrf5_sw.obj"
 	@echo "... drivers/pwm/pwm_nrf5_sw.i"
 	@echo "... drivers/pwm/pwm_nrf5_sw.s"
+	@echo "... drivers/sensor/nrf5/temp_nrf5.obj"
+	@echo "... drivers/sensor/nrf5/temp_nrf5.i"
+	@echo "... drivers/sensor/nrf5/temp_nrf5.s"
 	@echo "... drivers/serial/uart_nrf5.obj"
 	@echo "... drivers/serial/uart_nrf5.i"
 	@echo "... drivers/serial/uart_nrf5.s"
@@ -1241,6 +1388,9 @@ help:
 	@echo "... misc/printk.obj"
 	@echo "... misc/printk.i"
 	@echo "... misc/printk.s"
+	@echo "... subsys/logging/sys_log.obj"
+	@echo "... subsys/logging/sys_log.i"
+	@echo "... subsys/logging/sys_log.s"
 .PHONY : help
 
 

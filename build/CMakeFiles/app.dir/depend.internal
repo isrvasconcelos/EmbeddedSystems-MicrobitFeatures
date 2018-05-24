@@ -179,6 +179,7 @@ CMakeFiles/app.dir/src/main.c.obj
  /home/israel/zephyr/include/misc/util.h
  /home/israel/zephyr/include/pwm.h
  /home/israel/zephyr/include/random/rand32.h
+ /home/israel/zephyr/include/sensor.h
  /home/israel/zephyr/include/sw_isr_table.h
  /home/israel/zephyr/include/sys_clock.h
  /home/israel/zephyr/include/syscall.h
@@ -204,3 +205,4 @@ CMakeFiles/app.dir/src/main.c.obj
  zephyr/include/generated/syscalls/gpio.h
  zephyr/include/generated/syscalls/kernel.h
  zephyr/include/generated/syscalls/pwm.h
+ zephyr/include/generated/syscalls/sensor.h

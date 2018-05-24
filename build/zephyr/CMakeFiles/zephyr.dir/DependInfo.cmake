@@ -67,7 +67,11 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/israel/zephyr/drivers/display/mb_display.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_display.c.obj"
   "/home/israel/zephyr/drivers/display/mb_font.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_font.c.obj"
   "/home/israel/zephyr/drivers/gpio/gpio_nrf5.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.obj"
+  "/home/israel/zephyr/drivers/i2c/i2c_bitbang.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.obj"
+  "/home/israel/zephyr/drivers/i2c/i2c_gpio.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.obj"
+  "/home/israel/zephyr/drivers/i2c/i2c_nrf5.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.obj"
   "/home/israel/zephyr/drivers/pwm/pwm_nrf5_sw.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.obj"
+  "/home/israel/zephyr/drivers/sensor/nrf5/temp_nrf5.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.obj"
   "/home/israel/zephyr/drivers/serial/uart_nrf5.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/serial/uart_nrf5.c.obj"
   "/home/israel/zephyr/drivers/timer/nrf_rtc_timer.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/timer/nrf_rtc_timer.c.obj"
   "/home/israel/zephyr/drivers/timer/sys_clock_init.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/drivers/timer/sys_clock_init.c.obj"
@@ -75,6 +79,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/israel/zephyr/lib/crc/crc8_sw.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/lib/crc/crc8_sw.c.obj"
   "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/misc/generated/configs.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj"
   "/home/israel/zephyr/misc/printk.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/misc/printk.c.obj"
+  "/home/israel/zephyr/subsys/logging/sys_log.c" "/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

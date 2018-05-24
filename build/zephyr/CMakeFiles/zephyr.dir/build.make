@@ -323,9 +323,22 @@ zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zephyr.dir/misc/generated/configs.c.s"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/misc/generated/configs.c -o CMakeFiles/zephyr.dir/misc/generated/configs.c.s
 
+zephyr/CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.obj: zephyr/CMakeFiles/zephyr.dir/flags.make
+zephyr/CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.obj: /home/israel/zephyr/subsys/logging/sys_log.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.obj"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.obj   -c /home/israel/zephyr/subsys/logging/sys_log.c
+
+zephyr/CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.i"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/israel/zephyr/subsys/logging/sys_log.c > CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.i
+
+zephyr/CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.s"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/israel/zephyr/subsys/logging/sys_log.c -o CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.s
+
 zephyr/CMakeFiles/zephyr.dir/drivers/console/uart_console.c.obj: zephyr/CMakeFiles/zephyr.dir/flags.make
 zephyr/CMakeFiles/zephyr.dir/drivers/console/uart_console.c.obj: /home/israel/zephyr/drivers/console/uart_console.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/console/uart_console.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/console/uart_console.c.obj"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zephyr.dir/drivers/console/uart_console.c.obj   -c /home/israel/zephyr/drivers/console/uart_console.c
 
 zephyr/CMakeFiles/zephyr.dir/drivers/console/uart_console.c.i: cmake_force
@@ -338,7 +351,7 @@ zephyr/CMakeFiles/zephyr.dir/drivers/console/uart_console.c.s: cmake_force
 
 zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_display.c.obj: zephyr/CMakeFiles/zephyr.dir/flags.make
 zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_display.c.obj: /home/israel/zephyr/drivers/display/mb_display.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_display.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_display.c.obj"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zephyr.dir/drivers/display/mb_display.c.obj   -c /home/israel/zephyr/drivers/display/mb_display.c
 
 zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_display.c.i: cmake_force
@@ -351,7 +364,7 @@ zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_display.c.s: cmake_force
 
 zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_font.c.obj: zephyr/CMakeFiles/zephyr.dir/flags.make
 zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_font.c.obj: /home/israel/zephyr/drivers/display/mb_font.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_font.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_font.c.obj"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zephyr.dir/drivers/display/mb_font.c.obj   -c /home/israel/zephyr/drivers/display/mb_font.c
 
 zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_font.c.i: cmake_force
@@ -364,7 +377,7 @@ zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_font.c.s: cmake_force
 
 zephyr/CMakeFiles/zephyr.dir/drivers/clock_control/nrf5_power_clock.c.obj: zephyr/CMakeFiles/zephyr.dir/flags.make
 zephyr/CMakeFiles/zephyr.dir/drivers/clock_control/nrf5_power_clock.c.obj: /home/israel/zephyr/drivers/clock_control/nrf5_power_clock.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/clock_control/nrf5_power_clock.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/clock_control/nrf5_power_clock.c.obj"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zephyr.dir/drivers/clock_control/nrf5_power_clock.c.obj   -c /home/israel/zephyr/drivers/clock_control/nrf5_power_clock.c
 
 zephyr/CMakeFiles/zephyr.dir/drivers/clock_control/nrf5_power_clock.c.i: cmake_force
@@ -377,7 +390,7 @@ zephyr/CMakeFiles/zephyr.dir/drivers/clock_control/nrf5_power_clock.c.s: cmake_f
 
 zephyr/CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.obj: zephyr/CMakeFiles/zephyr.dir/flags.make
 zephyr/CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.obj: /home/israel/zephyr/drivers/gpio/gpio_nrf5.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.obj"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.obj   -c /home/israel/zephyr/drivers/gpio/gpio_nrf5.c
 
 zephyr/CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.i: cmake_force
@@ -388,9 +401,48 @@ zephyr/CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.s"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/israel/zephyr/drivers/gpio/gpio_nrf5.c -o CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.s
 
+zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.obj: zephyr/CMakeFiles/zephyr.dir/flags.make
+zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.obj: /home/israel/zephyr/drivers/i2c/i2c_bitbang.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.obj"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.obj   -c /home/israel/zephyr/drivers/i2c/i2c_bitbang.c
+
+zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.i"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/israel/zephyr/drivers/i2c/i2c_bitbang.c > CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.i
+
+zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.s"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/israel/zephyr/drivers/i2c/i2c_bitbang.c -o CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.s
+
+zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.obj: zephyr/CMakeFiles/zephyr.dir/flags.make
+zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.obj: /home/israel/zephyr/drivers/i2c/i2c_gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.obj"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.obj   -c /home/israel/zephyr/drivers/i2c/i2c_gpio.c
+
+zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.i"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/israel/zephyr/drivers/i2c/i2c_gpio.c > CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.i
+
+zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.s"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/israel/zephyr/drivers/i2c/i2c_gpio.c -o CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.s
+
+zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.obj: zephyr/CMakeFiles/zephyr.dir/flags.make
+zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.obj: /home/israel/zephyr/drivers/i2c/i2c_nrf5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.obj"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.obj   -c /home/israel/zephyr/drivers/i2c/i2c_nrf5.c
+
+zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.i"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/israel/zephyr/drivers/i2c/i2c_nrf5.c > CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.i
+
+zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.s"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/israel/zephyr/drivers/i2c/i2c_nrf5.c -o CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.s
+
 zephyr/CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.obj: zephyr/CMakeFiles/zephyr.dir/flags.make
 zephyr/CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.obj: /home/israel/zephyr/drivers/pwm/pwm_nrf5_sw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.obj"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.obj   -c /home/israel/zephyr/drivers/pwm/pwm_nrf5_sw.c
 
 zephyr/CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.i: cmake_force
@@ -401,9 +453,22 @@ zephyr/CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.s"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/israel/zephyr/drivers/pwm/pwm_nrf5_sw.c -o CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.s
 
+zephyr/CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.obj: zephyr/CMakeFiles/zephyr.dir/flags.make
+zephyr/CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.obj: /home/israel/zephyr/drivers/sensor/nrf5/temp_nrf5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.obj"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.obj   -c /home/israel/zephyr/drivers/sensor/nrf5/temp_nrf5.c
+
+zephyr/CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.i"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/israel/zephyr/drivers/sensor/nrf5/temp_nrf5.c > CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.i
+
+zephyr/CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.s"
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/israel/zephyr/drivers/sensor/nrf5/temp_nrf5.c -o CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.s
+
 zephyr/CMakeFiles/zephyr.dir/drivers/serial/uart_nrf5.c.obj: zephyr/CMakeFiles/zephyr.dir/flags.make
 zephyr/CMakeFiles/zephyr.dir/drivers/serial/uart_nrf5.c.obj: /home/israel/zephyr/drivers/serial/uart_nrf5.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/serial/uart_nrf5.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/serial/uart_nrf5.c.obj"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zephyr.dir/drivers/serial/uart_nrf5.c.obj   -c /home/israel/zephyr/drivers/serial/uart_nrf5.c
 
 zephyr/CMakeFiles/zephyr.dir/drivers/serial/uart_nrf5.c.i: cmake_force
@@ -416,7 +481,7 @@ zephyr/CMakeFiles/zephyr.dir/drivers/serial/uart_nrf5.c.s: cmake_force
 
 zephyr/CMakeFiles/zephyr.dir/drivers/timer/sys_clock_init.c.obj: zephyr/CMakeFiles/zephyr.dir/flags.make
 zephyr/CMakeFiles/zephyr.dir/drivers/timer/sys_clock_init.c.obj: /home/israel/zephyr/drivers/timer/sys_clock_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/timer/sys_clock_init.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/timer/sys_clock_init.c.obj"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zephyr.dir/drivers/timer/sys_clock_init.c.obj   -c /home/israel/zephyr/drivers/timer/sys_clock_init.c
 
 zephyr/CMakeFiles/zephyr.dir/drivers/timer/sys_clock_init.c.i: cmake_force
@@ -429,7 +494,7 @@ zephyr/CMakeFiles/zephyr.dir/drivers/timer/sys_clock_init.c.s: cmake_force
 
 zephyr/CMakeFiles/zephyr.dir/drivers/timer/nrf_rtc_timer.c.obj: zephyr/CMakeFiles/zephyr.dir/flags.make
 zephyr/CMakeFiles/zephyr.dir/drivers/timer/nrf_rtc_timer.c.obj: /home/israel/zephyr/drivers/timer/nrf_rtc_timer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/timer/nrf_rtc_timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object zephyr/CMakeFiles/zephyr.dir/drivers/timer/nrf_rtc_timer.c.obj"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/zephyr.dir/drivers/timer/nrf_rtc_timer.c.obj   -c /home/israel/zephyr/drivers/timer/nrf_rtc_timer.c
 
 zephyr/CMakeFiles/zephyr.dir/drivers/timer/nrf_rtc_timer.c.i: cmake_force
@@ -468,12 +533,17 @@ zephyr_OBJECTS = \
 "CMakeFiles/zephyr.dir/lib/crc/crc8_sw.c.obj" \
 "CMakeFiles/zephyr.dir/misc/printk.c.obj" \
 "CMakeFiles/zephyr.dir/misc/generated/configs.c.obj" \
+"CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.obj" \
 "CMakeFiles/zephyr.dir/drivers/console/uart_console.c.obj" \
 "CMakeFiles/zephyr.dir/drivers/display/mb_display.c.obj" \
 "CMakeFiles/zephyr.dir/drivers/display/mb_font.c.obj" \
 "CMakeFiles/zephyr.dir/drivers/clock_control/nrf5_power_clock.c.obj" \
 "CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.obj" \
+"CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.obj" \
+"CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.obj" \
+"CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.obj" \
 "CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.obj" \
+"CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.obj" \
 "CMakeFiles/zephyr.dir/drivers/serial/uart_nrf5.c.obj" \
 "CMakeFiles/zephyr.dir/drivers/timer/sys_clock_init.c.obj" \
 "CMakeFiles/zephyr.dir/drivers/timer/nrf_rtc_timer.c.obj"
@@ -507,18 +577,23 @@ zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/lib/crc/crc16_sw.c.obj
 zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/lib/crc/crc8_sw.c.obj
 zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/misc/printk.c.obj
 zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/subsys/logging/sys_log.c.obj
 zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/drivers/console/uart_console.c.obj
 zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_display.c.obj
 zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/drivers/display/mb_font.c.obj
 zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/drivers/clock_control/nrf5_power_clock.c.obj
 zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/drivers/gpio/gpio_nrf5.c.obj
+zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_bitbang.c.obj
+zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_gpio.c.obj
+zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/drivers/i2c/i2c_nrf5.c.obj
 zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/drivers/pwm/pwm_nrf5_sw.c.obj
+zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/drivers/sensor/nrf5/temp_nrf5.c.obj
 zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/drivers/serial/uart_nrf5.c.obj
 zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/drivers/timer/sys_clock_init.c.obj
 zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/drivers/timer/nrf_rtc_timer.c.obj
 zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/build.make
 zephyr/libzephyr.a: zephyr/CMakeFiles/zephyr.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking C static library libzephyr.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Linking C static library libzephyr.a"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && $(CMAKE_COMMAND) -P CMakeFiles/zephyr.dir/cmake_clean_target.cmake
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/zephyr.dir/link.txt --verbose=$(VERBOSE)
 

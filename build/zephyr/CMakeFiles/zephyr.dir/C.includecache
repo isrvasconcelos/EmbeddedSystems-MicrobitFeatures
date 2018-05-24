@@ -362,6 +362,46 @@ gpio_utils.h
 
 /home/israel/zephyr/drivers/gpio/gpio_utils.h
 
+/home/israel/zephyr/drivers/i2c/i2c_bitbang.c
+errno.h
+-
+kernel.h
+-
+i2c.h
+-
+i2c_bitbang.h
+/home/israel/zephyr/drivers/i2c/i2c_bitbang.h
+
+/home/israel/zephyr/drivers/i2c/i2c_bitbang.h
+
+/home/israel/zephyr/drivers/i2c/i2c_gpio.c
+device.h
+-
+errno.h
+-
+gpio.h
+-
+i2c.h
+-
+i2c_bitbang.h
+/home/israel/zephyr/drivers/i2c/i2c_bitbang.h
+
+/home/israel/zephyr/drivers/i2c/i2c_nrf5.c
+errno.h
+-
+i2c.h
+-
+soc.h
+-
+nrf.h
+-
+misc/util.h
+-
+gpio.h
+-
+logging/sys_log.h
+-
+
 /home/israel/zephyr/drivers/pwm/pwm_nrf5_sw.c
 soc.h
 -
@@ -369,6 +409,20 @@ pwm.h
 /home/israel/zephyr/drivers/pwm/pwm.h
 logging/sys_log.h
 -
+
+/home/israel/zephyr/drivers/sensor/nrf5/temp_nrf5.c
+device.h
+-
+sensor.h
+-
+clock_control.h
+-
+logging/sys_log.h
+-
+nrf.h
+/home/israel/zephyr/drivers/sensor/nrf5/nrf.h
+nrf5_common.h
+/home/israel/zephyr/drivers/sensor/nrf5/nrf5_common.h
 
 /home/israel/zephyr/drivers/serial/uart_nrf5.c
 kernel.h
@@ -1152,6 +1206,14 @@ device.h
 syscalls/gpio.h
 -
 
+/home/israel/zephyr/include/i2c.h
+zephyr/types.h
+-
+device.h
+-
+syscalls/i2c.h
+-
+
 /home/israel/zephyr/include/init.h
 device.h
 -
@@ -1300,6 +1362,16 @@ kernel.h
 misc/util.h
 -
 errno.h
+-
+
+/home/israel/zephyr/include/sensor.h
+zephyr/types.h
+-
+device.h
+-
+errno.h
+-
+syscalls/sensor.h
 -
 
 /home/israel/zephyr/include/sw_isr_table.h
@@ -1474,6 +1546,10 @@ linker/sections.h
 syscall_handler.h
 -
 
+/home/israel/zephyr/subsys/logging/sys_log.c
+logging/sys_log.h
+-
+
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include-fixed/limits.h
 
 /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/lib/arm-zephyr-eabi/gcc/arm-zephyr-eabi/6.2.0/include/stdarg.h
@@ -1504,6 +1580,12 @@ syscall_list.h
 syscall_macros.h
 -
 
+zephyr/include/generated/syscalls/i2c.h
+syscall_list.h
+-
+syscall_macros.h
+-
+
 zephyr/include/generated/syscalls/kernel.h
 syscall_list.h
 -
@@ -1511,6 +1593,12 @@ syscall_macros.h
 -
 
 zephyr/include/generated/syscalls/pwm.h
+syscall_list.h
+-
+syscall_macros.h
+-
+
+zephyr/include/generated/syscalls/sensor.h
 syscall_list.h
 -
 syscall_macros.h

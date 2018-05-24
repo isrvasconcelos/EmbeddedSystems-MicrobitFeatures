@@ -19,6 +19,10 @@ pwm.h
 -
 device.h
 -
+sensor.h
+-
+stdio.h
+-
 display/mb_display.h
 -
 
@@ -704,6 +708,16 @@ syscalls/pwm.h
 zephyr/types.h
 -
 
+/home/israel/zephyr/include/sensor.h
+zephyr/types.h
+-
+device.h
+-
+errno.h
+-
+syscalls/sensor.h
+-
+
 /home/israel/zephyr/include/sw_isr_table.h
 zephyr/types.h
 -
@@ -883,6 +897,12 @@ syscall_macros.h
 -
 
 zephyr/include/generated/syscalls/pwm.h
+syscall_list.h
+-
+syscall_macros.h
+-
+
+zephyr/include/generated/syscalls/sensor.h
 syscall_list.h
 -
 syscall_macros.h
