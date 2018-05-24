@@ -122,6 +122,8 @@
 /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/clock_control/CMakeFiles/edit_cache.dir
 /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/gpio/CMakeFiles/rebuild_cache.dir
 /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/gpio/CMakeFiles/edit_cache.dir
+/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/i2c/CMakeFiles/rebuild_cache.dir
+/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/i2c/CMakeFiles/edit_cache.dir
 /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/pwm/CMakeFiles/rebuild_cache.dir
 /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/pwm/CMakeFiles/edit_cache.dir
 /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/drivers/sensor/CMakeFiles/rebuild_cache.dir

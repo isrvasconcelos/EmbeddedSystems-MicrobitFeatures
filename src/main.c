@@ -44,6 +44,7 @@ static state_t current_state = Q1;
 
 static struct device *temp_dev;
 static struct sensor_value temp_value;
+static uint8_t current_temperature;
 
 void s1_display() { /* Show some scrolling text ("ECOM042.2017.2") */
 	struct mb_display *disp = mb_display_get();
@@ -54,25 +55,31 @@ void s1_display() { /* Show some scrolling text ("ECOM042.2017.2") */
 void s2_accelerometer() {
 	struct mb_display *disp = mb_display_get();
 	mb_display_print(disp, MB_DISPLAY_MODE_SINGLE,
-		K_SECONDS(1), "2");
+		K_SECONDS(1), "B");
 }
 
 void s3_compass() {
 	struct mb_display *disp = mb_display_get();
 	mb_display_print(disp, MB_DISPLAY_MODE_SINGLE,
-		K_SECONDS(1), "3");
+		K_SECONDS(1), "C");
 }
 
 void s4_temperature() {
 
+	struct mb_display *disp = mb_display_get();
 
+	printk("State 4\n");
+	printf("Temperature is %dC\n", current_temperature);
 
+	char output[3];
+	snprintk(output, 3, "%02d", current_temperature);
+	mb_display_print(disp, MB_DISPLAY_MODE_SINGLE, K_SECONDS(1), output);
 }
 
 void s5_bluetooth() {
 	struct mb_display *disp = mb_display_get();
 	mb_display_print(disp, MB_DISPLAY_MODE_SINGLE,
-		K_SECONDS(1), "5");
+		K_SECONDS(1), "D");
 }
 
 mstate_t machine[] = {
@@ -137,12 +144,11 @@ void main(void)
 {
 	configure_buttons();
 
-	printk("Thermometer Example! %s\n", CONFIG_ARCH);
+	printf("Thermometer Example! %s\n", CONFIG_ARCH);
 
 	temp_dev = device_get_binding("TEMP_0");
 	if (!temp_dev) {
 		printk("error: no temp device\n");
-		return;
 	}
 
 	printf("temp device is %p, name is %s\n",
@@ -150,8 +156,6 @@ void main(void)
 
 	while (1) {
 		int r;
-		
-
 		r = sensor_sample_fetch(temp_dev);
 		if (r) {
 			printf("sensor_sample_fetch failed return: %d\n", r);
@@ -165,9 +169,7 @@ void main(void)
 			break;
 		}
 
-		printf("Temperature is %gC\n",
-		       sensor_value_to_double(&temp_value));
-
-		k_sleep(5000);
+		current_temperature = sensor_value_to_double(&temp_value);
+		k_sleep(2500);
 	}
 }
