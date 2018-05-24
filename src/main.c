@@ -17,6 +17,20 @@
 
 #include <display/mb_display.h>
 
+#include "version.h"
+#include "i2c_util.h"
+
+#define ACC_DEV_ADDR     0x1D
+#define ACC_WHO_AM_I_REG 0x0D
+#define ACC_TEST_VALUE   0x5A
+
+#define COMPASS_DEV_ADDR     0x0e
+#define COMPASS_WHO_AM_I_REG 0x07
+#define COMPASS_TEST_VALUE 0xC4
+
+struct i2c_dev acc, compass;
+u8_t data[2];
+
 /***************************************************************************************/
 /** STATE MACHINE **/
 
@@ -53,9 +67,7 @@ void s1_display() { /* Show some scrolling text ("ECOM042.2017.2") */
 }
 
 void s2_accelerometer() {
-	struct mb_display *disp = mb_display_get();
-	mb_display_print(disp, MB_DISPLAY_MODE_SINGLE,
-		K_SECONDS(1), "B");
+
 }
 
 void s3_compass() {
@@ -144,6 +156,12 @@ void main(void)
 {
 	configure_buttons();
 
+        SYS_LOG_WRN("Firmware version: v%d.%d.%d",
+                        VERSION_MAJOR, VERSION_MINOR, VERSION_BUILD);
+
+        i2c_util_dev_init(&acc, ACC_DEV_ADDR, "ACC", ACC_WHO_AM_I_REG,
+                                ACC_TEST_VALUE);
+
 	printf("Thermometer Example! %s\n", CONFIG_ARCH);
 
 	temp_dev = device_get_binding("TEMP_0");
@@ -170,6 +188,10 @@ void main(void)
 		}
 
 		current_temperature = sensor_value_to_double(&temp_value);
-		k_sleep(2500);
+
+		i2c_util_read_bytes(&acc, 0x02, data, sizeof(data));
+		SYS_LOG_DBG("ACC X: %d", (data[1] << 8) | data[0]);
+
+		k_sleep(2000);
 	}
 }

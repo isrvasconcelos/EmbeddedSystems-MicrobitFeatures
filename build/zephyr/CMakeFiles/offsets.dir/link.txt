@@ -1,2 +1,0 @@
-ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-ar qc liboffsets.a  CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
-ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-ranlib liboffsets.a

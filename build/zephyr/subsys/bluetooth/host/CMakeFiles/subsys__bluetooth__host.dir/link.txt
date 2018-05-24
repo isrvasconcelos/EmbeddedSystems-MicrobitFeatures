@@ -1,2 +1,0 @@
-ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-ar qc libsubsys__bluetooth__host.a  CMakeFiles/subsys__bluetooth__host.dir/uuid.c.obj CMakeFiles/subsys__bluetooth__host.dir/hci_core.c.obj
-ccache /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-ranlib libsubsys__bluetooth__host.a
