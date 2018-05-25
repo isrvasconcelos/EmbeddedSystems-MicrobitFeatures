@@ -127,139 +127,10 @@ enum {
 };
 
 
-extern u32_t _handler_uart_err_check(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_uart_poll_in(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_uart_poll_out(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_uart_irq_tx_enable(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_uart_irq_tx_disable(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_uart_irq_rx_enable(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_uart_irq_rx_disable(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_uart_irq_err_enable(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_uart_irq_err_disable(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_uart_irq_is_pending(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_uart_irq_update(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_uart_line_ctrl_set(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_uart_line_ctrl_get(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_uart_drv_cmd(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_pinmux_pin_set(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_pinmux_pin_get(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_pinmux_pin_pullup(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_pinmux_pin_input_enable(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_flash_read(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_flash_write(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_flash_erase(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_flash_write_protection_set(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_flash_get_page_info_by_offs(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_flash_get_page_info_by_idx(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_flash_get_page_count(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_flash_get_write_block_size(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_sensor_attr_set(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_sensor_sample_fetch(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_sensor_sample_fetch_chan(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_sensor_channel_get(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_counter_start(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_counter_stop(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_counter_read(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_counter_get_pending_int(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_gpio_config(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_gpio_write(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_gpio_read(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_gpio_enable_callback(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_gpio_disable_callback(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_gpio_get_pending_int(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
 extern u32_t _handler_i2c_configure(u32_t arg1, u32_t arg2, u32_t arg3,
                 u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 extern u32_t _handler_i2c_transfer(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_entropy_get_entropy(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_pwm_pin_set_cycles(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_pwm_get_cycles_per_sec(u32_t arg1, u32_t arg2, u32_t arg3,
                 u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 extern u32_t _handler_rtc_read(u32_t arg1, u32_t arg2, u32_t arg3,
@@ -275,6 +146,18 @@ extern u32_t _handler_rtc_set_alarm(u32_t arg1, u32_t arg2, u32_t arg3,
                 u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 extern u32_t _handler_rtc_get_pending_int(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_pinmux_pin_set(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_pinmux_pin_get(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_pinmux_pin_pullup(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_pinmux_pin_input_enable(u32_t arg1, u32_t arg2, u32_t arg3,
                 u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 extern u32_t _handler_k_object_access_grant(u32_t arg1, u32_t arg2, u32_t arg3,
@@ -424,6 +307,105 @@ extern u32_t _handler_k_pipe_get(u32_t arg1, u32_t arg2, u32_t arg3,
 extern u32_t _handler_k_str_out(u32_t arg1, u32_t arg2, u32_t arg3,
                 u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
+extern u32_t _handler_dma_start(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_dma_stop(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_uart_err_check(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_uart_poll_in(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_uart_poll_out(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_uart_irq_tx_enable(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_uart_irq_tx_disable(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_uart_irq_rx_enable(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_uart_irq_rx_disable(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_uart_irq_err_enable(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_uart_irq_err_disable(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_uart_irq_is_pending(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_uart_irq_update(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_uart_line_ctrl_set(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_uart_line_ctrl_get(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_uart_drv_cmd(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_counter_start(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_counter_stop(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_counter_read(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_counter_get_pending_int(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_flash_read(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_flash_write(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_flash_erase(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_flash_write_protection_set(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_flash_get_page_info_by_offs(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_flash_get_page_info_by_idx(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_flash_get_page_count(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_flash_get_write_block_size(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_entropy_get_entropy(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_pwm_pin_set_cycles(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_pwm_get_cycles_per_sec(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_spi_transceive(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_spi_release(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
 extern u32_t _handler_adc_enable(u32_t arg1, u32_t arg2, u32_t arg3,
                 u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
@@ -433,16 +415,10 @@ extern u32_t _handler_adc_disable(u32_t arg1, u32_t arg2, u32_t arg3,
 extern u32_t _handler_adc_read(u32_t arg1, u32_t arg2, u32_t arg3,
                 u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
-extern u32_t _handler_spi_transceive(u32_t arg1, u32_t arg2, u32_t arg3,
+extern u32_t _handler_aio_cmp_disable(u32_t arg1, u32_t arg2, u32_t arg3,
                 u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
-extern u32_t _handler_spi_release(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_dma_start(u32_t arg1, u32_t arg2, u32_t arg3,
-                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-extern u32_t _handler_dma_stop(u32_t arg1, u32_t arg2, u32_t arg3,
+extern u32_t _handler_aio_cmp_get_pending_int(u32_t arg1, u32_t arg2, u32_t arg3,
                 u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 extern u32_t _handler_ipm_send(u32_t arg1, u32_t arg2, u32_t arg3,
@@ -457,10 +433,34 @@ extern u32_t _handler_ipm_max_id_val_get(u32_t arg1, u32_t arg2, u32_t arg3,
 extern u32_t _handler_ipm_set_enabled(u32_t arg1, u32_t arg2, u32_t arg3,
                 u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
-extern u32_t _handler_aio_cmp_disable(u32_t arg1, u32_t arg2, u32_t arg3,
+extern u32_t _handler_sensor_attr_set(u32_t arg1, u32_t arg2, u32_t arg3,
                 u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
-extern u32_t _handler_aio_cmp_get_pending_int(u32_t arg1, u32_t arg2, u32_t arg3,
+extern u32_t _handler_sensor_sample_fetch(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_sensor_sample_fetch_chan(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_sensor_channel_get(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_gpio_config(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_gpio_write(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_gpio_read(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_gpio_enable_callback(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_gpio_disable_callback(u32_t arg1, u32_t arg2, u32_t arg3,
+                u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+extern u32_t _handler_gpio_get_pending_int(u32_t arg1, u32_t arg2, u32_t arg3,
                 u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 

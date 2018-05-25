@@ -60,7 +60,7 @@ include zephyr/CMakeFiles/kernel_elf.dir/flags.make
 zephyr/isr_tables.c: zephyr/zephyr_prebuilt.elf
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating isr_tables.c"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-objcopy -I elf32-littlearm -O binary --only-section=.intList /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/zephyr_prebuilt.elf isrList.bin
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /usr/bin/python3.4 /home/israel/zephyr/arch/common/gen_isr_tables.py --output-source isr_tables.c --kernel /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/zephyr_prebuilt.elf --intlist isrList.bin  --sw-isr-table --vector-table
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /usr/bin/python3 /home/israel/zephyr/arch/common/gen_isr_tables.py --output-source isr_tables.c --kernel /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/zephyr_prebuilt.elf --intlist isrList.bin  --sw-isr-table --vector-table
 
 zephyr/CMakeFiles/kernel_elf.dir/misc/empty_file.c.obj: zephyr/CMakeFiles/kernel_elf.dir/flags.make
 zephyr/CMakeFiles/kernel_elf.dir/misc/empty_file.c.obj: /home/israel/zephyr/misc/empty_file.c
@@ -113,7 +113,7 @@ zephyr/zephyr.elf: zephyr/CMakeFiles/kernel_elf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable zephyr.elf"
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kernel_elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating files from zephyr.elf for board: bbc_microbit"
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /usr/bin/python3.4 /home/israel/zephyr/scripts/check_link_map.py zephyr.map
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /usr/bin/python3 /home/israel/zephyr/scripts/check_link_map.py zephyr.map
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-objcopy -S -Oihex -R .comment -R COMMON -R .eh_frame zephyr.elf zephyr.hex
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-objcopy -S -Obinary -R .comment -R COMMON -R .eh_frame zephyr.elf zephyr.bin
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-objdump -S zephyr.elf > zephyr.lst

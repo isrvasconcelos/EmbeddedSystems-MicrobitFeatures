@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -126,21 +126,6 @@ debugserver/fast:
 .PHONY : debugserver/fast
 
 # Convenience name for target.
-zephyr/cmake/flash/CMakeFiles/debug.dir/rule:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/flash/CMakeFiles/debug.dir/rule
-.PHONY : zephyr/cmake/flash/CMakeFiles/debug.dir/rule
-
-# Convenience name for target.
-debug: zephyr/cmake/flash/CMakeFiles/debug.dir/rule
-
-.PHONY : debug
-
-# fast build rule for target.
-debug/fast:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/cmake/flash/CMakeFiles/debug.dir/build.make zephyr/cmake/flash/CMakeFiles/debug.dir/build
-.PHONY : debug/fast
-
-# Convenience name for target.
 zephyr/cmake/flash/CMakeFiles/flash.dir/rule:
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/flash/CMakeFiles/flash.dir/rule
 .PHONY : zephyr/cmake/flash/CMakeFiles/flash.dir/rule
@@ -155,17 +140,32 @@ flash/fast:
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/cmake/flash/CMakeFiles/flash.dir/build.make zephyr/cmake/flash/CMakeFiles/flash.dir/build
 .PHONY : flash/fast
 
+# Convenience name for target.
+zephyr/cmake/flash/CMakeFiles/debug.dir/rule:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/flash/CMakeFiles/debug.dir/rule
+.PHONY : zephyr/cmake/flash/CMakeFiles/debug.dir/rule
+
+# Convenience name for target.
+debug: zephyr/cmake/flash/CMakeFiles/debug.dir/rule
+
+.PHONY : debug
+
+# fast build rule for target.
+debug/fast:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/cmake/flash/CMakeFiles/debug.dir/build.make zephyr/cmake/flash/CMakeFiles/debug.dir/build
+.PHONY : debug/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
 	@echo "... debugserver"
-	@echo "... debug"
 	@echo "... flash"
+	@echo "... debug"
 .PHONY : help
 
 

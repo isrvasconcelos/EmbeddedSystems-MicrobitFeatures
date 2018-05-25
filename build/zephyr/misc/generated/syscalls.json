@@ -1,285 +1,5 @@
 [
     [
-        "uart.h",
-        "_handler_uart_err_check",
-        "K_SYSCALL_DECLARE1(K_SYSCALL_UART_ERR_CHECK, uart_err_check, int, struct device *, dev);",
-        "K_SYSCALL_UART_ERR_CHECK",
-        "[K_SYSCALL_UART_ERR_CHECK] = _handler_uart_err_check"
-    ],
-    [
-        "uart.h",
-        "_handler_uart_poll_in",
-        "K_SYSCALL_DECLARE2(K_SYSCALL_UART_POLL_IN, uart_poll_in, int, struct device *, dev, unsigned char *, p_char);",
-        "K_SYSCALL_UART_POLL_IN",
-        "[K_SYSCALL_UART_POLL_IN] = _handler_uart_poll_in"
-    ],
-    [
-        "uart.h",
-        "_handler_uart_poll_out",
-        "K_SYSCALL_DECLARE2(K_SYSCALL_UART_POLL_OUT, uart_poll_out, unsigned char, struct device *, dev, unsigned char, out_char);",
-        "K_SYSCALL_UART_POLL_OUT",
-        "[K_SYSCALL_UART_POLL_OUT] = _handler_uart_poll_out"
-    ],
-    [
-        "uart.h",
-        "_handler_uart_irq_tx_enable",
-        "K_SYSCALL_DECLARE1_VOID(K_SYSCALL_UART_IRQ_TX_ENABLE, uart_irq_tx_enable, struct device *, dev);",
-        "K_SYSCALL_UART_IRQ_TX_ENABLE",
-        "[K_SYSCALL_UART_IRQ_TX_ENABLE] = _handler_uart_irq_tx_enable"
-    ],
-    [
-        "uart.h",
-        "_handler_uart_irq_tx_disable",
-        "K_SYSCALL_DECLARE1_VOID(K_SYSCALL_UART_IRQ_TX_DISABLE, uart_irq_tx_disable, struct device *, dev);",
-        "K_SYSCALL_UART_IRQ_TX_DISABLE",
-        "[K_SYSCALL_UART_IRQ_TX_DISABLE] = _handler_uart_irq_tx_disable"
-    ],
-    [
-        "uart.h",
-        "_handler_uart_irq_rx_enable",
-        "K_SYSCALL_DECLARE1_VOID(K_SYSCALL_UART_IRQ_RX_ENABLE, uart_irq_rx_enable, struct device *, dev);",
-        "K_SYSCALL_UART_IRQ_RX_ENABLE",
-        "[K_SYSCALL_UART_IRQ_RX_ENABLE] = _handler_uart_irq_rx_enable"
-    ],
-    [
-        "uart.h",
-        "_handler_uart_irq_rx_disable",
-        "K_SYSCALL_DECLARE1_VOID(K_SYSCALL_UART_IRQ_RX_DISABLE, uart_irq_rx_disable, struct device *, dev);",
-        "K_SYSCALL_UART_IRQ_RX_DISABLE",
-        "[K_SYSCALL_UART_IRQ_RX_DISABLE] = _handler_uart_irq_rx_disable"
-    ],
-    [
-        "uart.h",
-        "_handler_uart_irq_err_enable",
-        "K_SYSCALL_DECLARE1_VOID(K_SYSCALL_UART_IRQ_ERR_ENABLE, uart_irq_err_enable, struct device *, dev);",
-        "K_SYSCALL_UART_IRQ_ERR_ENABLE",
-        "[K_SYSCALL_UART_IRQ_ERR_ENABLE] = _handler_uart_irq_err_enable"
-    ],
-    [
-        "uart.h",
-        "_handler_uart_irq_err_disable",
-        "K_SYSCALL_DECLARE1_VOID(K_SYSCALL_UART_IRQ_ERR_DISABLE, uart_irq_err_disable, struct device *, dev);",
-        "K_SYSCALL_UART_IRQ_ERR_DISABLE",
-        "[K_SYSCALL_UART_IRQ_ERR_DISABLE] = _handler_uart_irq_err_disable"
-    ],
-    [
-        "uart.h",
-        "_handler_uart_irq_is_pending",
-        "K_SYSCALL_DECLARE1(K_SYSCALL_UART_IRQ_IS_PENDING, uart_irq_is_pending, int, struct device *, dev);",
-        "K_SYSCALL_UART_IRQ_IS_PENDING",
-        "[K_SYSCALL_UART_IRQ_IS_PENDING] = _handler_uart_irq_is_pending"
-    ],
-    [
-        "uart.h",
-        "_handler_uart_irq_update",
-        "K_SYSCALL_DECLARE1(K_SYSCALL_UART_IRQ_UPDATE, uart_irq_update, int, struct device *, dev);",
-        "K_SYSCALL_UART_IRQ_UPDATE",
-        "[K_SYSCALL_UART_IRQ_UPDATE] = _handler_uart_irq_update"
-    ],
-    [
-        "uart.h",
-        "_handler_uart_line_ctrl_set",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_UART_LINE_CTRL_SET, uart_line_ctrl_set, int, struct device *, dev, u32_t, ctrl, u32_t, val);",
-        "K_SYSCALL_UART_LINE_CTRL_SET",
-        "[K_SYSCALL_UART_LINE_CTRL_SET] = _handler_uart_line_ctrl_set"
-    ],
-    [
-        "uart.h",
-        "_handler_uart_line_ctrl_get",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_UART_LINE_CTRL_GET, uart_line_ctrl_get, int, struct device *, dev, u32_t, ctrl, u32_t *, val);",
-        "K_SYSCALL_UART_LINE_CTRL_GET",
-        "[K_SYSCALL_UART_LINE_CTRL_GET] = _handler_uart_line_ctrl_get"
-    ],
-    [
-        "uart.h",
-        "_handler_uart_drv_cmd",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_UART_DRV_CMD, uart_drv_cmd, int, struct device *, dev, u32_t, cmd, u32_t, p);",
-        "K_SYSCALL_UART_DRV_CMD",
-        "[K_SYSCALL_UART_DRV_CMD] = _handler_uart_drv_cmd"
-    ],
-    [
-        "pinmux.h",
-        "_handler_pinmux_pin_set",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_PINMUX_PIN_SET, pinmux_pin_set, int, struct device *, dev, u32_t, pin, u32_t, func);",
-        "K_SYSCALL_PINMUX_PIN_SET",
-        "[K_SYSCALL_PINMUX_PIN_SET] = _handler_pinmux_pin_set"
-    ],
-    [
-        "pinmux.h",
-        "_handler_pinmux_pin_get",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_PINMUX_PIN_GET, pinmux_pin_get, int, struct device *, dev, u32_t, pin, u32_t *, func);",
-        "K_SYSCALL_PINMUX_PIN_GET",
-        "[K_SYSCALL_PINMUX_PIN_GET] = _handler_pinmux_pin_get"
-    ],
-    [
-        "pinmux.h",
-        "_handler_pinmux_pin_pullup",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_PINMUX_PIN_PULLUP, pinmux_pin_pullup, int, struct device *, dev, u32_t, pin, u8_t, func);",
-        "K_SYSCALL_PINMUX_PIN_PULLUP",
-        "[K_SYSCALL_PINMUX_PIN_PULLUP] = _handler_pinmux_pin_pullup"
-    ],
-    [
-        "pinmux.h",
-        "_handler_pinmux_pin_input_enable",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_PINMUX_PIN_INPUT_ENABLE, pinmux_pin_input_enable, int, struct device *, dev, u32_t, pin, u8_t, func);",
-        "K_SYSCALL_PINMUX_PIN_INPUT_ENABLE",
-        "[K_SYSCALL_PINMUX_PIN_INPUT_ENABLE] = _handler_pinmux_pin_input_enable"
-    ],
-    [
-        "flash.h",
-        "_handler_flash_read",
-        "K_SYSCALL_DECLARE4(K_SYSCALL_FLASH_READ, flash_read, int, struct device *, dev, off_t, offset, void *, data, size_t, len);",
-        "K_SYSCALL_FLASH_READ",
-        "[K_SYSCALL_FLASH_READ] = _handler_flash_read"
-    ],
-    [
-        "flash.h",
-        "_handler_flash_write",
-        "K_SYSCALL_DECLARE4(K_SYSCALL_FLASH_WRITE, flash_write, int, struct device *, dev, off_t, offset, const void *, data, size_t, len);",
-        "K_SYSCALL_FLASH_WRITE",
-        "[K_SYSCALL_FLASH_WRITE] = _handler_flash_write"
-    ],
-    [
-        "flash.h",
-        "_handler_flash_erase",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_FLASH_ERASE, flash_erase, int, struct device *, dev, off_t, offset, size_t, size);",
-        "K_SYSCALL_FLASH_ERASE",
-        "[K_SYSCALL_FLASH_ERASE] = _handler_flash_erase"
-    ],
-    [
-        "flash.h",
-        "_handler_flash_write_protection_set",
-        "K_SYSCALL_DECLARE2(K_SYSCALL_FLASH_WRITE_PROTECTION_SET, flash_write_protection_set, int, struct device *, dev, bool, enable);",
-        "K_SYSCALL_FLASH_WRITE_PROTECTION_SET",
-        "[K_SYSCALL_FLASH_WRITE_PROTECTION_SET] = _handler_flash_write_protection_set"
-    ],
-    [
-        "flash.h",
-        "_handler_flash_get_page_info_by_offs",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_FLASH_GET_PAGE_INFO_BY_OFFS, flash_get_page_info_by_offs, int, struct device *, dev, off_t, offset, struct flash_pages_info *, info);",
-        "K_SYSCALL_FLASH_GET_PAGE_INFO_BY_OFFS",
-        "[K_SYSCALL_FLASH_GET_PAGE_INFO_BY_OFFS] = _handler_flash_get_page_info_by_offs"
-    ],
-    [
-        "flash.h",
-        "_handler_flash_get_page_info_by_idx",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_FLASH_GET_PAGE_INFO_BY_IDX, flash_get_page_info_by_idx, int, struct device *, dev, u32_t, page_index, struct flash_pages_info *, info);",
-        "K_SYSCALL_FLASH_GET_PAGE_INFO_BY_IDX",
-        "[K_SYSCALL_FLASH_GET_PAGE_INFO_BY_IDX] = _handler_flash_get_page_info_by_idx"
-    ],
-    [
-        "flash.h",
-        "_handler_flash_get_page_count",
-        "K_SYSCALL_DECLARE1(K_SYSCALL_FLASH_GET_PAGE_COUNT, flash_get_page_count, size_t, struct device *, dev);",
-        "K_SYSCALL_FLASH_GET_PAGE_COUNT",
-        "[K_SYSCALL_FLASH_GET_PAGE_COUNT] = _handler_flash_get_page_count"
-    ],
-    [
-        "flash.h",
-        "_handler_flash_get_write_block_size",
-        "K_SYSCALL_DECLARE1(K_SYSCALL_FLASH_GET_WRITE_BLOCK_SIZE, flash_get_write_block_size, size_t, struct device *, dev);",
-        "K_SYSCALL_FLASH_GET_WRITE_BLOCK_SIZE",
-        "[K_SYSCALL_FLASH_GET_WRITE_BLOCK_SIZE] = _handler_flash_get_write_block_size"
-    ],
-    [
-        "sensor.h",
-        "_handler_sensor_attr_set",
-        "K_SYSCALL_DECLARE4(K_SYSCALL_SENSOR_ATTR_SET, sensor_attr_set, int, struct device *, dev, enum sensor_channel, chan, enum sensor_attribute, attr, const struct sensor_value *, val);",
-        "K_SYSCALL_SENSOR_ATTR_SET",
-        "[K_SYSCALL_SENSOR_ATTR_SET] = _handler_sensor_attr_set"
-    ],
-    [
-        "sensor.h",
-        "_handler_sensor_sample_fetch",
-        "K_SYSCALL_DECLARE1(K_SYSCALL_SENSOR_SAMPLE_FETCH, sensor_sample_fetch, int, struct device *, dev);",
-        "K_SYSCALL_SENSOR_SAMPLE_FETCH",
-        "[K_SYSCALL_SENSOR_SAMPLE_FETCH] = _handler_sensor_sample_fetch"
-    ],
-    [
-        "sensor.h",
-        "_handler_sensor_sample_fetch_chan",
-        "K_SYSCALL_DECLARE2(K_SYSCALL_SENSOR_SAMPLE_FETCH_CHAN, sensor_sample_fetch_chan, int, struct device *, dev, enum sensor_channel, type);",
-        "K_SYSCALL_SENSOR_SAMPLE_FETCH_CHAN",
-        "[K_SYSCALL_SENSOR_SAMPLE_FETCH_CHAN] = _handler_sensor_sample_fetch_chan"
-    ],
-    [
-        "sensor.h",
-        "_handler_sensor_channel_get",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_SENSOR_CHANNEL_GET, sensor_channel_get, int, struct device *, dev, enum sensor_channel, chan, struct sensor_value *, val);",
-        "K_SYSCALL_SENSOR_CHANNEL_GET",
-        "[K_SYSCALL_SENSOR_CHANNEL_GET] = _handler_sensor_channel_get"
-    ],
-    [
-        "counter.h",
-        "_handler_counter_start",
-        "K_SYSCALL_DECLARE1(K_SYSCALL_COUNTER_START, counter_start, int, struct device *, dev);",
-        "K_SYSCALL_COUNTER_START",
-        "[K_SYSCALL_COUNTER_START] = _handler_counter_start"
-    ],
-    [
-        "counter.h",
-        "_handler_counter_stop",
-        "K_SYSCALL_DECLARE1(K_SYSCALL_COUNTER_STOP, counter_stop, int, struct device *, dev);",
-        "K_SYSCALL_COUNTER_STOP",
-        "[K_SYSCALL_COUNTER_STOP] = _handler_counter_stop"
-    ],
-    [
-        "counter.h",
-        "_handler_counter_read",
-        "K_SYSCALL_DECLARE1(K_SYSCALL_COUNTER_READ, counter_read, u32_t, struct device *, dev);",
-        "K_SYSCALL_COUNTER_READ",
-        "[K_SYSCALL_COUNTER_READ] = _handler_counter_read"
-    ],
-    [
-        "counter.h",
-        "_handler_counter_get_pending_int",
-        "K_SYSCALL_DECLARE1(K_SYSCALL_COUNTER_GET_PENDING_INT, counter_get_pending_int, int, struct device *, dev);",
-        "K_SYSCALL_COUNTER_GET_PENDING_INT",
-        "[K_SYSCALL_COUNTER_GET_PENDING_INT] = _handler_counter_get_pending_int"
-    ],
-    [
-        "gpio.h",
-        "_handler_gpio_config",
-        "K_SYSCALL_DECLARE4(K_SYSCALL_GPIO_CONFIG, gpio_config, int, struct device *, port, int, access_op, u32_t, pin, int, flags);",
-        "K_SYSCALL_GPIO_CONFIG",
-        "[K_SYSCALL_GPIO_CONFIG] = _handler_gpio_config"
-    ],
-    [
-        "gpio.h",
-        "_handler_gpio_write",
-        "K_SYSCALL_DECLARE4(K_SYSCALL_GPIO_WRITE, gpio_write, int, struct device *, port, int, access_op, u32_t, pin, u32_t, value);",
-        "K_SYSCALL_GPIO_WRITE",
-        "[K_SYSCALL_GPIO_WRITE] = _handler_gpio_write"
-    ],
-    [
-        "gpio.h",
-        "_handler_gpio_read",
-        "K_SYSCALL_DECLARE4(K_SYSCALL_GPIO_READ, gpio_read, int, struct device *, port, int, access_op, u32_t, pin, u32_t *, value);",
-        "K_SYSCALL_GPIO_READ",
-        "[K_SYSCALL_GPIO_READ] = _handler_gpio_read"
-    ],
-    [
-        "gpio.h",
-        "_handler_gpio_enable_callback",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_GPIO_ENABLE_CALLBACK, gpio_enable_callback, int, struct device *, port, int, access_op, u32_t, pin);",
-        "K_SYSCALL_GPIO_ENABLE_CALLBACK",
-        "[K_SYSCALL_GPIO_ENABLE_CALLBACK] = _handler_gpio_enable_callback"
-    ],
-    [
-        "gpio.h",
-        "_handler_gpio_disable_callback",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_GPIO_DISABLE_CALLBACK, gpio_disable_callback, int, struct device *, port, int, access_op, u32_t, pin);",
-        "K_SYSCALL_GPIO_DISABLE_CALLBACK",
-        "[K_SYSCALL_GPIO_DISABLE_CALLBACK] = _handler_gpio_disable_callback"
-    ],
-    [
-        "gpio.h",
-        "_handler_gpio_get_pending_int",
-        "K_SYSCALL_DECLARE1(K_SYSCALL_GPIO_GET_PENDING_INT, gpio_get_pending_int, int, struct device *, dev);",
-        "K_SYSCALL_GPIO_GET_PENDING_INT",
-        "[K_SYSCALL_GPIO_GET_PENDING_INT] = _handler_gpio_get_pending_int"
-    ],
-    [
         "i2c.h",
         "_handler_i2c_configure",
         "K_SYSCALL_DECLARE2(K_SYSCALL_I2C_CONFIGURE, i2c_configure, int, struct device *, dev, u32_t, dev_config);",
@@ -292,27 +12,6 @@
         "K_SYSCALL_DECLARE4(K_SYSCALL_I2C_TRANSFER, i2c_transfer, int, struct device *, dev, struct i2c_msg *, msgs, u8_t, num_msgs, u16_t, addr);",
         "K_SYSCALL_I2C_TRANSFER",
         "[K_SYSCALL_I2C_TRANSFER] = _handler_i2c_transfer"
-    ],
-    [
-        "entropy.h",
-        "_handler_entropy_get_entropy",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_ENTROPY_GET_ENTROPY, entropy_get_entropy, int, struct device *, dev, u8_t *, buffer, u16_t, length);",
-        "K_SYSCALL_ENTROPY_GET_ENTROPY",
-        "[K_SYSCALL_ENTROPY_GET_ENTROPY] = _handler_entropy_get_entropy"
-    ],
-    [
-        "pwm.h",
-        "_handler_pwm_pin_set_cycles",
-        "K_SYSCALL_DECLARE4(K_SYSCALL_PWM_PIN_SET_CYCLES, pwm_pin_set_cycles, int, struct device *, dev, u32_t, pwm, u32_t, period, u32_t, pulse);",
-        "K_SYSCALL_PWM_PIN_SET_CYCLES",
-        "[K_SYSCALL_PWM_PIN_SET_CYCLES] = _handler_pwm_pin_set_cycles"
-    ],
-    [
-        "pwm.h",
-        "_handler_pwm_get_cycles_per_sec",
-        "K_SYSCALL_DECLARE3(K_SYSCALL_PWM_GET_CYCLES_PER_SEC, pwm_get_cycles_per_sec, int, struct device *, dev, u32_t, pwm, u64_t *, cycles);",
-        "K_SYSCALL_PWM_GET_CYCLES_PER_SEC",
-        "[K_SYSCALL_PWM_GET_CYCLES_PER_SEC] = _handler_pwm_get_cycles_per_sec"
     ],
     [
         "rtc.h",
@@ -348,6 +47,34 @@
         "K_SYSCALL_DECLARE1(K_SYSCALL_RTC_GET_PENDING_INT, rtc_get_pending_int, int, struct device *, dev);",
         "K_SYSCALL_RTC_GET_PENDING_INT",
         "[K_SYSCALL_RTC_GET_PENDING_INT] = _handler_rtc_get_pending_int"
+    ],
+    [
+        "pinmux.h",
+        "_handler_pinmux_pin_set",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_PINMUX_PIN_SET, pinmux_pin_set, int, struct device *, dev, u32_t, pin, u32_t, func);",
+        "K_SYSCALL_PINMUX_PIN_SET",
+        "[K_SYSCALL_PINMUX_PIN_SET] = _handler_pinmux_pin_set"
+    ],
+    [
+        "pinmux.h",
+        "_handler_pinmux_pin_get",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_PINMUX_PIN_GET, pinmux_pin_get, int, struct device *, dev, u32_t, pin, u32_t *, func);",
+        "K_SYSCALL_PINMUX_PIN_GET",
+        "[K_SYSCALL_PINMUX_PIN_GET] = _handler_pinmux_pin_get"
+    ],
+    [
+        "pinmux.h",
+        "_handler_pinmux_pin_pullup",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_PINMUX_PIN_PULLUP, pinmux_pin_pullup, int, struct device *, dev, u32_t, pin, u8_t, func);",
+        "K_SYSCALL_PINMUX_PIN_PULLUP",
+        "[K_SYSCALL_PINMUX_PIN_PULLUP] = _handler_pinmux_pin_pullup"
+    ],
+    [
+        "pinmux.h",
+        "_handler_pinmux_pin_input_enable",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_PINMUX_PIN_INPUT_ENABLE, pinmux_pin_input_enable, int, struct device *, dev, u32_t, pin, u8_t, func);",
+        "K_SYSCALL_PINMUX_PIN_INPUT_ENABLE",
+        "[K_SYSCALL_PINMUX_PIN_INPUT_ENABLE] = _handler_pinmux_pin_input_enable"
     ],
     [
         "kernel.h",
@@ -693,6 +420,237 @@
         "[K_SYSCALL_K_STR_OUT] = _handler_k_str_out"
     ],
     [
+        "dma.h",
+        "_handler_dma_start",
+        "K_SYSCALL_DECLARE2(K_SYSCALL_DMA_START, dma_start, int, struct device *, dev, u32_t, channel);",
+        "K_SYSCALL_DMA_START",
+        "[K_SYSCALL_DMA_START] = _handler_dma_start"
+    ],
+    [
+        "dma.h",
+        "_handler_dma_stop",
+        "K_SYSCALL_DECLARE2(K_SYSCALL_DMA_STOP, dma_stop, int, struct device *, dev, u32_t, channel);",
+        "K_SYSCALL_DMA_STOP",
+        "[K_SYSCALL_DMA_STOP] = _handler_dma_stop"
+    ],
+    [
+        "uart.h",
+        "_handler_uart_err_check",
+        "K_SYSCALL_DECLARE1(K_SYSCALL_UART_ERR_CHECK, uart_err_check, int, struct device *, dev);",
+        "K_SYSCALL_UART_ERR_CHECK",
+        "[K_SYSCALL_UART_ERR_CHECK] = _handler_uart_err_check"
+    ],
+    [
+        "uart.h",
+        "_handler_uart_poll_in",
+        "K_SYSCALL_DECLARE2(K_SYSCALL_UART_POLL_IN, uart_poll_in, int, struct device *, dev, unsigned char *, p_char);",
+        "K_SYSCALL_UART_POLL_IN",
+        "[K_SYSCALL_UART_POLL_IN] = _handler_uart_poll_in"
+    ],
+    [
+        "uart.h",
+        "_handler_uart_poll_out",
+        "K_SYSCALL_DECLARE2(K_SYSCALL_UART_POLL_OUT, uart_poll_out, unsigned char, struct device *, dev, unsigned char, out_char);",
+        "K_SYSCALL_UART_POLL_OUT",
+        "[K_SYSCALL_UART_POLL_OUT] = _handler_uart_poll_out"
+    ],
+    [
+        "uart.h",
+        "_handler_uart_irq_tx_enable",
+        "K_SYSCALL_DECLARE1_VOID(K_SYSCALL_UART_IRQ_TX_ENABLE, uart_irq_tx_enable, struct device *, dev);",
+        "K_SYSCALL_UART_IRQ_TX_ENABLE",
+        "[K_SYSCALL_UART_IRQ_TX_ENABLE] = _handler_uart_irq_tx_enable"
+    ],
+    [
+        "uart.h",
+        "_handler_uart_irq_tx_disable",
+        "K_SYSCALL_DECLARE1_VOID(K_SYSCALL_UART_IRQ_TX_DISABLE, uart_irq_tx_disable, struct device *, dev);",
+        "K_SYSCALL_UART_IRQ_TX_DISABLE",
+        "[K_SYSCALL_UART_IRQ_TX_DISABLE] = _handler_uart_irq_tx_disable"
+    ],
+    [
+        "uart.h",
+        "_handler_uart_irq_rx_enable",
+        "K_SYSCALL_DECLARE1_VOID(K_SYSCALL_UART_IRQ_RX_ENABLE, uart_irq_rx_enable, struct device *, dev);",
+        "K_SYSCALL_UART_IRQ_RX_ENABLE",
+        "[K_SYSCALL_UART_IRQ_RX_ENABLE] = _handler_uart_irq_rx_enable"
+    ],
+    [
+        "uart.h",
+        "_handler_uart_irq_rx_disable",
+        "K_SYSCALL_DECLARE1_VOID(K_SYSCALL_UART_IRQ_RX_DISABLE, uart_irq_rx_disable, struct device *, dev);",
+        "K_SYSCALL_UART_IRQ_RX_DISABLE",
+        "[K_SYSCALL_UART_IRQ_RX_DISABLE] = _handler_uart_irq_rx_disable"
+    ],
+    [
+        "uart.h",
+        "_handler_uart_irq_err_enable",
+        "K_SYSCALL_DECLARE1_VOID(K_SYSCALL_UART_IRQ_ERR_ENABLE, uart_irq_err_enable, struct device *, dev);",
+        "K_SYSCALL_UART_IRQ_ERR_ENABLE",
+        "[K_SYSCALL_UART_IRQ_ERR_ENABLE] = _handler_uart_irq_err_enable"
+    ],
+    [
+        "uart.h",
+        "_handler_uart_irq_err_disable",
+        "K_SYSCALL_DECLARE1_VOID(K_SYSCALL_UART_IRQ_ERR_DISABLE, uart_irq_err_disable, struct device *, dev);",
+        "K_SYSCALL_UART_IRQ_ERR_DISABLE",
+        "[K_SYSCALL_UART_IRQ_ERR_DISABLE] = _handler_uart_irq_err_disable"
+    ],
+    [
+        "uart.h",
+        "_handler_uart_irq_is_pending",
+        "K_SYSCALL_DECLARE1(K_SYSCALL_UART_IRQ_IS_PENDING, uart_irq_is_pending, int, struct device *, dev);",
+        "K_SYSCALL_UART_IRQ_IS_PENDING",
+        "[K_SYSCALL_UART_IRQ_IS_PENDING] = _handler_uart_irq_is_pending"
+    ],
+    [
+        "uart.h",
+        "_handler_uart_irq_update",
+        "K_SYSCALL_DECLARE1(K_SYSCALL_UART_IRQ_UPDATE, uart_irq_update, int, struct device *, dev);",
+        "K_SYSCALL_UART_IRQ_UPDATE",
+        "[K_SYSCALL_UART_IRQ_UPDATE] = _handler_uart_irq_update"
+    ],
+    [
+        "uart.h",
+        "_handler_uart_line_ctrl_set",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_UART_LINE_CTRL_SET, uart_line_ctrl_set, int, struct device *, dev, u32_t, ctrl, u32_t, val);",
+        "K_SYSCALL_UART_LINE_CTRL_SET",
+        "[K_SYSCALL_UART_LINE_CTRL_SET] = _handler_uart_line_ctrl_set"
+    ],
+    [
+        "uart.h",
+        "_handler_uart_line_ctrl_get",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_UART_LINE_CTRL_GET, uart_line_ctrl_get, int, struct device *, dev, u32_t, ctrl, u32_t *, val);",
+        "K_SYSCALL_UART_LINE_CTRL_GET",
+        "[K_SYSCALL_UART_LINE_CTRL_GET] = _handler_uart_line_ctrl_get"
+    ],
+    [
+        "uart.h",
+        "_handler_uart_drv_cmd",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_UART_DRV_CMD, uart_drv_cmd, int, struct device *, dev, u32_t, cmd, u32_t, p);",
+        "K_SYSCALL_UART_DRV_CMD",
+        "[K_SYSCALL_UART_DRV_CMD] = _handler_uart_drv_cmd"
+    ],
+    [
+        "counter.h",
+        "_handler_counter_start",
+        "K_SYSCALL_DECLARE1(K_SYSCALL_COUNTER_START, counter_start, int, struct device *, dev);",
+        "K_SYSCALL_COUNTER_START",
+        "[K_SYSCALL_COUNTER_START] = _handler_counter_start"
+    ],
+    [
+        "counter.h",
+        "_handler_counter_stop",
+        "K_SYSCALL_DECLARE1(K_SYSCALL_COUNTER_STOP, counter_stop, int, struct device *, dev);",
+        "K_SYSCALL_COUNTER_STOP",
+        "[K_SYSCALL_COUNTER_STOP] = _handler_counter_stop"
+    ],
+    [
+        "counter.h",
+        "_handler_counter_read",
+        "K_SYSCALL_DECLARE1(K_SYSCALL_COUNTER_READ, counter_read, u32_t, struct device *, dev);",
+        "K_SYSCALL_COUNTER_READ",
+        "[K_SYSCALL_COUNTER_READ] = _handler_counter_read"
+    ],
+    [
+        "counter.h",
+        "_handler_counter_get_pending_int",
+        "K_SYSCALL_DECLARE1(K_SYSCALL_COUNTER_GET_PENDING_INT, counter_get_pending_int, int, struct device *, dev);",
+        "K_SYSCALL_COUNTER_GET_PENDING_INT",
+        "[K_SYSCALL_COUNTER_GET_PENDING_INT] = _handler_counter_get_pending_int"
+    ],
+    [
+        "flash.h",
+        "_handler_flash_read",
+        "K_SYSCALL_DECLARE4(K_SYSCALL_FLASH_READ, flash_read, int, struct device *, dev, off_t, offset, void *, data, size_t, len);",
+        "K_SYSCALL_FLASH_READ",
+        "[K_SYSCALL_FLASH_READ] = _handler_flash_read"
+    ],
+    [
+        "flash.h",
+        "_handler_flash_write",
+        "K_SYSCALL_DECLARE4(K_SYSCALL_FLASH_WRITE, flash_write, int, struct device *, dev, off_t, offset, const void *, data, size_t, len);",
+        "K_SYSCALL_FLASH_WRITE",
+        "[K_SYSCALL_FLASH_WRITE] = _handler_flash_write"
+    ],
+    [
+        "flash.h",
+        "_handler_flash_erase",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_FLASH_ERASE, flash_erase, int, struct device *, dev, off_t, offset, size_t, size);",
+        "K_SYSCALL_FLASH_ERASE",
+        "[K_SYSCALL_FLASH_ERASE] = _handler_flash_erase"
+    ],
+    [
+        "flash.h",
+        "_handler_flash_write_protection_set",
+        "K_SYSCALL_DECLARE2(K_SYSCALL_FLASH_WRITE_PROTECTION_SET, flash_write_protection_set, int, struct device *, dev, bool, enable);",
+        "K_SYSCALL_FLASH_WRITE_PROTECTION_SET",
+        "[K_SYSCALL_FLASH_WRITE_PROTECTION_SET] = _handler_flash_write_protection_set"
+    ],
+    [
+        "flash.h",
+        "_handler_flash_get_page_info_by_offs",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_FLASH_GET_PAGE_INFO_BY_OFFS, flash_get_page_info_by_offs, int, struct device *, dev, off_t, offset, struct flash_pages_info *, info);",
+        "K_SYSCALL_FLASH_GET_PAGE_INFO_BY_OFFS",
+        "[K_SYSCALL_FLASH_GET_PAGE_INFO_BY_OFFS] = _handler_flash_get_page_info_by_offs"
+    ],
+    [
+        "flash.h",
+        "_handler_flash_get_page_info_by_idx",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_FLASH_GET_PAGE_INFO_BY_IDX, flash_get_page_info_by_idx, int, struct device *, dev, u32_t, page_index, struct flash_pages_info *, info);",
+        "K_SYSCALL_FLASH_GET_PAGE_INFO_BY_IDX",
+        "[K_SYSCALL_FLASH_GET_PAGE_INFO_BY_IDX] = _handler_flash_get_page_info_by_idx"
+    ],
+    [
+        "flash.h",
+        "_handler_flash_get_page_count",
+        "K_SYSCALL_DECLARE1(K_SYSCALL_FLASH_GET_PAGE_COUNT, flash_get_page_count, size_t, struct device *, dev);",
+        "K_SYSCALL_FLASH_GET_PAGE_COUNT",
+        "[K_SYSCALL_FLASH_GET_PAGE_COUNT] = _handler_flash_get_page_count"
+    ],
+    [
+        "flash.h",
+        "_handler_flash_get_write_block_size",
+        "K_SYSCALL_DECLARE1(K_SYSCALL_FLASH_GET_WRITE_BLOCK_SIZE, flash_get_write_block_size, size_t, struct device *, dev);",
+        "K_SYSCALL_FLASH_GET_WRITE_BLOCK_SIZE",
+        "[K_SYSCALL_FLASH_GET_WRITE_BLOCK_SIZE] = _handler_flash_get_write_block_size"
+    ],
+    [
+        "entropy.h",
+        "_handler_entropy_get_entropy",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_ENTROPY_GET_ENTROPY, entropy_get_entropy, int, struct device *, dev, u8_t *, buffer, u16_t, length);",
+        "K_SYSCALL_ENTROPY_GET_ENTROPY",
+        "[K_SYSCALL_ENTROPY_GET_ENTROPY] = _handler_entropy_get_entropy"
+    ],
+    [
+        "pwm.h",
+        "_handler_pwm_pin_set_cycles",
+        "K_SYSCALL_DECLARE4(K_SYSCALL_PWM_PIN_SET_CYCLES, pwm_pin_set_cycles, int, struct device *, dev, u32_t, pwm, u32_t, period, u32_t, pulse);",
+        "K_SYSCALL_PWM_PIN_SET_CYCLES",
+        "[K_SYSCALL_PWM_PIN_SET_CYCLES] = _handler_pwm_pin_set_cycles"
+    ],
+    [
+        "pwm.h",
+        "_handler_pwm_get_cycles_per_sec",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_PWM_GET_CYCLES_PER_SEC, pwm_get_cycles_per_sec, int, struct device *, dev, u32_t, pwm, u64_t *, cycles);",
+        "K_SYSCALL_PWM_GET_CYCLES_PER_SEC",
+        "[K_SYSCALL_PWM_GET_CYCLES_PER_SEC] = _handler_pwm_get_cycles_per_sec"
+    ],
+    [
+        "spi.h",
+        "_handler_spi_transceive",
+        "K_SYSCALL_DECLARE5(K_SYSCALL_SPI_TRANSCEIVE, spi_transceive, int, struct spi_config *, config, const struct spi_buf *, tx_bufs, size_t, tx_count, struct spi_buf *, rx_bufs, size_t, rx_count);",
+        "K_SYSCALL_SPI_TRANSCEIVE",
+        "[K_SYSCALL_SPI_TRANSCEIVE] = _handler_spi_transceive"
+    ],
+    [
+        "spi.h",
+        "_handler_spi_release",
+        "K_SYSCALL_DECLARE1(K_SYSCALL_SPI_RELEASE, spi_release, int, struct spi_config *, config);",
+        "K_SYSCALL_SPI_RELEASE",
+        "[K_SYSCALL_SPI_RELEASE] = _handler_spi_release"
+    ],
+    [
         "adc.h",
         "_handler_adc_enable",
         "K_SYSCALL_DECLARE1_VOID(K_SYSCALL_ADC_ENABLE, adc_enable, struct device *, dev);",
@@ -714,32 +672,18 @@
         "[K_SYSCALL_ADC_READ] = _handler_adc_read"
     ],
     [
-        "spi.h",
-        "_handler_spi_transceive",
-        "K_SYSCALL_DECLARE5(K_SYSCALL_SPI_TRANSCEIVE, spi_transceive, int, struct spi_config *, config, const struct spi_buf *, tx_bufs, size_t, tx_count, struct spi_buf *, rx_bufs, size_t, rx_count);",
-        "K_SYSCALL_SPI_TRANSCEIVE",
-        "[K_SYSCALL_SPI_TRANSCEIVE] = _handler_spi_transceive"
+        "aio_comparator.h",
+        "_handler_aio_cmp_disable",
+        "K_SYSCALL_DECLARE2(K_SYSCALL_AIO_CMP_DISABLE, aio_cmp_disable, int, struct device *, dev, u8_t, index);",
+        "K_SYSCALL_AIO_CMP_DISABLE",
+        "[K_SYSCALL_AIO_CMP_DISABLE] = _handler_aio_cmp_disable"
     ],
     [
-        "spi.h",
-        "_handler_spi_release",
-        "K_SYSCALL_DECLARE1(K_SYSCALL_SPI_RELEASE, spi_release, int, struct spi_config *, config);",
-        "K_SYSCALL_SPI_RELEASE",
-        "[K_SYSCALL_SPI_RELEASE] = _handler_spi_release"
-    ],
-    [
-        "dma.h",
-        "_handler_dma_start",
-        "K_SYSCALL_DECLARE2(K_SYSCALL_DMA_START, dma_start, int, struct device *, dev, u32_t, channel);",
-        "K_SYSCALL_DMA_START",
-        "[K_SYSCALL_DMA_START] = _handler_dma_start"
-    ],
-    [
-        "dma.h",
-        "_handler_dma_stop",
-        "K_SYSCALL_DECLARE2(K_SYSCALL_DMA_STOP, dma_stop, int, struct device *, dev, u32_t, channel);",
-        "K_SYSCALL_DMA_STOP",
-        "[K_SYSCALL_DMA_STOP] = _handler_dma_stop"
+        "aio_comparator.h",
+        "_handler_aio_cmp_get_pending_int",
+        "K_SYSCALL_DECLARE1(K_SYSCALL_AIO_CMP_GET_PENDING_INT, aio_cmp_get_pending_int, int, struct device *, dev);",
+        "K_SYSCALL_AIO_CMP_GET_PENDING_INT",
+        "[K_SYSCALL_AIO_CMP_GET_PENDING_INT] = _handler_aio_cmp_get_pending_int"
     ],
     [
         "ipm.h",
@@ -770,17 +714,73 @@
         "[K_SYSCALL_IPM_SET_ENABLED] = _handler_ipm_set_enabled"
     ],
     [
-        "aio_comparator.h",
-        "_handler_aio_cmp_disable",
-        "K_SYSCALL_DECLARE2(K_SYSCALL_AIO_CMP_DISABLE, aio_cmp_disable, int, struct device *, dev, u8_t, index);",
-        "K_SYSCALL_AIO_CMP_DISABLE",
-        "[K_SYSCALL_AIO_CMP_DISABLE] = _handler_aio_cmp_disable"
+        "sensor.h",
+        "_handler_sensor_attr_set",
+        "K_SYSCALL_DECLARE4(K_SYSCALL_SENSOR_ATTR_SET, sensor_attr_set, int, struct device *, dev, enum sensor_channel, chan, enum sensor_attribute, attr, const struct sensor_value *, val);",
+        "K_SYSCALL_SENSOR_ATTR_SET",
+        "[K_SYSCALL_SENSOR_ATTR_SET] = _handler_sensor_attr_set"
     ],
     [
-        "aio_comparator.h",
-        "_handler_aio_cmp_get_pending_int",
-        "K_SYSCALL_DECLARE1(K_SYSCALL_AIO_CMP_GET_PENDING_INT, aio_cmp_get_pending_int, int, struct device *, dev);",
-        "K_SYSCALL_AIO_CMP_GET_PENDING_INT",
-        "[K_SYSCALL_AIO_CMP_GET_PENDING_INT] = _handler_aio_cmp_get_pending_int"
+        "sensor.h",
+        "_handler_sensor_sample_fetch",
+        "K_SYSCALL_DECLARE1(K_SYSCALL_SENSOR_SAMPLE_FETCH, sensor_sample_fetch, int, struct device *, dev);",
+        "K_SYSCALL_SENSOR_SAMPLE_FETCH",
+        "[K_SYSCALL_SENSOR_SAMPLE_FETCH] = _handler_sensor_sample_fetch"
+    ],
+    [
+        "sensor.h",
+        "_handler_sensor_sample_fetch_chan",
+        "K_SYSCALL_DECLARE2(K_SYSCALL_SENSOR_SAMPLE_FETCH_CHAN, sensor_sample_fetch_chan, int, struct device *, dev, enum sensor_channel, type);",
+        "K_SYSCALL_SENSOR_SAMPLE_FETCH_CHAN",
+        "[K_SYSCALL_SENSOR_SAMPLE_FETCH_CHAN] = _handler_sensor_sample_fetch_chan"
+    ],
+    [
+        "sensor.h",
+        "_handler_sensor_channel_get",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_SENSOR_CHANNEL_GET, sensor_channel_get, int, struct device *, dev, enum sensor_channel, chan, struct sensor_value *, val);",
+        "K_SYSCALL_SENSOR_CHANNEL_GET",
+        "[K_SYSCALL_SENSOR_CHANNEL_GET] = _handler_sensor_channel_get"
+    ],
+    [
+        "gpio.h",
+        "_handler_gpio_config",
+        "K_SYSCALL_DECLARE4(K_SYSCALL_GPIO_CONFIG, gpio_config, int, struct device *, port, int, access_op, u32_t, pin, int, flags);",
+        "K_SYSCALL_GPIO_CONFIG",
+        "[K_SYSCALL_GPIO_CONFIG] = _handler_gpio_config"
+    ],
+    [
+        "gpio.h",
+        "_handler_gpio_write",
+        "K_SYSCALL_DECLARE4(K_SYSCALL_GPIO_WRITE, gpio_write, int, struct device *, port, int, access_op, u32_t, pin, u32_t, value);",
+        "K_SYSCALL_GPIO_WRITE",
+        "[K_SYSCALL_GPIO_WRITE] = _handler_gpio_write"
+    ],
+    [
+        "gpio.h",
+        "_handler_gpio_read",
+        "K_SYSCALL_DECLARE4(K_SYSCALL_GPIO_READ, gpio_read, int, struct device *, port, int, access_op, u32_t, pin, u32_t *, value);",
+        "K_SYSCALL_GPIO_READ",
+        "[K_SYSCALL_GPIO_READ] = _handler_gpio_read"
+    ],
+    [
+        "gpio.h",
+        "_handler_gpio_enable_callback",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_GPIO_ENABLE_CALLBACK, gpio_enable_callback, int, struct device *, port, int, access_op, u32_t, pin);",
+        "K_SYSCALL_GPIO_ENABLE_CALLBACK",
+        "[K_SYSCALL_GPIO_ENABLE_CALLBACK] = _handler_gpio_enable_callback"
+    ],
+    [
+        "gpio.h",
+        "_handler_gpio_disable_callback",
+        "K_SYSCALL_DECLARE3(K_SYSCALL_GPIO_DISABLE_CALLBACK, gpio_disable_callback, int, struct device *, port, int, access_op, u32_t, pin);",
+        "K_SYSCALL_GPIO_DISABLE_CALLBACK",
+        "[K_SYSCALL_GPIO_DISABLE_CALLBACK] = _handler_gpio_disable_callback"
+    ],
+    [
+        "gpio.h",
+        "_handler_gpio_get_pending_int",
+        "K_SYSCALL_DECLARE1(K_SYSCALL_GPIO_GET_PENDING_INT, gpio_get_pending_int, int, struct device *, dev);",
+        "K_SYSCALL_GPIO_GET_PENDING_INT",
+        "[K_SYSCALL_GPIO_GET_PENDING_INT] = _handler_gpio_get_pending_int"
     ]
 ]

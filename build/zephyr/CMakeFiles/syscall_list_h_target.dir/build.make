@@ -58,14 +58,14 @@ zephyr/CMakeFiles/syscall_list_h_target: zephyr/include/generated/syscall_list.h
 
 zephyr/include/generated/syscall_dispatch.c: zephyr/misc/generated/syscalls.json
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/generated/syscall_dispatch.c, include/generated/syscall_list.h"
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /usr/bin/python3.4 /home/israel/zephyr/scripts/gen_syscalls.py --json-file /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/misc/generated/syscalls.json --base-output include/generated/syscalls --syscall-dispatch include/generated/syscall_dispatch.c > /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/include/generated/syscall_list.h
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /usr/bin/python3 /home/israel/zephyr/scripts/gen_syscalls.py --json-file /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/misc/generated/syscalls.json --base-output include/generated/syscalls --syscall-dispatch include/generated/syscall_dispatch.c > /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/include/generated/syscall_list.h
 
 zephyr/include/generated/syscall_list.h: zephyr/include/generated/syscall_dispatch.c
 	@$(CMAKE_COMMAND) -E touch_nocreate zephyr/include/generated/syscall_list.h
 
 zephyr/misc/generated/syscalls.json: zephyr/always_rebuild
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating misc/generated/syscalls.json"
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /usr/bin/python3.4 /home/israel/zephyr/scripts/parse_syscalls.py --include /home/israel/zephyr/include --json-file /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/misc/generated/syscalls.json
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /usr/bin/python3 /home/israel/zephyr/scripts/parse_syscalls.py --include /home/israel/zephyr/include --json-file /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/misc/generated/syscalls.json
 
 zephyr/always_rebuild:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating always_rebuild"

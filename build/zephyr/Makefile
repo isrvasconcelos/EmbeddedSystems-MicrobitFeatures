@@ -111,34 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-zephyr/CMakeFiles/run.dir/rule:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/run.dir/rule
-.PHONY : zephyr/CMakeFiles/run.dir/rule
+zephyr/CMakeFiles/kernel_elf.dir/rule:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/kernel_elf.dir/rule
+.PHONY : zephyr/CMakeFiles/kernel_elf.dir/rule
 
 # Convenience name for target.
-run: zephyr/CMakeFiles/run.dir/rule
+kernel_elf: zephyr/CMakeFiles/kernel_elf.dir/rule
 
-.PHONY : run
+.PHONY : kernel_elf
 
 # fast build rule for target.
-run/fast:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/run.dir/build.make zephyr/CMakeFiles/run.dir/build
-.PHONY : run/fast
-
-# Convenience name for target.
-zephyr/CMakeFiles/zephyr_prebuilt.dir/rule:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr_prebuilt.dir/rule
-.PHONY : zephyr/CMakeFiles/zephyr_prebuilt.dir/rule
-
-# Convenience name for target.
-zephyr_prebuilt: zephyr/CMakeFiles/zephyr_prebuilt.dir/rule
-
-.PHONY : zephyr_prebuilt
-
-# fast build rule for target.
-zephyr_prebuilt/fast:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr_prebuilt.dir/build.make zephyr/CMakeFiles/zephyr_prebuilt.dir/build
-.PHONY : zephyr_prebuilt/fast
+kernel_elf/fast:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/kernel_elf.dir/build.make zephyr/CMakeFiles/kernel_elf.dir/build
+.PHONY : kernel_elf/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/linker_pass_final_script.dir/rule:
@@ -186,19 +171,19 @@ syscall_macros_h_target/fast:
 .PHONY : syscall_macros_h_target/fast
 
 # Convenience name for target.
-zephyr/CMakeFiles/syscall_list_h_target.dir/rule:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/syscall_list_h_target.dir/rule
-.PHONY : zephyr/CMakeFiles/syscall_list_h_target.dir/rule
+zephyr/CMakeFiles/zephyr_prebuilt.dir/rule:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr_prebuilt.dir/rule
+.PHONY : zephyr/CMakeFiles/zephyr_prebuilt.dir/rule
 
 # Convenience name for target.
-syscall_list_h_target: zephyr/CMakeFiles/syscall_list_h_target.dir/rule
+zephyr_prebuilt: zephyr/CMakeFiles/zephyr_prebuilt.dir/rule
 
-.PHONY : syscall_list_h_target
+.PHONY : zephyr_prebuilt
 
 # fast build rule for target.
-syscall_list_h_target/fast:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/syscall_list_h_target.dir/build.make zephyr/CMakeFiles/syscall_list_h_target.dir/build
-.PHONY : syscall_list_h_target/fast
+zephyr_prebuilt/fast:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr_prebuilt.dir/build.make zephyr/CMakeFiles/zephyr_prebuilt.dir/build
+.PHONY : zephyr_prebuilt/fast
 
 # Convenience name for target.
 zephyr/CMakeFiles/linker_script.dir/rule:
@@ -231,6 +216,36 @@ offsets/fast:
 .PHONY : offsets/fast
 
 # Convenience name for target.
+zephyr/CMakeFiles/syscall_list_h_target.dir/rule:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/syscall_list_h_target.dir/rule
+.PHONY : zephyr/CMakeFiles/syscall_list_h_target.dir/rule
+
+# Convenience name for target.
+syscall_list_h_target: zephyr/CMakeFiles/syscall_list_h_target.dir/rule
+
+.PHONY : syscall_list_h_target
+
+# fast build rule for target.
+syscall_list_h_target/fast:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/syscall_list_h_target.dir/build.make zephyr/CMakeFiles/syscall_list_h_target.dir/build
+.PHONY : syscall_list_h_target/fast
+
+# Convenience name for target.
+zephyr/CMakeFiles/run.dir/rule:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/run.dir/rule
+.PHONY : zephyr/CMakeFiles/run.dir/rule
+
+# Convenience name for target.
+run: zephyr/CMakeFiles/run.dir/rule
+
+.PHONY : run
+
+# fast build rule for target.
+run/fast:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/run.dir/build.make zephyr/CMakeFiles/run.dir/build
+.PHONY : run/fast
+
+# Convenience name for target.
 zephyr/CMakeFiles/offsets_h.dir/rule:
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/offsets_h.dir/rule
 .PHONY : zephyr/CMakeFiles/offsets_h.dir/rule
@@ -244,21 +259,6 @@ offsets_h: zephyr/CMakeFiles/offsets_h.dir/rule
 offsets_h/fast:
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/offsets_h.dir/build.make zephyr/CMakeFiles/offsets_h.dir/build
 .PHONY : offsets_h/fast
-
-# Convenience name for target.
-zephyr/CMakeFiles/kernel_elf.dir/rule:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/kernel_elf.dir/rule
-.PHONY : zephyr/CMakeFiles/kernel_elf.dir/rule
-
-# Convenience name for target.
-kernel_elf: zephyr/CMakeFiles/kernel_elf.dir/rule
-
-.PHONY : kernel_elf
-
-# fast build rule for target.
-kernel_elf/fast:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/kernel_elf.dir/build.make zephyr/CMakeFiles/kernel_elf.dir/build
-.PHONY : kernel_elf/fast
 
 arch/arm/core/cortex_m/exc_manage.obj: arch/arm/core/cortex_m/exc_manage.c.obj
 
@@ -1157,8 +1157,8 @@ misc/empty_file.obj: misc/empty_file.c.obj
 
 # target to build an object file
 misc/empty_file.c.obj:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr_prebuilt.dir/build.make zephyr/CMakeFiles/zephyr_prebuilt.dir/misc/empty_file.c.obj
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/kernel_elf.dir/build.make zephyr/CMakeFiles/kernel_elf.dir/misc/empty_file.c.obj
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr_prebuilt.dir/build.make zephyr/CMakeFiles/zephyr_prebuilt.dir/misc/empty_file.c.obj
 .PHONY : misc/empty_file.c.obj
 
 misc/empty_file.i: misc/empty_file.c.i
@@ -1167,8 +1167,8 @@ misc/empty_file.i: misc/empty_file.c.i
 
 # target to preprocess a source file
 misc/empty_file.c.i:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr_prebuilt.dir/build.make zephyr/CMakeFiles/zephyr_prebuilt.dir/misc/empty_file.c.i
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/kernel_elf.dir/build.make zephyr/CMakeFiles/kernel_elf.dir/misc/empty_file.c.i
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr_prebuilt.dir/build.make zephyr/CMakeFiles/zephyr_prebuilt.dir/misc/empty_file.c.i
 .PHONY : misc/empty_file.c.i
 
 misc/empty_file.s: misc/empty_file.c.s
@@ -1177,8 +1177,8 @@ misc/empty_file.s: misc/empty_file.c.s
 
 # target to generate assembly for a file
 misc/empty_file.c.s:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr_prebuilt.dir/build.make zephyr/CMakeFiles/zephyr_prebuilt.dir/misc/empty_file.c.s
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/kernel_elf.dir/build.make zephyr/CMakeFiles/kernel_elf.dir/misc/empty_file.c.s
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/CMakeFiles/zephyr_prebuilt.dir/build.make zephyr/CMakeFiles/zephyr_prebuilt.dir/misc/empty_file.c.s
 .PHONY : misc/empty_file.c.s
 
 misc/generated/configs.obj: misc/generated/configs.c.obj
@@ -1269,17 +1269,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... run"
-	@echo "... zephyr_prebuilt"
+	@echo "... kernel_elf"
+	@echo "... rebuild_cache"
 	@echo "... linker_pass_final_script"
 	@echo "... zephyr"
 	@echo "... syscall_macros_h_target"
-	@echo "... rebuild_cache"
-	@echo "... syscall_list_h_target"
+	@echo "... zephyr_prebuilt"
 	@echo "... linker_script"
 	@echo "... offsets"
+	@echo "... syscall_list_h_target"
+	@echo "... run"
 	@echo "... offsets_h"
-	@echo "... kernel_elf"
 	@echo "... arch/arm/core/cortex_m/exc_manage.obj"
 	@echo "... arch/arm/core/cortex_m/exc_manage.i"
 	@echo "... arch/arm/core/cortex_m/exc_manage.s"

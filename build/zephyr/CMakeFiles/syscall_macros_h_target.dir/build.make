@@ -58,7 +58,7 @@ zephyr/CMakeFiles/syscall_macros_h_target: zephyr/include/generated/syscall_macr
 
 zephyr/include/generated/syscall_macros.h: /home/israel/zephyr/scripts/gen_syscall_header.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/generated/syscall_macros.h"
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /usr/bin/python3.4 /home/israel/zephyr/scripts/gen_syscall_header.py > /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/include/generated/syscall_macros.h
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /usr/bin/python3 /home/israel/zephyr/scripts/gen_syscall_header.py > /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/include/generated/syscall_macros.h
 
 syscall_macros_h_target: zephyr/CMakeFiles/syscall_macros_h_target
 syscall_macros_h_target: zephyr/include/generated/syscall_macros.h

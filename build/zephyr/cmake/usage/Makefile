@@ -111,21 +111,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/rule:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/rule
-.PHONY : zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/rule
-
-# Convenience name for target.
-kconfig-usage: zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/rule
-
-.PHONY : kconfig-usage
-
-# fast build rule for target.
-kconfig-usage/fast:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/build.make zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/build
-.PHONY : kconfig-usage/fast
-
-# Convenience name for target.
 zephyr/cmake/usage/CMakeFiles/usage.dir/rule:
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/usage/CMakeFiles/usage.dir/rule
 .PHONY : zephyr/cmake/usage/CMakeFiles/usage.dir/rule
@@ -140,6 +125,21 @@ usage/fast:
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/cmake/usage/CMakeFiles/usage.dir/build.make zephyr/cmake/usage/CMakeFiles/usage.dir/build
 .PHONY : usage/fast
 
+# Convenience name for target.
+zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/rule:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/rule
+.PHONY : zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/rule
+
+# Convenience name for target.
+kconfig-usage: zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/rule
+
+.PHONY : kconfig-usage
+
+# fast build rule for target.
+kconfig-usage/fast:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/build.make zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/build
+.PHONY : kconfig-usage/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -148,8 +148,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... kconfig-usage"
 	@echo "... usage"
+	@echo "... kconfig-usage"
 .PHONY : help
 
 

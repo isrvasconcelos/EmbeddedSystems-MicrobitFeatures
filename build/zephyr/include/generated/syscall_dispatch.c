@@ -5,183 +5,11 @@
  */
 
 __weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_uart_err_check(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_uart_poll_in(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_uart_poll_out(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_uart_irq_tx_enable(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_uart_irq_tx_disable(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_uart_irq_rx_enable(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_uart_irq_rx_disable(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_uart_irq_err_enable(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_uart_irq_err_disable(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_uart_irq_is_pending(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_uart_irq_update(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_uart_line_ctrl_set(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_uart_line_ctrl_get(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_uart_drv_cmd(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_pinmux_pin_set(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_pinmux_pin_get(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_pinmux_pin_pullup(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_pinmux_pin_input_enable(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_flash_read(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_flash_write(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_flash_erase(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_flash_write_protection_set(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_flash_get_page_info_by_offs(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_flash_get_page_info_by_idx(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_flash_get_page_count(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_flash_get_write_block_size(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_sensor_attr_set(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_sensor_sample_fetch(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_sensor_sample_fetch_chan(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_sensor_channel_get(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_counter_start(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_counter_stop(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_counter_read(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_counter_get_pending_int(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_gpio_config(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_gpio_write(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_gpio_read(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_gpio_enable_callback(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_gpio_disable_callback(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_gpio_get_pending_int(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
 u32_t _handler_i2c_configure(u32_t arg1, u32_t arg2, u32_t arg3,
          u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 __weak ALIAS_OF(_handler_no_syscall)
 u32_t _handler_i2c_transfer(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_entropy_get_entropy(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_pwm_pin_set_cycles(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_pwm_get_cycles_per_sec(u32_t arg1, u32_t arg2, u32_t arg3,
          u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 __weak ALIAS_OF(_handler_no_syscall)
@@ -202,6 +30,22 @@ u32_t _handler_rtc_set_alarm(u32_t arg1, u32_t arg2, u32_t arg3,
 
 __weak ALIAS_OF(_handler_no_syscall)
 u32_t _handler_rtc_get_pending_int(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_pinmux_pin_set(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_pinmux_pin_get(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_pinmux_pin_pullup(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_pinmux_pin_input_enable(u32_t arg1, u32_t arg2, u32_t arg3,
          u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 __weak ALIAS_OF(_handler_no_syscall)
@@ -401,6 +245,138 @@ u32_t _handler_k_str_out(u32_t arg1, u32_t arg2, u32_t arg3,
          u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 __weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_dma_start(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_dma_stop(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_uart_err_check(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_uart_poll_in(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_uart_poll_out(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_uart_irq_tx_enable(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_uart_irq_tx_disable(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_uart_irq_rx_enable(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_uart_irq_rx_disable(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_uart_irq_err_enable(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_uart_irq_err_disable(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_uart_irq_is_pending(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_uart_irq_update(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_uart_line_ctrl_set(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_uart_line_ctrl_get(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_uart_drv_cmd(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_counter_start(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_counter_stop(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_counter_read(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_counter_get_pending_int(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_flash_read(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_flash_write(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_flash_erase(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_flash_write_protection_set(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_flash_get_page_info_by_offs(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_flash_get_page_info_by_idx(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_flash_get_page_count(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_flash_get_write_block_size(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_entropy_get_entropy(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_pwm_pin_set_cycles(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_pwm_get_cycles_per_sec(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_spi_transceive(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_spi_release(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
 u32_t _handler_adc_enable(u32_t arg1, u32_t arg2, u32_t arg3,
          u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
@@ -413,19 +389,11 @@ u32_t _handler_adc_read(u32_t arg1, u32_t arg2, u32_t arg3,
          u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 __weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_spi_transceive(u32_t arg1, u32_t arg2, u32_t arg3,
+u32_t _handler_aio_cmp_disable(u32_t arg1, u32_t arg2, u32_t arg3,
          u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 __weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_spi_release(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_dma_start(u32_t arg1, u32_t arg2, u32_t arg3,
-         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
-
-__weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_dma_stop(u32_t arg1, u32_t arg2, u32_t arg3,
+u32_t _handler_aio_cmp_get_pending_int(u32_t arg1, u32_t arg2, u32_t arg3,
          u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 __weak ALIAS_OF(_handler_no_syscall)
@@ -445,65 +413,58 @@ u32_t _handler_ipm_set_enabled(u32_t arg1, u32_t arg2, u32_t arg3,
          u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 __weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_aio_cmp_disable(u32_t arg1, u32_t arg2, u32_t arg3,
+u32_t _handler_sensor_attr_set(u32_t arg1, u32_t arg2, u32_t arg3,
          u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 __weak ALIAS_OF(_handler_no_syscall)
-u32_t _handler_aio_cmp_get_pending_int(u32_t arg1, u32_t arg2, u32_t arg3,
+u32_t _handler_sensor_sample_fetch(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_sensor_sample_fetch_chan(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_sensor_channel_get(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_gpio_config(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_gpio_write(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_gpio_read(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_gpio_enable_callback(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_gpio_disable_callback(u32_t arg1, u32_t arg2, u32_t arg3,
+         u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
+
+__weak ALIAS_OF(_handler_no_syscall)
+u32_t _handler_gpio_get_pending_int(u32_t arg1, u32_t arg2, u32_t arg3,
          u32_t arg4, u32_t arg5, u32_t arg6, void *ssf);
 
 
 const _k_syscall_handler_t _k_syscall_table[K_SYSCALL_LIMIT] = {
-	[K_SYSCALL_UART_ERR_CHECK] = _handler_uart_err_check,
-	[K_SYSCALL_UART_POLL_IN] = _handler_uart_poll_in,
-	[K_SYSCALL_UART_POLL_OUT] = _handler_uart_poll_out,
-	[K_SYSCALL_UART_IRQ_TX_ENABLE] = _handler_uart_irq_tx_enable,
-	[K_SYSCALL_UART_IRQ_TX_DISABLE] = _handler_uart_irq_tx_disable,
-	[K_SYSCALL_UART_IRQ_RX_ENABLE] = _handler_uart_irq_rx_enable,
-	[K_SYSCALL_UART_IRQ_RX_DISABLE] = _handler_uart_irq_rx_disable,
-	[K_SYSCALL_UART_IRQ_ERR_ENABLE] = _handler_uart_irq_err_enable,
-	[K_SYSCALL_UART_IRQ_ERR_DISABLE] = _handler_uart_irq_err_disable,
-	[K_SYSCALL_UART_IRQ_IS_PENDING] = _handler_uart_irq_is_pending,
-	[K_SYSCALL_UART_IRQ_UPDATE] = _handler_uart_irq_update,
-	[K_SYSCALL_UART_LINE_CTRL_SET] = _handler_uart_line_ctrl_set,
-	[K_SYSCALL_UART_LINE_CTRL_GET] = _handler_uart_line_ctrl_get,
-	[K_SYSCALL_UART_DRV_CMD] = _handler_uart_drv_cmd,
-	[K_SYSCALL_PINMUX_PIN_SET] = _handler_pinmux_pin_set,
-	[K_SYSCALL_PINMUX_PIN_GET] = _handler_pinmux_pin_get,
-	[K_SYSCALL_PINMUX_PIN_PULLUP] = _handler_pinmux_pin_pullup,
-	[K_SYSCALL_PINMUX_PIN_INPUT_ENABLE] = _handler_pinmux_pin_input_enable,
-	[K_SYSCALL_FLASH_READ] = _handler_flash_read,
-	[K_SYSCALL_FLASH_WRITE] = _handler_flash_write,
-	[K_SYSCALL_FLASH_ERASE] = _handler_flash_erase,
-	[K_SYSCALL_FLASH_WRITE_PROTECTION_SET] = _handler_flash_write_protection_set,
-	[K_SYSCALL_FLASH_GET_PAGE_INFO_BY_OFFS] = _handler_flash_get_page_info_by_offs,
-	[K_SYSCALL_FLASH_GET_PAGE_INFO_BY_IDX] = _handler_flash_get_page_info_by_idx,
-	[K_SYSCALL_FLASH_GET_PAGE_COUNT] = _handler_flash_get_page_count,
-	[K_SYSCALL_FLASH_GET_WRITE_BLOCK_SIZE] = _handler_flash_get_write_block_size,
-	[K_SYSCALL_SENSOR_ATTR_SET] = _handler_sensor_attr_set,
-	[K_SYSCALL_SENSOR_SAMPLE_FETCH] = _handler_sensor_sample_fetch,
-	[K_SYSCALL_SENSOR_SAMPLE_FETCH_CHAN] = _handler_sensor_sample_fetch_chan,
-	[K_SYSCALL_SENSOR_CHANNEL_GET] = _handler_sensor_channel_get,
-	[K_SYSCALL_COUNTER_START] = _handler_counter_start,
-	[K_SYSCALL_COUNTER_STOP] = _handler_counter_stop,
-	[K_SYSCALL_COUNTER_READ] = _handler_counter_read,
-	[K_SYSCALL_COUNTER_GET_PENDING_INT] = _handler_counter_get_pending_int,
-	[K_SYSCALL_GPIO_CONFIG] = _handler_gpio_config,
-	[K_SYSCALL_GPIO_WRITE] = _handler_gpio_write,
-	[K_SYSCALL_GPIO_READ] = _handler_gpio_read,
-	[K_SYSCALL_GPIO_ENABLE_CALLBACK] = _handler_gpio_enable_callback,
-	[K_SYSCALL_GPIO_DISABLE_CALLBACK] = _handler_gpio_disable_callback,
-	[K_SYSCALL_GPIO_GET_PENDING_INT] = _handler_gpio_get_pending_int,
 	[K_SYSCALL_I2C_CONFIGURE] = _handler_i2c_configure,
 	[K_SYSCALL_I2C_TRANSFER] = _handler_i2c_transfer,
-	[K_SYSCALL_ENTROPY_GET_ENTROPY] = _handler_entropy_get_entropy,
-	[K_SYSCALL_PWM_PIN_SET_CYCLES] = _handler_pwm_pin_set_cycles,
-	[K_SYSCALL_PWM_GET_CYCLES_PER_SEC] = _handler_pwm_get_cycles_per_sec,
 	[K_SYSCALL_RTC_READ] = _handler_rtc_read,
 	[K_SYSCALL_RTC_ENABLE] = _handler_rtc_enable,
 	[K_SYSCALL_RTC_DISABLE] = _handler_rtc_disable,
 	[K_SYSCALL_RTC_SET_ALARM] = _handler_rtc_set_alarm,
 	[K_SYSCALL_RTC_GET_PENDING_INT] = _handler_rtc_get_pending_int,
+	[K_SYSCALL_PINMUX_PIN_SET] = _handler_pinmux_pin_set,
+	[K_SYSCALL_PINMUX_PIN_GET] = _handler_pinmux_pin_get,
+	[K_SYSCALL_PINMUX_PIN_PULLUP] = _handler_pinmux_pin_pullup,
+	[K_SYSCALL_PINMUX_PIN_INPUT_ENABLE] = _handler_pinmux_pin_input_enable,
 	[K_SYSCALL_K_OBJECT_ACCESS_GRANT] = _handler_k_object_access_grant,
 	[K_SYSCALL_K_OBJECT_ACCESS_REVOKE] = _handler_k_object_access_revoke,
 	[K_SYSCALL_K_THREAD_CREATE] = _handler_k_thread_create,
@@ -553,18 +514,57 @@ const _k_syscall_handler_t _k_syscall_table[K_SYSCALL_LIMIT] = {
 	[K_SYSCALL_K_PIPE_PUT] = _handler_k_pipe_put,
 	[K_SYSCALL_K_PIPE_GET] = _handler_k_pipe_get,
 	[K_SYSCALL_K_STR_OUT] = _handler_k_str_out,
+	[K_SYSCALL_DMA_START] = _handler_dma_start,
+	[K_SYSCALL_DMA_STOP] = _handler_dma_stop,
+	[K_SYSCALL_UART_ERR_CHECK] = _handler_uart_err_check,
+	[K_SYSCALL_UART_POLL_IN] = _handler_uart_poll_in,
+	[K_SYSCALL_UART_POLL_OUT] = _handler_uart_poll_out,
+	[K_SYSCALL_UART_IRQ_TX_ENABLE] = _handler_uart_irq_tx_enable,
+	[K_SYSCALL_UART_IRQ_TX_DISABLE] = _handler_uart_irq_tx_disable,
+	[K_SYSCALL_UART_IRQ_RX_ENABLE] = _handler_uart_irq_rx_enable,
+	[K_SYSCALL_UART_IRQ_RX_DISABLE] = _handler_uart_irq_rx_disable,
+	[K_SYSCALL_UART_IRQ_ERR_ENABLE] = _handler_uart_irq_err_enable,
+	[K_SYSCALL_UART_IRQ_ERR_DISABLE] = _handler_uart_irq_err_disable,
+	[K_SYSCALL_UART_IRQ_IS_PENDING] = _handler_uart_irq_is_pending,
+	[K_SYSCALL_UART_IRQ_UPDATE] = _handler_uart_irq_update,
+	[K_SYSCALL_UART_LINE_CTRL_SET] = _handler_uart_line_ctrl_set,
+	[K_SYSCALL_UART_LINE_CTRL_GET] = _handler_uart_line_ctrl_get,
+	[K_SYSCALL_UART_DRV_CMD] = _handler_uart_drv_cmd,
+	[K_SYSCALL_COUNTER_START] = _handler_counter_start,
+	[K_SYSCALL_COUNTER_STOP] = _handler_counter_stop,
+	[K_SYSCALL_COUNTER_READ] = _handler_counter_read,
+	[K_SYSCALL_COUNTER_GET_PENDING_INT] = _handler_counter_get_pending_int,
+	[K_SYSCALL_FLASH_READ] = _handler_flash_read,
+	[K_SYSCALL_FLASH_WRITE] = _handler_flash_write,
+	[K_SYSCALL_FLASH_ERASE] = _handler_flash_erase,
+	[K_SYSCALL_FLASH_WRITE_PROTECTION_SET] = _handler_flash_write_protection_set,
+	[K_SYSCALL_FLASH_GET_PAGE_INFO_BY_OFFS] = _handler_flash_get_page_info_by_offs,
+	[K_SYSCALL_FLASH_GET_PAGE_INFO_BY_IDX] = _handler_flash_get_page_info_by_idx,
+	[K_SYSCALL_FLASH_GET_PAGE_COUNT] = _handler_flash_get_page_count,
+	[K_SYSCALL_FLASH_GET_WRITE_BLOCK_SIZE] = _handler_flash_get_write_block_size,
+	[K_SYSCALL_ENTROPY_GET_ENTROPY] = _handler_entropy_get_entropy,
+	[K_SYSCALL_PWM_PIN_SET_CYCLES] = _handler_pwm_pin_set_cycles,
+	[K_SYSCALL_PWM_GET_CYCLES_PER_SEC] = _handler_pwm_get_cycles_per_sec,
+	[K_SYSCALL_SPI_TRANSCEIVE] = _handler_spi_transceive,
+	[K_SYSCALL_SPI_RELEASE] = _handler_spi_release,
 	[K_SYSCALL_ADC_ENABLE] = _handler_adc_enable,
 	[K_SYSCALL_ADC_DISABLE] = _handler_adc_disable,
 	[K_SYSCALL_ADC_READ] = _handler_adc_read,
-	[K_SYSCALL_SPI_TRANSCEIVE] = _handler_spi_transceive,
-	[K_SYSCALL_SPI_RELEASE] = _handler_spi_release,
-	[K_SYSCALL_DMA_START] = _handler_dma_start,
-	[K_SYSCALL_DMA_STOP] = _handler_dma_stop,
+	[K_SYSCALL_AIO_CMP_DISABLE] = _handler_aio_cmp_disable,
+	[K_SYSCALL_AIO_CMP_GET_PENDING_INT] = _handler_aio_cmp_get_pending_int,
 	[K_SYSCALL_IPM_SEND] = _handler_ipm_send,
 	[K_SYSCALL_IPM_MAX_DATA_SIZE_GET] = _handler_ipm_max_data_size_get,
 	[K_SYSCALL_IPM_MAX_ID_VAL_GET] = _handler_ipm_max_id_val_get,
 	[K_SYSCALL_IPM_SET_ENABLED] = _handler_ipm_set_enabled,
-	[K_SYSCALL_AIO_CMP_DISABLE] = _handler_aio_cmp_disable,
-	[K_SYSCALL_AIO_CMP_GET_PENDING_INT] = _handler_aio_cmp_get_pending_int,
+	[K_SYSCALL_SENSOR_ATTR_SET] = _handler_sensor_attr_set,
+	[K_SYSCALL_SENSOR_SAMPLE_FETCH] = _handler_sensor_sample_fetch,
+	[K_SYSCALL_SENSOR_SAMPLE_FETCH_CHAN] = _handler_sensor_sample_fetch_chan,
+	[K_SYSCALL_SENSOR_CHANNEL_GET] = _handler_sensor_channel_get,
+	[K_SYSCALL_GPIO_CONFIG] = _handler_gpio_config,
+	[K_SYSCALL_GPIO_WRITE] = _handler_gpio_write,
+	[K_SYSCALL_GPIO_READ] = _handler_gpio_read,
+	[K_SYSCALL_GPIO_ENABLE_CALLBACK] = _handler_gpio_enable_callback,
+	[K_SYSCALL_GPIO_DISABLE_CALLBACK] = _handler_gpio_disable_callback,
+	[K_SYSCALL_GPIO_GET_PENDING_INT] = _handler_gpio_get_pending_int,
 	[K_SYSCALL_BAD] = _handler_bad_syscall
 };

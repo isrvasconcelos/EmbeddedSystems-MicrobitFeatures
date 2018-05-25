@@ -58,7 +58,7 @@ zephyr/CMakeFiles/offsets_h: zephyr/include/generated/offsets.h
 
 zephyr/include/generated/offsets.h: zephyr/liboffsets.a
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/generated/offsets.h"
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /usr/bin/python3.4 /home/israel/zephyr/scripts/gen_offset_header.py -i /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj -o /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/include/generated/offsets.h
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr && /usr/bin/python3 /home/israel/zephyr/scripts/gen_offset_header.py -i /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj -o /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/include/generated/offsets.h
 
 offsets_h: zephyr/CMakeFiles/offsets_h
 offsets_h: zephyr/include/generated/offsets.h

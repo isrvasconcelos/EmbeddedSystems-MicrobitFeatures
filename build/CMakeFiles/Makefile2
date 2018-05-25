@@ -92,139 +92,6 @@ clean: CMakeFiles/config-sanitycheck.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/xconfig.dir
-
-# All Build rule for target.
-CMakeFiles/xconfig.dir/all:
-	$(MAKE) -f CMakeFiles/xconfig.dir/build.make CMakeFiles/xconfig.dir/depend
-	$(MAKE) -f CMakeFiles/xconfig.dir/build.make CMakeFiles/xconfig.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num= "Built target xconfig"
-.PHONY : CMakeFiles/xconfig.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/xconfig.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/xconfig.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-.PHONY : CMakeFiles/xconfig.dir/rule
-
-# Convenience name for target.
-xconfig: CMakeFiles/xconfig.dir/rule
-
-.PHONY : xconfig
-
-# clean rule for target.
-CMakeFiles/xconfig.dir/clean:
-	$(MAKE) -f CMakeFiles/xconfig.dir/build.make CMakeFiles/xconfig.dir/clean
-.PHONY : CMakeFiles/xconfig.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/xconfig.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/oldconfig.dir
-
-# All Build rule for target.
-CMakeFiles/oldconfig.dir/all:
-	$(MAKE) -f CMakeFiles/oldconfig.dir/build.make CMakeFiles/oldconfig.dir/depend
-	$(MAKE) -f CMakeFiles/oldconfig.dir/build.make CMakeFiles/oldconfig.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num= "Built target oldconfig"
-.PHONY : CMakeFiles/oldconfig.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/oldconfig.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/oldconfig.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-.PHONY : CMakeFiles/oldconfig.dir/rule
-
-# Convenience name for target.
-oldconfig: CMakeFiles/oldconfig.dir/rule
-
-.PHONY : oldconfig
-
-# clean rule for target.
-CMakeFiles/oldconfig.dir/clean:
-	$(MAKE) -f CMakeFiles/oldconfig.dir/build.make CMakeFiles/oldconfig.dir/clean
-.PHONY : CMakeFiles/oldconfig.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/oldconfig.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/app.dir
-
-# All Build rule for target.
-CMakeFiles/app.dir/all: zephyr/CMakeFiles/offsets_h.dir/all
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/depend
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target app"
-.PHONY : CMakeFiles/app.dir/all
-
-# Include target in all.
-all: CMakeFiles/app.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 15
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/app.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-.PHONY : CMakeFiles/app.dir/rule
-
-# Convenience name for target.
-app: CMakeFiles/app.dir/rule
-
-.PHONY : app
-
-# clean rule for target.
-CMakeFiles/app.dir/clean:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/clean
-.PHONY : CMakeFiles/app.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/app.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/menuconfig.dir
-
-# All Build rule for target.
-CMakeFiles/menuconfig.dir/all:
-	$(MAKE) -f CMakeFiles/menuconfig.dir/build.make CMakeFiles/menuconfig.dir/depend
-	$(MAKE) -f CMakeFiles/menuconfig.dir/build.make CMakeFiles/menuconfig.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num= "Built target menuconfig"
-.PHONY : CMakeFiles/menuconfig.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/menuconfig.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/menuconfig.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-.PHONY : CMakeFiles/menuconfig.dir/rule
-
-# Convenience name for target.
-menuconfig: CMakeFiles/menuconfig.dir/rule
-
-.PHONY : menuconfig
-
-# clean rule for target.
-CMakeFiles/menuconfig.dir/clean:
-	$(MAKE) -f CMakeFiles/menuconfig.dir/build.make CMakeFiles/menuconfig.dir/clean
-.PHONY : CMakeFiles/menuconfig.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/menuconfig.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/config.dir
 
 # All Build rule for target.
@@ -321,13 +188,146 @@ clean: CMakeFiles/pristine.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/menuconfig.dir
+
+# All Build rule for target.
+CMakeFiles/menuconfig.dir/all:
+	$(MAKE) -f CMakeFiles/menuconfig.dir/build.make CMakeFiles/menuconfig.dir/depend
+	$(MAKE) -f CMakeFiles/menuconfig.dir/build.make CMakeFiles/menuconfig.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num= "Built target menuconfig"
+.PHONY : CMakeFiles/menuconfig.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/menuconfig.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/menuconfig.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+.PHONY : CMakeFiles/menuconfig.dir/rule
+
+# Convenience name for target.
+menuconfig: CMakeFiles/menuconfig.dir/rule
+
+.PHONY : menuconfig
+
+# clean rule for target.
+CMakeFiles/menuconfig.dir/clean:
+	$(MAKE) -f CMakeFiles/menuconfig.dir/build.make CMakeFiles/menuconfig.dir/clean
+.PHONY : CMakeFiles/menuconfig.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/menuconfig.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/app.dir
+
+# All Build rule for target.
+CMakeFiles/app.dir/all: zephyr/CMakeFiles/offsets_h.dir/all
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/depend
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target app"
+.PHONY : CMakeFiles/app.dir/all
+
+# Include target in all.
+all: CMakeFiles/app.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/app.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 15
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/app.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+.PHONY : CMakeFiles/app.dir/rule
+
+# Convenience name for target.
+app: CMakeFiles/app.dir/rule
+
+.PHONY : app
+
+# clean rule for target.
+CMakeFiles/app.dir/clean:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/clean
+.PHONY : CMakeFiles/app.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/app.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/oldconfig.dir
+
+# All Build rule for target.
+CMakeFiles/oldconfig.dir/all:
+	$(MAKE) -f CMakeFiles/oldconfig.dir/build.make CMakeFiles/oldconfig.dir/depend
+	$(MAKE) -f CMakeFiles/oldconfig.dir/build.make CMakeFiles/oldconfig.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num= "Built target oldconfig"
+.PHONY : CMakeFiles/oldconfig.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/oldconfig.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/oldconfig.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+.PHONY : CMakeFiles/oldconfig.dir/rule
+
+# Convenience name for target.
+oldconfig: CMakeFiles/oldconfig.dir/rule
+
+.PHONY : oldconfig
+
+# clean rule for target.
+CMakeFiles/oldconfig.dir/clean:
+	$(MAKE) -f CMakeFiles/oldconfig.dir/build.make CMakeFiles/oldconfig.dir/clean
+.PHONY : CMakeFiles/oldconfig.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/oldconfig.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/xconfig.dir
+
+# All Build rule for target.
+CMakeFiles/xconfig.dir/all:
+	$(MAKE) -f CMakeFiles/xconfig.dir/build.make CMakeFiles/xconfig.dir/depend
+	$(MAKE) -f CMakeFiles/xconfig.dir/build.make CMakeFiles/xconfig.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num= "Built target xconfig"
+.PHONY : CMakeFiles/xconfig.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/xconfig.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/xconfig.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+.PHONY : CMakeFiles/xconfig.dir/rule
+
+# Convenience name for target.
+xconfig: CMakeFiles/xconfig.dir/rule
+
+.PHONY : xconfig
+
+# clean rule for target.
+CMakeFiles/xconfig.dir/clean:
+	$(MAKE) -f CMakeFiles/xconfig.dir/build.make CMakeFiles/xconfig.dir/clean
+.PHONY : CMakeFiles/xconfig.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/xconfig.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory zephyr
 
 # Convenience name for "all" pass in the directory.
-zephyr/all: zephyr/CMakeFiles/zephyr_prebuilt.dir/all
-zephyr/all: zephyr/CMakeFiles/zephyr.dir/all
-zephyr/all: zephyr/CMakeFiles/offsets.dir/all
 zephyr/all: zephyr/CMakeFiles/kernel_elf.dir/all
+zephyr/all: zephyr/CMakeFiles/zephyr.dir/all
+zephyr/all: zephyr/CMakeFiles/zephyr_prebuilt.dir/all
+zephyr/all: zephyr/CMakeFiles/offsets.dir/all
 zephyr/all: zephyr/arch/all
 zephyr/all: zephyr/lib/all
 zephyr/all: zephyr/misc/all
@@ -344,16 +344,16 @@ zephyr/all: zephyr/cmake/reports/all
 .PHONY : zephyr/all
 
 # Convenience name for "clean" pass in the directory.
-zephyr/clean: zephyr/CMakeFiles/run.dir/clean
-zephyr/clean: zephyr/CMakeFiles/zephyr_prebuilt.dir/clean
+zephyr/clean: zephyr/CMakeFiles/kernel_elf.dir/clean
 zephyr/clean: zephyr/CMakeFiles/linker_pass_final_script.dir/clean
 zephyr/clean: zephyr/CMakeFiles/zephyr.dir/clean
 zephyr/clean: zephyr/CMakeFiles/syscall_macros_h_target.dir/clean
-zephyr/clean: zephyr/CMakeFiles/syscall_list_h_target.dir/clean
+zephyr/clean: zephyr/CMakeFiles/zephyr_prebuilt.dir/clean
 zephyr/clean: zephyr/CMakeFiles/linker_script.dir/clean
 zephyr/clean: zephyr/CMakeFiles/offsets.dir/clean
+zephyr/clean: zephyr/CMakeFiles/syscall_list_h_target.dir/clean
+zephyr/clean: zephyr/CMakeFiles/run.dir/clean
 zephyr/clean: zephyr/CMakeFiles/offsets_h.dir/clean
-zephyr/clean: zephyr/CMakeFiles/kernel_elf.dir/clean
 zephyr/clean: zephyr/arch/clean
 zephyr/clean: zephyr/lib/clean
 zephyr/clean: zephyr/misc/clean
@@ -386,79 +386,47 @@ zephyr/preinstall: zephyr/cmake/reports/preinstall
 .PHONY : zephyr/preinstall
 
 #=============================================================================
-# Target rules for target zephyr/CMakeFiles/run.dir
+# Target rules for target zephyr/CMakeFiles/kernel_elf.dir
 
 # All Build rule for target.
-zephyr/CMakeFiles/run.dir/all:
-	$(MAKE) -f zephyr/CMakeFiles/run.dir/build.make zephyr/CMakeFiles/run.dir/depend
-	$(MAKE) -f zephyr/CMakeFiles/run.dir/build.make zephyr/CMakeFiles/run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num= "Built target run"
-.PHONY : zephyr/CMakeFiles/run.dir/all
-
-# Build rule for subdir invocation for target.
-zephyr/CMakeFiles/run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/run.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-.PHONY : zephyr/CMakeFiles/run.dir/rule
-
-# Convenience name for target.
-run: zephyr/CMakeFiles/run.dir/rule
-
-.PHONY : run
-
-# clean rule for target.
-zephyr/CMakeFiles/run.dir/clean:
-	$(MAKE) -f zephyr/CMakeFiles/run.dir/build.make zephyr/CMakeFiles/run.dir/clean
-.PHONY : zephyr/CMakeFiles/run.dir/clean
-
-# clean rule for target.
-clean: zephyr/CMakeFiles/run.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target zephyr/CMakeFiles/zephyr_prebuilt.dir
-
-# All Build rule for target.
-zephyr/CMakeFiles/zephyr_prebuilt.dir/all: CMakeFiles/app.dir/all
-zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/CMakeFiles/zephyr.dir/all
-zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/CMakeFiles/linker_script.dir/all
-zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/CMakeFiles/offsets.dir/all
-zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/all
-zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/all
-zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/all
-zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/subsys/net/CMakeFiles/subsys__net.dir/all
-zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/kernel/CMakeFiles/kernel.dir/all
-	$(MAKE) -f zephyr/CMakeFiles/zephyr_prebuilt.dir/build.make zephyr/CMakeFiles/zephyr_prebuilt.dir/depend
-	$(MAKE) -f zephyr/CMakeFiles/zephyr_prebuilt.dir/build.make zephyr/CMakeFiles/zephyr_prebuilt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=99,100 "Built target zephyr_prebuilt"
-.PHONY : zephyr/CMakeFiles/zephyr_prebuilt.dir/all
+zephyr/CMakeFiles/kernel_elf.dir/all: CMakeFiles/app.dir/all
+zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/CMakeFiles/linker_pass_final_script.dir/all
+zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/CMakeFiles/zephyr.dir/all
+zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/CMakeFiles/zephyr_prebuilt.dir/all
+zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/all
+zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/all
+zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/all
+zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/subsys/net/CMakeFiles/subsys__net.dir/all
+zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/kernel/CMakeFiles/kernel.dir/all
+	$(MAKE) -f zephyr/CMakeFiles/kernel_elf.dir/build.make zephyr/CMakeFiles/kernel_elf.dir/depend
+	$(MAKE) -f zephyr/CMakeFiles/kernel_elf.dir/build.make zephyr/CMakeFiles/kernel_elf.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=33,34,35,36 "Built target kernel_elf"
+.PHONY : zephyr/CMakeFiles/kernel_elf.dir/all
 
 # Include target in all.
-all: zephyr/CMakeFiles/zephyr_prebuilt.dir/all
+all: zephyr/CMakeFiles/kernel_elf.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-zephyr/CMakeFiles/zephyr_prebuilt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 93
-	$(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr_prebuilt.dir/all
+zephyr/CMakeFiles/kernel_elf.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 97
+	$(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/kernel_elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-.PHONY : zephyr/CMakeFiles/zephyr_prebuilt.dir/rule
+.PHONY : zephyr/CMakeFiles/kernel_elf.dir/rule
 
 # Convenience name for target.
-zephyr_prebuilt: zephyr/CMakeFiles/zephyr_prebuilt.dir/rule
+kernel_elf: zephyr/CMakeFiles/kernel_elf.dir/rule
 
-.PHONY : zephyr_prebuilt
-
-# clean rule for target.
-zephyr/CMakeFiles/zephyr_prebuilt.dir/clean:
-	$(MAKE) -f zephyr/CMakeFiles/zephyr_prebuilt.dir/build.make zephyr/CMakeFiles/zephyr_prebuilt.dir/clean
-.PHONY : zephyr/CMakeFiles/zephyr_prebuilt.dir/clean
+.PHONY : kernel_elf
 
 # clean rule for target.
-clean: zephyr/CMakeFiles/zephyr_prebuilt.dir/clean
+zephyr/CMakeFiles/kernel_elf.dir/clean:
+	$(MAKE) -f zephyr/CMakeFiles/kernel_elf.dir/build.make zephyr/CMakeFiles/kernel_elf.dir/clean
+.PHONY : zephyr/CMakeFiles/kernel_elf.dir/clean
+
+# clean rule for target.
+clean: zephyr/CMakeFiles/kernel_elf.dir/clean
 
 .PHONY : clean
 
@@ -565,34 +533,47 @@ clean: zephyr/CMakeFiles/syscall_macros_h_target.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target zephyr/CMakeFiles/syscall_list_h_target.dir
+# Target rules for target zephyr/CMakeFiles/zephyr_prebuilt.dir
 
 # All Build rule for target.
-zephyr/CMakeFiles/syscall_list_h_target.dir/all:
-	$(MAKE) -f zephyr/CMakeFiles/syscall_list_h_target.dir/build.make zephyr/CMakeFiles/syscall_list_h_target.dir/depend
-	$(MAKE) -f zephyr/CMakeFiles/syscall_list_h_target.dir/build.make zephyr/CMakeFiles/syscall_list_h_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=63,64 "Built target syscall_list_h_target"
-.PHONY : zephyr/CMakeFiles/syscall_list_h_target.dir/all
+zephyr/CMakeFiles/zephyr_prebuilt.dir/all: CMakeFiles/app.dir/all
+zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/CMakeFiles/zephyr.dir/all
+zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/CMakeFiles/linker_script.dir/all
+zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/CMakeFiles/offsets.dir/all
+zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/all
+zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/all
+zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/all
+zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/subsys/net/CMakeFiles/subsys__net.dir/all
+zephyr/CMakeFiles/zephyr_prebuilt.dir/all: zephyr/kernel/CMakeFiles/kernel.dir/all
+	$(MAKE) -f zephyr/CMakeFiles/zephyr_prebuilt.dir/build.make zephyr/CMakeFiles/zephyr_prebuilt.dir/depend
+	$(MAKE) -f zephyr/CMakeFiles/zephyr_prebuilt.dir/build.make zephyr/CMakeFiles/zephyr_prebuilt.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=99,100 "Built target zephyr_prebuilt"
+.PHONY : zephyr/CMakeFiles/zephyr_prebuilt.dir/all
+
+# Include target in all.
+all: zephyr/CMakeFiles/zephyr_prebuilt.dir/all
+
+.PHONY : all
 
 # Build rule for subdir invocation for target.
-zephyr/CMakeFiles/syscall_list_h_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/syscall_list_h_target.dir/all
+zephyr/CMakeFiles/zephyr_prebuilt.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 93
+	$(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/zephyr_prebuilt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-.PHONY : zephyr/CMakeFiles/syscall_list_h_target.dir/rule
+.PHONY : zephyr/CMakeFiles/zephyr_prebuilt.dir/rule
 
 # Convenience name for target.
-syscall_list_h_target: zephyr/CMakeFiles/syscall_list_h_target.dir/rule
+zephyr_prebuilt: zephyr/CMakeFiles/zephyr_prebuilt.dir/rule
 
-.PHONY : syscall_list_h_target
-
-# clean rule for target.
-zephyr/CMakeFiles/syscall_list_h_target.dir/clean:
-	$(MAKE) -f zephyr/CMakeFiles/syscall_list_h_target.dir/build.make zephyr/CMakeFiles/syscall_list_h_target.dir/clean
-.PHONY : zephyr/CMakeFiles/syscall_list_h_target.dir/clean
+.PHONY : zephyr_prebuilt
 
 # clean rule for target.
-clean: zephyr/CMakeFiles/syscall_list_h_target.dir/clean
+zephyr/CMakeFiles/zephyr_prebuilt.dir/clean:
+	$(MAKE) -f zephyr/CMakeFiles/zephyr_prebuilt.dir/build.make zephyr/CMakeFiles/zephyr_prebuilt.dir/clean
+.PHONY : zephyr/CMakeFiles/zephyr_prebuilt.dir/clean
+
+# clean rule for target.
+clean: zephyr/CMakeFiles/zephyr_prebuilt.dir/clean
 
 .PHONY : clean
 
@@ -667,6 +648,70 @@ clean: zephyr/CMakeFiles/offsets.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target zephyr/CMakeFiles/syscall_list_h_target.dir
+
+# All Build rule for target.
+zephyr/CMakeFiles/syscall_list_h_target.dir/all:
+	$(MAKE) -f zephyr/CMakeFiles/syscall_list_h_target.dir/build.make zephyr/CMakeFiles/syscall_list_h_target.dir/depend
+	$(MAKE) -f zephyr/CMakeFiles/syscall_list_h_target.dir/build.make zephyr/CMakeFiles/syscall_list_h_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=63,64 "Built target syscall_list_h_target"
+.PHONY : zephyr/CMakeFiles/syscall_list_h_target.dir/all
+
+# Build rule for subdir invocation for target.
+zephyr/CMakeFiles/syscall_list_h_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/syscall_list_h_target.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+.PHONY : zephyr/CMakeFiles/syscall_list_h_target.dir/rule
+
+# Convenience name for target.
+syscall_list_h_target: zephyr/CMakeFiles/syscall_list_h_target.dir/rule
+
+.PHONY : syscall_list_h_target
+
+# clean rule for target.
+zephyr/CMakeFiles/syscall_list_h_target.dir/clean:
+	$(MAKE) -f zephyr/CMakeFiles/syscall_list_h_target.dir/build.make zephyr/CMakeFiles/syscall_list_h_target.dir/clean
+.PHONY : zephyr/CMakeFiles/syscall_list_h_target.dir/clean
+
+# clean rule for target.
+clean: zephyr/CMakeFiles/syscall_list_h_target.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target zephyr/CMakeFiles/run.dir
+
+# All Build rule for target.
+zephyr/CMakeFiles/run.dir/all:
+	$(MAKE) -f zephyr/CMakeFiles/run.dir/build.make zephyr/CMakeFiles/run.dir/depend
+	$(MAKE) -f zephyr/CMakeFiles/run.dir/build.make zephyr/CMakeFiles/run.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num= "Built target run"
+.PHONY : zephyr/CMakeFiles/run.dir/all
+
+# Build rule for subdir invocation for target.
+zephyr/CMakeFiles/run.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/run.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+.PHONY : zephyr/CMakeFiles/run.dir/rule
+
+# Convenience name for target.
+run: zephyr/CMakeFiles/run.dir/rule
+
+.PHONY : run
+
+# clean rule for target.
+zephyr/CMakeFiles/run.dir/clean:
+	$(MAKE) -f zephyr/CMakeFiles/run.dir/build.make zephyr/CMakeFiles/run.dir/clean
+.PHONY : zephyr/CMakeFiles/run.dir/clean
+
+# clean rule for target.
+clean: zephyr/CMakeFiles/run.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target zephyr/CMakeFiles/offsets_h.dir
 
 # All Build rule for target.
@@ -695,51 +740,6 @@ zephyr/CMakeFiles/offsets_h.dir/clean:
 
 # clean rule for target.
 clean: zephyr/CMakeFiles/offsets_h.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target zephyr/CMakeFiles/kernel_elf.dir
-
-# All Build rule for target.
-zephyr/CMakeFiles/kernel_elf.dir/all: CMakeFiles/app.dir/all
-zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/CMakeFiles/zephyr_prebuilt.dir/all
-zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/CMakeFiles/linker_pass_final_script.dir/all
-zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/CMakeFiles/zephyr.dir/all
-zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/all
-zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/all
-zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/all
-zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/subsys/net/CMakeFiles/subsys__net.dir/all
-zephyr/CMakeFiles/kernel_elf.dir/all: zephyr/kernel/CMakeFiles/kernel.dir/all
-	$(MAKE) -f zephyr/CMakeFiles/kernel_elf.dir/build.make zephyr/CMakeFiles/kernel_elf.dir/depend
-	$(MAKE) -f zephyr/CMakeFiles/kernel_elf.dir/build.make zephyr/CMakeFiles/kernel_elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=33,34,35,36 "Built target kernel_elf"
-.PHONY : zephyr/CMakeFiles/kernel_elf.dir/all
-
-# Include target in all.
-all: zephyr/CMakeFiles/kernel_elf.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-zephyr/CMakeFiles/kernel_elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 97
-	$(MAKE) -f CMakeFiles/Makefile2 zephyr/CMakeFiles/kernel_elf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-.PHONY : zephyr/CMakeFiles/kernel_elf.dir/rule
-
-# Convenience name for target.
-kernel_elf: zephyr/CMakeFiles/kernel_elf.dir/rule
-
-.PHONY : kernel_elf
-
-# clean rule for target.
-zephyr/CMakeFiles/kernel_elf.dir/clean:
-	$(MAKE) -f zephyr/CMakeFiles/kernel_elf.dir/build.make zephyr/CMakeFiles/kernel_elf.dir/clean
-.PHONY : zephyr/CMakeFiles/kernel_elf.dir/clean
-
-# clean rule for target.
-clean: zephyr/CMakeFiles/kernel_elf.dir/clean
 
 .PHONY : clean
 
@@ -2098,8 +2098,8 @@ zephyr/cmake/flash/all:
 
 # Convenience name for "clean" pass in the directory.
 zephyr/cmake/flash/clean: zephyr/cmake/flash/CMakeFiles/debugserver.dir/clean
-zephyr/cmake/flash/clean: zephyr/cmake/flash/CMakeFiles/debug.dir/clean
 zephyr/cmake/flash/clean: zephyr/cmake/flash/CMakeFiles/flash.dir/clean
+zephyr/cmake/flash/clean: zephyr/cmake/flash/CMakeFiles/debug.dir/clean
 
 .PHONY : zephyr/cmake/flash/clean
 
@@ -2141,38 +2141,6 @@ clean: zephyr/cmake/flash/CMakeFiles/debugserver.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target zephyr/cmake/flash/CMakeFiles/debug.dir
-
-# All Build rule for target.
-zephyr/cmake/flash/CMakeFiles/debug.dir/all: zephyr/CMakeFiles/kernel_elf.dir/all
-	$(MAKE) -f zephyr/cmake/flash/CMakeFiles/debug.dir/build.make zephyr/cmake/flash/CMakeFiles/debug.dir/depend
-	$(MAKE) -f zephyr/cmake/flash/CMakeFiles/debug.dir/build.make zephyr/cmake/flash/CMakeFiles/debug.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=10 "Built target debug"
-.PHONY : zephyr/cmake/flash/CMakeFiles/debug.dir/all
-
-# Build rule for subdir invocation for target.
-zephyr/cmake/flash/CMakeFiles/debug.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 98
-	$(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/flash/CMakeFiles/debug.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-.PHONY : zephyr/cmake/flash/CMakeFiles/debug.dir/rule
-
-# Convenience name for target.
-debug: zephyr/cmake/flash/CMakeFiles/debug.dir/rule
-
-.PHONY : debug
-
-# clean rule for target.
-zephyr/cmake/flash/CMakeFiles/debug.dir/clean:
-	$(MAKE) -f zephyr/cmake/flash/CMakeFiles/debug.dir/build.make zephyr/cmake/flash/CMakeFiles/debug.dir/clean
-.PHONY : zephyr/cmake/flash/CMakeFiles/debug.dir/clean
-
-# clean rule for target.
-clean: zephyr/cmake/flash/CMakeFiles/debug.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target zephyr/cmake/flash/CMakeFiles/flash.dir
 
 # All Build rule for target.
@@ -2205,6 +2173,38 @@ clean: zephyr/cmake/flash/CMakeFiles/flash.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target zephyr/cmake/flash/CMakeFiles/debug.dir
+
+# All Build rule for target.
+zephyr/cmake/flash/CMakeFiles/debug.dir/all: zephyr/CMakeFiles/kernel_elf.dir/all
+	$(MAKE) -f zephyr/cmake/flash/CMakeFiles/debug.dir/build.make zephyr/cmake/flash/CMakeFiles/debug.dir/depend
+	$(MAKE) -f zephyr/cmake/flash/CMakeFiles/debug.dir/build.make zephyr/cmake/flash/CMakeFiles/debug.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num=10 "Built target debug"
+.PHONY : zephyr/cmake/flash/CMakeFiles/debug.dir/all
+
+# Build rule for subdir invocation for target.
+zephyr/cmake/flash/CMakeFiles/debug.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 98
+	$(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/flash/CMakeFiles/debug.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+.PHONY : zephyr/cmake/flash/CMakeFiles/debug.dir/rule
+
+# Convenience name for target.
+debug: zephyr/cmake/flash/CMakeFiles/debug.dir/rule
+
+.PHONY : debug
+
+# clean rule for target.
+zephyr/cmake/flash/CMakeFiles/debug.dir/clean:
+	$(MAKE) -f zephyr/cmake/flash/CMakeFiles/debug.dir/build.make zephyr/cmake/flash/CMakeFiles/debug.dir/clean
+.PHONY : zephyr/cmake/flash/CMakeFiles/debug.dir/clean
+
+# clean rule for target.
+clean: zephyr/cmake/flash/CMakeFiles/debug.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory zephyr/cmake/usage
 
 # Convenience name for "all" pass in the directory.
@@ -2213,8 +2213,8 @@ zephyr/cmake/usage/all:
 .PHONY : zephyr/cmake/usage/all
 
 # Convenience name for "clean" pass in the directory.
-zephyr/cmake/usage/clean: zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/clean
 zephyr/cmake/usage/clean: zephyr/cmake/usage/CMakeFiles/usage.dir/clean
+zephyr/cmake/usage/clean: zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/clean
 
 .PHONY : zephyr/cmake/usage/clean
 
@@ -2222,38 +2222,6 @@ zephyr/cmake/usage/clean: zephyr/cmake/usage/CMakeFiles/usage.dir/clean
 zephyr/cmake/usage/preinstall:
 
 .PHONY : zephyr/cmake/usage/preinstall
-
-#=============================================================================
-# Target rules for target zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir
-
-# All Build rule for target.
-zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/all:
-	$(MAKE) -f zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/build.make zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/depend
-	$(MAKE) -f zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/build.make zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num= "Built target kconfig-usage"
-.PHONY : zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/all
-
-# Build rule for subdir invocation for target.
-zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-.PHONY : zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/rule
-
-# Convenience name for target.
-kconfig-usage: zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/rule
-
-.PHONY : kconfig-usage
-
-# clean rule for target.
-zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/clean:
-	$(MAKE) -f zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/build.make zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/clean
-.PHONY : zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/clean
-
-# clean rule for target.
-clean: zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/clean
-
-.PHONY : clean
 
 #=============================================================================
 # Target rules for target zephyr/cmake/usage/CMakeFiles/usage.dir
@@ -2288,6 +2256,38 @@ clean: zephyr/cmake/usage/CMakeFiles/usage.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir
+
+# All Build rule for target.
+zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/all:
+	$(MAKE) -f zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/build.make zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/depend
+	$(MAKE) -f zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/build.make zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num= "Built target kconfig-usage"
+.PHONY : zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/all
+
+# Build rule for subdir invocation for target.
+zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+.PHONY : zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/rule
+
+# Convenience name for target.
+kconfig-usage: zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/rule
+
+.PHONY : kconfig-usage
+
+# clean rule for target.
+zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/clean:
+	$(MAKE) -f zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/build.make zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/clean
+.PHONY : zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/clean
+
+# clean rule for target.
+clean: zephyr/cmake/usage/CMakeFiles/kconfig-usage.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory zephyr/cmake/reports
 
 # Convenience name for "all" pass in the directory.
@@ -2296,8 +2296,8 @@ zephyr/cmake/reports/all:
 .PHONY : zephyr/cmake/reports/all
 
 # Convenience name for "clean" pass in the directory.
-zephyr/cmake/reports/clean: zephyr/cmake/reports/CMakeFiles/rom_report.dir/clean
 zephyr/cmake/reports/clean: zephyr/cmake/reports/CMakeFiles/ram_report.dir/clean
+zephyr/cmake/reports/clean: zephyr/cmake/reports/CMakeFiles/rom_report.dir/clean
 
 .PHONY : zephyr/cmake/reports/clean
 
@@ -2305,38 +2305,6 @@ zephyr/cmake/reports/clean: zephyr/cmake/reports/CMakeFiles/ram_report.dir/clean
 zephyr/cmake/reports/preinstall:
 
 .PHONY : zephyr/cmake/reports/preinstall
-
-#=============================================================================
-# Target rules for target zephyr/cmake/reports/CMakeFiles/rom_report.dir
-
-# All Build rule for target.
-zephyr/cmake/reports/CMakeFiles/rom_report.dir/all: zephyr/CMakeFiles/kernel_elf.dir/all
-	$(MAKE) -f zephyr/cmake/reports/CMakeFiles/rom_report.dir/build.make zephyr/cmake/reports/CMakeFiles/rom_report.dir/depend
-	$(MAKE) -f zephyr/cmake/reports/CMakeFiles/rom_report.dir/build.make zephyr/cmake/reports/CMakeFiles/rom_report.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num= "Built target rom_report"
-.PHONY : zephyr/cmake/reports/CMakeFiles/rom_report.dir/all
-
-# Build rule for subdir invocation for target.
-zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 97
-	$(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/reports/CMakeFiles/rom_report.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
-.PHONY : zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
-
-# Convenience name for target.
-rom_report: zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
-
-.PHONY : rom_report
-
-# clean rule for target.
-zephyr/cmake/reports/CMakeFiles/rom_report.dir/clean:
-	$(MAKE) -f zephyr/cmake/reports/CMakeFiles/rom_report.dir/build.make zephyr/cmake/reports/CMakeFiles/rom_report.dir/clean
-.PHONY : zephyr/cmake/reports/CMakeFiles/rom_report.dir/clean
-
-# clean rule for target.
-clean: zephyr/cmake/reports/CMakeFiles/rom_report.dir/clean
-
-.PHONY : clean
 
 #=============================================================================
 # Target rules for target zephyr/cmake/reports/CMakeFiles/ram_report.dir
@@ -2367,6 +2335,38 @@ zephyr/cmake/reports/CMakeFiles/ram_report.dir/clean:
 
 # clean rule for target.
 clean: zephyr/cmake/reports/CMakeFiles/ram_report.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target zephyr/cmake/reports/CMakeFiles/rom_report.dir
+
+# All Build rule for target.
+zephyr/cmake/reports/CMakeFiles/rom_report.dir/all: zephyr/CMakeFiles/kernel_elf.dir/all
+	$(MAKE) -f zephyr/cmake/reports/CMakeFiles/rom_report.dir/build.make zephyr/cmake/reports/CMakeFiles/rom_report.dir/depend
+	$(MAKE) -f zephyr/cmake/reports/CMakeFiles/rom_report.dir/build.make zephyr/cmake/reports/CMakeFiles/rom_report.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles --progress-num= "Built target rom_report"
+.PHONY : zephyr/cmake/reports/CMakeFiles/rom_report.dir/all
+
+# Build rule for subdir invocation for target.
+zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 97
+	$(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/reports/CMakeFiles/rom_report.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/CMakeFiles 0
+.PHONY : zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
+
+# Convenience name for target.
+rom_report: zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
+
+.PHONY : rom_report
+
+# clean rule for target.
+zephyr/cmake/reports/CMakeFiles/rom_report.dir/clean:
+	$(MAKE) -f zephyr/cmake/reports/CMakeFiles/rom_report.dir/build.make zephyr/cmake/reports/CMakeFiles/rom_report.dir/clean
+.PHONY : zephyr/cmake/reports/CMakeFiles/rom_report.dir/clean
+
+# clean rule for target.
+clean: zephyr/cmake/reports/CMakeFiles/rom_report.dir/clean
 
 .PHONY : clean
 

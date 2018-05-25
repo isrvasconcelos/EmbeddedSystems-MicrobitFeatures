@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build
 include zephyr/cmake/reports/CMakeFiles/rom_report.dir/progress.make
 
 zephyr/cmake/reports/CMakeFiles/rom_report: zephyr/zephyr.elf
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/cmake/reports && /usr/bin/python3.4 /home/israel/zephyr/scripts/footprint/size_report -F --objdump /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-objdump --objcopy /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-objcopy --nm /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-nm -o /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr/cmake/reports && /usr/bin/python3 /home/israel/zephyr/scripts/footprint/size_report -F --objdump /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-objdump --objcopy /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-objcopy --nm /opt/zephyr-sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-zephyr-eabi/arm-zephyr-eabi-nm -o /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build/zephyr
 
 rom_report: zephyr/cmake/reports/CMakeFiles/rom_report
 rom_report: zephyr/cmake/reports/CMakeFiles/rom_report.dir/build.make

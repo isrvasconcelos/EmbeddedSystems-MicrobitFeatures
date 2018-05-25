@@ -111,21 +111,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
-.PHONY : zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
-
-# Convenience name for target.
-rom_report: zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
-
-.PHONY : rom_report
-
-# fast build rule for target.
-rom_report/fast:
-	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/cmake/reports/CMakeFiles/rom_report.dir/build.make zephyr/cmake/reports/CMakeFiles/rom_report.dir/build
-.PHONY : rom_report/fast
-
-# Convenience name for target.
 zephyr/cmake/reports/CMakeFiles/ram_report.dir/rule:
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/reports/CMakeFiles/ram_report.dir/rule
 .PHONY : zephyr/cmake/reports/CMakeFiles/ram_report.dir/rule
@@ -140,6 +125,21 @@ ram_report/fast:
 	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/cmake/reports/CMakeFiles/ram_report.dir/build.make zephyr/cmake/reports/CMakeFiles/ram_report.dir/build
 .PHONY : ram_report/fast
 
+# Convenience name for target.
+zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f CMakeFiles/Makefile2 zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
+.PHONY : zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
+
+# Convenience name for target.
+rom_report: zephyr/cmake/reports/CMakeFiles/rom_report.dir/rule
+
+.PHONY : rom_report
+
+# fast build rule for target.
+rom_report/fast:
+	cd /home/israel/Dropbox/Ufal/2017.2/SE/06_Projeto/build && $(MAKE) -f zephyr/cmake/reports/CMakeFiles/rom_report.dir/build.make zephyr/cmake/reports/CMakeFiles/rom_report.dir/build
+.PHONY : rom_report/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -147,9 +147,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... rom_report"
-	@echo "... edit_cache"
 	@echo "... ram_report"
+	@echo "... edit_cache"
+	@echo "... rom_report"
 .PHONY : help
 
 
