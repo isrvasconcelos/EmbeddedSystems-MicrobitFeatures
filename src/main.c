@@ -34,8 +34,14 @@ u8_t data[2];
 bool compass_enabled = false;
 bool acc_enabled = false;
 bool temperature_enabled = false;
+bool bluetooth_enabled = false;
 
-#define RESET_ALL_SENSORS() ({compass_enabled = false; acc_enabled = false; temperature_enabled = false;})
+#define RESET_ALL_SENSORS() ({ 		\
+	compass_enabled = false; 	\
+	acc_enabled = false; 		\
+	temperature_enabled = false; 	\
+	bluetooth_enabled = false; 	\
+})
 
 /***************************************************************************************/
 /** STATE MACHINE **/
@@ -86,21 +92,13 @@ void s3_compass() {
 }
 
 void s4_temperature() {
-
-	//struct mb_display *disp = mb_display_get();
-	temperature_enabled=true;
-
 	printk("4: Temperature enabled.\n");
-
+	temperature_enabled=true;
 }
 
 void s5_bluetooth() {
-
-	printk("State 5\n");
-
-	struct mb_display *disp = mb_display_get();
-	mb_display_print(disp, MB_DISPLAY_MODE_SINGLE,
-		K_SECONDS(1), "D");
+	printk("5: Bluetooth enabled.\n");
+	bluetooth_enabled=true;
 }
 
 mstate_t machine[] = {
@@ -158,21 +156,18 @@ static void configure_buttons(void) {
 /** MAIN **/
 void main(void)
 {
-	configure_buttons();
 
         SYS_LOG_WRN("Firmware version: v%d.%d.%d",
                         VERSION_MAJOR, VERSION_MINOR, VERSION_BUILD);
 
 	struct mb_display *disp = mb_display_get();
-	struct mb_image pixel = {};
+	//struct mb_image pixel = {};
 
         i2c_util_dev_init(&acc, ACC_DEV_ADDR, "ACC", ACC_WHO_AM_I_REG,
                                 ACC_TEST_VALUE);
 
         i2c_util_dev_init(&compass, COMPASS_DEV_ADDR, "COMPASS",
 COMPASS_WHO_AM_I_REG, COMPASS_TEST_VALUE);
-
-//	printf("Thermometer Example! %s\n", CONFIG_ARCH);
 
 	temp_dev = device_get_binding("TEMP_0");
 	if (!temp_dev) {
@@ -182,16 +177,17 @@ COMPASS_WHO_AM_I_REG, COMPASS_TEST_VALUE);
 //	printf("temp device is %p, name is %s\n",
 //	       temp_dev, temp_dev->config->name);
 
+	configure_buttons();
 	
 	uint8_t enable_reg = 0x01;
 	i2c_util_write_bytes(&acc, 0x2A, &enable_reg, sizeof(enable_reg));
 
 	i2c_util_write_bytes(&compass, 0x10, &enable_reg, sizeof(enable_reg));
 
-	int delay = 500;
+	uint16_t delay = 500;
 
 	while (1) {
-		if(compass_enabled) {
+		if(compass_enabled) { /* Compass flag is enabled */
 			delay=500;
 			i2c_util_read_bytes(&compass, 0x01, data, sizeof(data));
 			printk("COMPASS: x%d, ", data[1]);
@@ -203,24 +199,42 @@ COMPASS_WHO_AM_I_REG, COMPASS_TEST_VALUE);
 			printk(" z%d\n", data[1]);
 		}
 
-		if(acc_enabled) {
-			delay=500;
+		if(acc_enabled) { /* Accelerometer flag is enabled */
+			delay=50;
 			i2c_util_read_bytes(&acc, ACC_OUT_X_MSB, data, 6);
+			struct mb_image pixel = {};
 
-			if((data[2] > 170 && data[4] > 170)) {
+			/* 
+			* data[0] is x-axis 
+			* data[2] is y-axis 
+			* data[4] is z-axis 
+			*/
 
-				printk("ACC: x%d, ", data[0]);
-				printk(" y%d, ", data[2]);
-				printk(" z%d\n", data[4]);			
+			if((data[2] > 196 && data[4] > 170)) {
+
+				uint8_t x,y=0;
+
+				if(data[0] < 69) {
+					x = data[0]/10;
+
+				} else if(data[0] > 196) {
+					x = (data[0]-196)/10;
+				} 
+
+				if(data[2] > 196) {
+					y = (data[2]-196)/10;
+				} 
+
+				pixel.row[y] = BIT(x);
+				mb_display_image(disp, MB_DISPLAY_MODE_SINGLE,
+						K_MSEC(delay), &pixel, 1);
 			}
 
 
-			pixel.row[0] = BIT(1);
-			mb_display_image(disp, MB_DISPLAY_MODE_SINGLE,
-					 K_MSEC(250), &pixel, 1);
+
 		}
 
-		if(temperature_enabled) {
+		if(temperature_enabled) { /* Temperature sensor flag is enabled */
 			delay=1500;
 
 			int r;
