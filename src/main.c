@@ -155,12 +155,6 @@ static void configure_buttons(void) {
 
 
 /***************************************************************************************/
-/** TEMPERATURE **/
-
-
-
-
-/***************************************************************************************/
 /** MAIN **/
 void main(void)
 {
@@ -194,25 +188,11 @@ COMPASS_WHO_AM_I_REG, COMPASS_TEST_VALUE);
 
 	i2c_util_write_bytes(&compass, 0x10, &enable_reg, sizeof(enable_reg));
 
+	int delay = 500;
+
 	while (1) {
-		int r;
-		r = sensor_sample_fetch(temp_dev);
-		if (r) {
-			printf("sensor_sample_fetch failed return: %d\n", r);
-			break;
-		}
-
-		r = sensor_channel_get(temp_dev, SENSOR_CHAN_TEMP,
-				       &temp_value);
-		if (r) {
-			printf("sensor_channel_get failed return: %d\n", r);
-			break;
-		}
-
-		current_temperature = sensor_value_to_double(&temp_value);
-
-
 		if(compass_enabled) {
+			delay=500;
 			i2c_util_read_bytes(&compass, 0x01, data, sizeof(data));
 			printk("COMPASS: x%d, ", data[1]);
 
@@ -224,6 +204,7 @@ COMPASS_WHO_AM_I_REG, COMPASS_TEST_VALUE);
 		}
 
 		if(acc_enabled) {
+			delay=500;
 			i2c_util_read_bytes(&acc, ACC_OUT_X_MSB, data, 6);
 
 			if((data[2] > 170 && data[4] > 170)) {
@@ -237,12 +218,27 @@ COMPASS_WHO_AM_I_REG, COMPASS_TEST_VALUE);
 			pixel.row[0] = BIT(1);
 			mb_display_image(disp, MB_DISPLAY_MODE_SINGLE,
 					 K_MSEC(250), &pixel, 1);
-			k_sleep(K_MSEC(300));
-
-
 		}
 
 		if(temperature_enabled) {
+			delay=1500;
+
+			int r;
+			r = sensor_sample_fetch(temp_dev);
+			if (r) {
+				printf("sensor_sample_fetch failed return: %d\n", r);
+				break;
+			}
+
+			r = sensor_channel_get(temp_dev, SENSOR_CHAN_TEMP,
+					       &temp_value);
+			if (r) {
+				printf("sensor_channel_get failed return: %d\n", r);
+				break;
+			}
+
+			current_temperature = sensor_value_to_double(&temp_value);
+
 			printf("Temperature is %dC\n", current_temperature);
 
 			char output[4];
@@ -250,6 +246,6 @@ COMPASS_WHO_AM_I_REG, COMPASS_TEST_VALUE);
 			mb_display_print(disp, MB_DISPLAY_MODE_SINGLE, K_SECONDS(0.5), output);
 		}
 
-		k_sleep(250);
+		k_sleep(delay);
 	}
 }
