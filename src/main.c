@@ -188,27 +188,105 @@ COMPASS_WHO_AM_I_REG, COMPASS_TEST_VALUE);
 
 	while (1) {
 		if(compass_enabled) { /* Compass flag is enabled */
-			delay=500;
-			i2c_util_read_bytes(&compass, 0x01, data, sizeof(data));
-			printk("COMPASS: x%d, ", data[1]);
+			delay=100;
 
-			i2c_util_read_bytes(&compass, 0x03, data, sizeof(data));
-			printk(" y%d, ", data[1]);
+			/* Calibration with accelerometer */
+			u8_t data2[2], data3[2], data4[2], data5[2];
+			i2c_util_read_bytes(&acc, ACC_OUT_X_MSB, data2, 6);
 
-			i2c_util_read_bytes(&compass, 0x05, data, sizeof(data));
-			printk(" z%d\n", data[1]);
+			//printk("x%d, y%d, z%d\n", data2[0], data2[2], data2[4]);
+
+			/* Device positioning: Valid accelerometer range */
+			bool position_y = data2[2] > 30 && data2[2] < 60;
+			bool position_z = data2[4] > 180 && data2[4] < 210;
+			if( position_y && position_z ) {
+				//delay=250;
+				i2c_util_read_bytes(&compass, 0x01, data3, sizeof(data));
+				i2c_util_read_bytes(&compass, 0x03, data4, sizeof(data));
+				i2c_util_read_bytes(&compass, 0x05, data5, sizeof(data));
+				printk("x%d, y%d, z%d\n", data3[1], data4[1], data5[1]);
+
+
+				struct mb_image arrow_north = 
+					MB_IMAGE({ 0, 0, 1, 0, 0 },
+						 { 0, 0, 1, 0, 0 },
+						 { 0, 0, 1, 0, 0 },
+						 { 0, 1, 1, 1, 0 },
+						 { 0, 0, 1, 0, 0 });
+
+				struct mb_image arrow_right = 
+					MB_IMAGE({ 0, 0, 0, 0, 0 },
+						 { 0, 1, 0, 0, 0 },
+						 { 1, 1, 1, 1, 1 },
+						 { 0, 1, 0, 0, 0 },
+						 { 0, 0, 0, 0, 0 });
+
+				struct mb_image arrow_left = 
+					MB_IMAGE({ 0, 0, 0, 0, 0 },
+						 { 0, 0, 0, 1, 0 },
+						 { 1, 1, 1, 1, 1 },
+						 { 0, 0, 0, 1, 0 },
+						 { 0, 0, 0, 0, 0 });
+
+				struct mb_image clear_display = 
+					MB_IMAGE({ 0, 0, 0, 0, 0 },
+						 { 0, 0, 0, 0, 0 },
+						 { 0, 0, 0, 0, 0 },
+						 { 0, 0, 0, 0, 0 },
+						 { 0, 0, 0, 0, 0 });
+
+				struct mb_image arrow = clear_display;
+
+				if(data5[1] < 100) {
+					arrow = arrow_left;
+				}
+
+				else if(data5[1] > 200) {
+					arrow = arrow_right;
+				} 
+
+				else if(data5[1] > 101 && data5[1] < 199) {
+					arrow = arrow_north;
+				} else {
+					arrow = clear_display;
+				}
+
+				mb_display_image(disp, MB_DISPLAY_MODE_SINGLE, K_MSEC(delay),
+						 &arrow, 1);
+
+			} else if((data2[2] < 60 && data2[4] > 180)) {
+
+				struct mb_image pixel = {};
+
+				uint8_t x,y=0;
+				y = data2[2]/10; 
+
+				if(data2[0] > 20 && data2[0] < 50) {
+					x = data2[0]/10;
+
+				} else if(data2[0] > 220 && data2[0] < 250) {
+					x = (data2[0]-220)/10;
+					//x = 3+x;
+				}
+
+				if(y > 3) {
+					y=y-1;
+				} else if (y == 2) {
+					y=y-1;
+				}
+
+				pixel.row[y] = BIT(x);
+				mb_display_image(disp, MB_DISPLAY_MODE_SINGLE,
+						K_MSEC(delay), &pixel, 1);
+			}
+
 		}
 
 		if(acc_enabled) { /* Accelerometer flag is enabled */
-			delay=50;
+			delay=100;
 			i2c_util_read_bytes(&acc, ACC_OUT_X_MSB, data, 6);
-			struct mb_image pixel = {};
 
-			/* 
-			* data[0] is x-axis 
-			* data[2] is y-axis 
-			* data[4] is z-axis 
-			*/
+			struct mb_image pixel = {};
 
 			if((data[2] > 196 && data[4] > 170)) {
 
