@@ -1,28 +1,8 @@
-.. _microbit_display:
+This project is based on bbc_microbit microcontroller and brings funcionalities using its built-in resources, described below:
 
-BBC micro:bit display
-#####################
+    - Display: Scroll a text on LED Matrix display.
+    - Accelerometer: Move a single point on LED Matrix based on the readings from accelerometer.
+    - Compass: Draw a single point which always points to the north.
+    - Temperature: Show the temperature on screen in degree Celsius.
+    - Bluetooth: Implement a simple bluetooth application.
 
-Overview
-********
-A simple example that demonstrates how to use the 5x5 LED matrix display
-on the BBC micro:bit board.
-
-Building
-********
-
-This project outputs various things on the BBC micro:bit display. It can
-be built as follows:
-
-.. zephyr-app-commands::
-   :zephyr-app: samples/boards/microbit/display
-   :board: bbc_microbit
-   :goals: build
-   :compact:
-
-Sample Output
-=============
-
-The sample app displays a countdown of the characters 9-0, iterates
-through all pixels one-by-one, displays a smiley face, some animations,
-and finally the text "Hello Zephyr!" by scrolling.
