@@ -200,7 +200,7 @@ COMPASS_WHO_AM_I_REG, COMPASS_TEST_VALUE);
 			bool position_y = data2[2] > 30 && data2[2] < 60;
 			bool position_z = data2[4] > 180 && data2[4] < 210;
 			if( position_y && position_z ) {
-				//delay=250;
+
 				i2c_util_read_bytes(&compass, 0x01, data3, sizeof(data));
 				i2c_util_read_bytes(&compass, 0x03, data4, sizeof(data));
 				i2c_util_read_bytes(&compass, 0x05, data5, sizeof(data));
@@ -307,9 +307,6 @@ COMPASS_WHO_AM_I_REG, COMPASS_TEST_VALUE);
 				mb_display_image(disp, MB_DISPLAY_MODE_SINGLE,
 						K_MSEC(delay), &pixel, 1);
 			}
-
-
-
 		}
 
 		if(temperature_enabled) { /* Temperature sensor flag is enabled */
