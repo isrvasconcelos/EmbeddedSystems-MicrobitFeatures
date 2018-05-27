@@ -1,0 +1,36 @@
+void acc_read(bool acc_ini_flag) {
+
+	if(!acc_ini_flag) {
+		i2c_util_dev_init(&acc, ACC_DEV_ADDR, "ACC", ACC_WHO_AM_I_REG,
+		                        ACC_TEST_VALUE);
+
+		uint8_t enable_reg = 0x01;
+		i2c_util_write_bytes(&acc, 0x2A, &enable_reg, sizeof(enable_reg));
+	}
+
+	delay=100;
+	i2c_util_read_bytes(&acc, ACC_OUT_X_MSB, data, 6);
+
+	struct mb_image pixel = {};
+
+	if((data[2] > 196 && data[4] > 170)) {
+		uint8_t x,y=0;
+
+		if(data[0] < 69) {
+			x = data[0]/10;
+
+		} else if(data[0] > 196) {
+			x = (data[0]-196)/10;
+		} 
+
+		if(data[2] > 196) {
+			y = (data[2]-196)/10;
+		} 
+
+		pixel.row[y] = BIT(x);
+		mb_display_image(disp, MB_DISPLAY_MODE_SINGLE,
+				K_MSEC(delay), &pixel, 1);
+	}
+
+
+}

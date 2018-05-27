@@ -1,0 +1,12 @@
+#ifndef __ACC_DISPLAY_H
+#define __ACC_DISPLAY_H
+
+#define ACC_DEV_ADDR     0x1D
+#define ACC_WHO_AM_I_REG 0x0D
+#define ACC_TEST_VALUE   0x5A
+#define ACC_OUT_X_MSB 0x01
+
+
+void acc_read(bool acc_ini_flag);
+
+#endif //__ACC_DISPLAY_H
