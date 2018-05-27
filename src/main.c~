@@ -215,7 +215,7 @@ void main(void)
 		}
 
 		if(temperature_enabled) { /* Thermometer flag is enabled */
-			delay=100;
+			delay=1000;
 			temp_read(temp_dev, disp, delay); 
 		}
 

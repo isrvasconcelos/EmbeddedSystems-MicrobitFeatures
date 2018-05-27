@@ -7,7 +7,7 @@
  * This application brings a table-driven
  * state machine triggered by the pushbuttons A and B.
  * 
- * Description:
+ * \brief Description:
  * State 1 - Display: Scroll a text on LED Matrix display.
  * State 2 - Accelerometer: Move a point on LED Matrix based on accel. samples.
  * State 3 - Compass: Draw a single point which always points to the north.
@@ -32,12 +32,12 @@
 
 
 /* Sensor interfaces */
-static struct i2c_dev acc; /* Accelerometer */
-static struct i2c_dev compass;  /* Magnetometer */
+static struct i2c_dev acc; /*!< Accelerometer */
+static struct i2c_dev compass;  /*!< Magnetometer */
 
-static struct device *pwm; /* Pushbutton */
-static struct device *gpio; /* Pushbutton */
-static struct device *temp_dev;  /* Termomether */
+static struct device *pwm; /*!< Pushbutton */
+static struct device *gpio; /*!< Pushbutton */
+static struct device *temp_dev;  /*!< Termomether */
 
 
 /* Sensor flags */
