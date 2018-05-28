@@ -1,0 +1,66 @@
+\hypertarget{display__acc_8h}{\section{/home/israel/\-Dropbox/\-Ufal/2017.2/\-S\-E/06\-\_\-\-Projeto/include/display\-\_\-acc.h File Reference}
+\label{display__acc_8h}\index{/home/israel/\-Dropbox/\-Ufal/2017.\-2/\-S\-E/06\-\_\-\-Projeto/include/display\-\_\-acc.\-h@{/home/israel/\-Dropbox/\-Ufal/2017.\-2/\-S\-E/06\-\_\-\-Projeto/include/display\-\_\-acc.\-h}}
+}
+{\ttfamily \#include $<$display/mb\-\_\-display.\-h$>$}\\*
+{\ttfamily \#include $<$misc/printk.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}i2c\-\_\-util.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{display__acc_8h_ae7ba5ea5c4040f4143fd45e31d7f8d09}{A\-C\-C\-\_\-\-D\-E\-V\-\_\-\-A\-D\-D\-R}~0x1\-D
+\item 
+\#define \hyperlink{display__acc_8h_a68fb842b0e1a2432fac6b0ab24c52766}{A\-C\-C\-\_\-\-W\-H\-O\-\_\-\-A\-M\-\_\-\-I\-\_\-\-R\-E\-G}~0x0\-D
+\item 
+\#define \hyperlink{display__acc_8h_a5ec95ff79ee7fab1c1b8a8e30b4c5e01}{A\-C\-C\-\_\-\-T\-E\-S\-T\-\_\-\-V\-A\-L\-U\-E}~0x5\-A
+\item 
+\#define \hyperlink{display__acc_8h_ac7c92aeb2120a5517cd34ba9a4a7e010}{A\-C\-C\-\_\-\-O\-U\-T\-\_\-\-X\-\_\-\-M\-S\-B}~0x01
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{display__acc_8h_ab62eb5ed29ea25838aa2eb0430528d14}{acc\-\_\-read} (struct \hyperlink{structi2c__dev}{i2c\-\_\-dev} acc, struct mb\-\_\-display $\ast$disp, uint16\-\_\-t delay)
+\begin{DoxyCompactList}\small\item\em Get readings from the accel. and shows an interactive point on display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\-\_\-t \hyperlink{display__acc_8h_a86f895ebffa5c68692e48851554c05b4}{acc\-\_\-data} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{display__acc_8h_ae7ba5ea5c4040f4143fd45e31d7f8d09}{\index{display\-\_\-acc.\-h@{display\-\_\-acc.\-h}!A\-C\-C\-\_\-\-D\-E\-V\-\_\-\-A\-D\-D\-R@{A\-C\-C\-\_\-\-D\-E\-V\-\_\-\-A\-D\-D\-R}}
+\index{A\-C\-C\-\_\-\-D\-E\-V\-\_\-\-A\-D\-D\-R@{A\-C\-C\-\_\-\-D\-E\-V\-\_\-\-A\-D\-D\-R}!display_acc.h@{display\-\_\-acc.\-h}}
+\subsubsection[{A\-C\-C\-\_\-\-D\-E\-V\-\_\-\-A\-D\-D\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-C\-C\-\_\-\-D\-E\-V\-\_\-\-A\-D\-D\-R~0x1\-D}}\label{display__acc_8h_ae7ba5ea5c4040f4143fd45e31d7f8d09}
+\hypertarget{display__acc_8h_ac7c92aeb2120a5517cd34ba9a4a7e010}{\index{display\-\_\-acc.\-h@{display\-\_\-acc.\-h}!A\-C\-C\-\_\-\-O\-U\-T\-\_\-\-X\-\_\-\-M\-S\-B@{A\-C\-C\-\_\-\-O\-U\-T\-\_\-\-X\-\_\-\-M\-S\-B}}
+\index{A\-C\-C\-\_\-\-O\-U\-T\-\_\-\-X\-\_\-\-M\-S\-B@{A\-C\-C\-\_\-\-O\-U\-T\-\_\-\-X\-\_\-\-M\-S\-B}!display_acc.h@{display\-\_\-acc.\-h}}
+\subsubsection[{A\-C\-C\-\_\-\-O\-U\-T\-\_\-\-X\-\_\-\-M\-S\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-C\-C\-\_\-\-O\-U\-T\-\_\-\-X\-\_\-\-M\-S\-B~0x01}}\label{display__acc_8h_ac7c92aeb2120a5517cd34ba9a4a7e010}
+\hypertarget{display__acc_8h_a5ec95ff79ee7fab1c1b8a8e30b4c5e01}{\index{display\-\_\-acc.\-h@{display\-\_\-acc.\-h}!A\-C\-C\-\_\-\-T\-E\-S\-T\-\_\-\-V\-A\-L\-U\-E@{A\-C\-C\-\_\-\-T\-E\-S\-T\-\_\-\-V\-A\-L\-U\-E}}
+\index{A\-C\-C\-\_\-\-T\-E\-S\-T\-\_\-\-V\-A\-L\-U\-E@{A\-C\-C\-\_\-\-T\-E\-S\-T\-\_\-\-V\-A\-L\-U\-E}!display_acc.h@{display\-\_\-acc.\-h}}
+\subsubsection[{A\-C\-C\-\_\-\-T\-E\-S\-T\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-C\-C\-\_\-\-T\-E\-S\-T\-\_\-\-V\-A\-L\-U\-E~0x5\-A}}\label{display__acc_8h_a5ec95ff79ee7fab1c1b8a8e30b4c5e01}
+\hypertarget{display__acc_8h_a68fb842b0e1a2432fac6b0ab24c52766}{\index{display\-\_\-acc.\-h@{display\-\_\-acc.\-h}!A\-C\-C\-\_\-\-W\-H\-O\-\_\-\-A\-M\-\_\-\-I\-\_\-\-R\-E\-G@{A\-C\-C\-\_\-\-W\-H\-O\-\_\-\-A\-M\-\_\-\-I\-\_\-\-R\-E\-G}}
+\index{A\-C\-C\-\_\-\-W\-H\-O\-\_\-\-A\-M\-\_\-\-I\-\_\-\-R\-E\-G@{A\-C\-C\-\_\-\-W\-H\-O\-\_\-\-A\-M\-\_\-\-I\-\_\-\-R\-E\-G}!display_acc.h@{display\-\_\-acc.\-h}}
+\subsubsection[{A\-C\-C\-\_\-\-W\-H\-O\-\_\-\-A\-M\-\_\-\-I\-\_\-\-R\-E\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-C\-C\-\_\-\-W\-H\-O\-\_\-\-A\-M\-\_\-\-I\-\_\-\-R\-E\-G~0x0\-D}}\label{display__acc_8h_a68fb842b0e1a2432fac6b0ab24c52766}
+
+
+\subsection{Function Documentation}
+\hypertarget{display__acc_8h_ab62eb5ed29ea25838aa2eb0430528d14}{\index{display\-\_\-acc.\-h@{display\-\_\-acc.\-h}!acc\-\_\-read@{acc\-\_\-read}}
+\index{acc\-\_\-read@{acc\-\_\-read}!display_acc.h@{display\-\_\-acc.\-h}}
+\subsubsection[{acc\-\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}void acc\-\_\-read (
+\begin{DoxyParamCaption}
+\item[{struct {\bf i2c\-\_\-dev}}]{acc, }
+\item[{struct mb\-\_\-display $\ast$}]{disp, }
+\item[{uint16\-\_\-t}]{delay}
+\end{DoxyParamCaption}
+)}}\label{display__acc_8h_ab62eb5ed29ea25838aa2eb0430528d14}
+
+
+Get readings from the accel. and shows an interactive point on display. 
+
+X-\/\-Offsets to position the board
+
+Y-\/\-Offsets to position the board 
+
+\subsection{Variable Documentation}
+\hypertarget{display__acc_8h_a86f895ebffa5c68692e48851554c05b4}{\index{display\-\_\-acc.\-h@{display\-\_\-acc.\-h}!acc\-\_\-data@{acc\-\_\-data}}
+\index{acc\-\_\-data@{acc\-\_\-data}!display_acc.h@{display\-\_\-acc.\-h}}
+\subsubsection[{acc\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t acc\-\_\-data\mbox{[}2\mbox{]}}}\label{display__acc_8h_a86f895ebffa5c68692e48851554c05b4}

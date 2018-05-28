@@ -1,0 +1,84 @@
+\hypertarget{i2c__util_8h}{\section{/home/israel/\-Dropbox/\-Ufal/2017.2/\-S\-E/06\-\_\-\-Projeto/include/i2c\-\_\-util.h File Reference}
+\label{i2c__util_8h}\index{/home/israel/\-Dropbox/\-Ufal/2017.\-2/\-S\-E/06\-\_\-\-Projeto/include/i2c\-\_\-util.\-h@{/home/israel/\-Dropbox/\-Ufal/2017.\-2/\-S\-E/06\-\_\-\-Projeto/include/i2c\-\_\-util.\-h}}
+}
+{\ttfamily \#include $<$zephyr.\-h$>$}\\*
+{\ttfamily \#include $<$misc/printk.\-h$>$}\\*
+{\ttfamily \#include $<$board.\-h$>$}\\*
+{\ttfamily \#include $<$gpio.\-h$>$}\\*
+{\ttfamily \#include $<$device.\-h$>$}\\*
+{\ttfamily \#include $<$i2c.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$logging/sys\-\_\-log.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structi2c__dev}{i2c\-\_\-dev}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{i2c__util_8h_ac5b2cb2d6ae6b5526953a00f765a23e4}{S\-Y\-S\-\_\-\-L\-O\-G\-\_\-\-D\-O\-M\-A\-I\-N}~\char`\"{}P\-R\-O\-J\-E\-C\-T\char`\"{}
+\item 
+\#define \hyperlink{i2c__util_8h_a48e1e64a2a8c3e1e1df44760d2a73eaa}{I2\-C\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-N\-A\-M\-E\-\_\-\-L\-E\-N\-G\-T\-H}~10
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{i2c__util_8h_a94dc84189a2c77ce509621dc4adb8150}{i2c\-\_\-util\-\_\-dev\-\_\-init} (struct \hyperlink{structi2c__dev}{i2c\-\_\-dev} $\ast$\hyperlink{structi2c__dev}{i2c\-\_\-dev}, u16\-\_\-t addr, const char $\ast$name, u8\-\_\-t reg\-\_\-test, u8\-\_\-t reg\-\_\-test\-\_\-expected\-\_\-val)
+\item 
+int \hyperlink{i2c__util_8h_a9bdf91cfea8b14d68bc7d8819e7ba742}{i2c\-\_\-util\-\_\-write\-\_\-bytes} (struct \hyperlink{structi2c__dev}{i2c\-\_\-dev} $\ast$\hyperlink{structi2c__dev}{i2c\-\_\-dev}, u8\-\_\-t reg, u8\-\_\-t $\ast$data, u32\-\_\-t num\-\_\-bytes)
+\item 
+int \hyperlink{i2c__util_8h_a7510a339f80427d63e309fd8b6613ce7}{i2c\-\_\-util\-\_\-read\-\_\-bytes} (struct \hyperlink{structi2c__dev}{i2c\-\_\-dev} $\ast$\hyperlink{structi2c__dev}{i2c\-\_\-dev}, u8\-\_\-t reg, u8\-\_\-t $\ast$data, u32\-\_\-t num\-\_\-bytes)
+\item 
+int \hyperlink{i2c__util_8h_a7879cbd3e3c4f64e2b36ef77aaf0ec85}{i2c\-\_\-util\-\_\-test\-\_\-connection} (struct \hyperlink{structi2c__dev}{i2c\-\_\-dev} $\ast$\hyperlink{structi2c__dev}{i2c\-\_\-dev})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{i2c__util_8h_a48e1e64a2a8c3e1e1df44760d2a73eaa}{\index{i2c\-\_\-util.\-h@{i2c\-\_\-util.\-h}!I2\-C\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-N\-A\-M\-E\-\_\-\-L\-E\-N\-G\-T\-H@{I2\-C\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-N\-A\-M\-E\-\_\-\-L\-E\-N\-G\-T\-H}}
+\index{I2\-C\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-N\-A\-M\-E\-\_\-\-L\-E\-N\-G\-T\-H@{I2\-C\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-N\-A\-M\-E\-\_\-\-L\-E\-N\-G\-T\-H}!i2c_util.h@{i2c\-\_\-util.\-h}}
+\subsubsection[{I2\-C\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-N\-A\-M\-E\-\_\-\-L\-E\-N\-G\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define I2\-C\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-N\-A\-M\-E\-\_\-\-L\-E\-N\-G\-T\-H~10}}\label{i2c__util_8h_a48e1e64a2a8c3e1e1df44760d2a73eaa}
+\hypertarget{i2c__util_8h_ac5b2cb2d6ae6b5526953a00f765a23e4}{\index{i2c\-\_\-util.\-h@{i2c\-\_\-util.\-h}!S\-Y\-S\-\_\-\-L\-O\-G\-\_\-\-D\-O\-M\-A\-I\-N@{S\-Y\-S\-\_\-\-L\-O\-G\-\_\-\-D\-O\-M\-A\-I\-N}}
+\index{S\-Y\-S\-\_\-\-L\-O\-G\-\_\-\-D\-O\-M\-A\-I\-N@{S\-Y\-S\-\_\-\-L\-O\-G\-\_\-\-D\-O\-M\-A\-I\-N}!i2c_util.h@{i2c\-\_\-util.\-h}}
+\subsubsection[{S\-Y\-S\-\_\-\-L\-O\-G\-\_\-\-D\-O\-M\-A\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-S\-\_\-\-L\-O\-G\-\_\-\-D\-O\-M\-A\-I\-N~\char`\"{}P\-R\-O\-J\-E\-C\-T\char`\"{}}}\label{i2c__util_8h_ac5b2cb2d6ae6b5526953a00f765a23e4}
+
+
+\subsection{Function Documentation}
+\hypertarget{i2c__util_8h_a94dc84189a2c77ce509621dc4adb8150}{\index{i2c\-\_\-util.\-h@{i2c\-\_\-util.\-h}!i2c\-\_\-util\-\_\-dev\-\_\-init@{i2c\-\_\-util\-\_\-dev\-\_\-init}}
+\index{i2c\-\_\-util\-\_\-dev\-\_\-init@{i2c\-\_\-util\-\_\-dev\-\_\-init}!i2c_util.h@{i2c\-\_\-util.\-h}}
+\subsubsection[{i2c\-\_\-util\-\_\-dev\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int i2c\-\_\-util\-\_\-dev\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{struct {\bf i2c\-\_\-dev} $\ast$}]{i2c\-\_\-dev, }
+\item[{u16\-\_\-t}]{addr, }
+\item[{const char $\ast$}]{name, }
+\item[{u8\-\_\-t}]{reg\-\_\-test, }
+\item[{u8\-\_\-t}]{reg\-\_\-test\-\_\-expected\-\_\-val}
+\end{DoxyParamCaption}
+)}}\label{i2c__util_8h_a94dc84189a2c77ce509621dc4adb8150}
+\hypertarget{i2c__util_8h_a7510a339f80427d63e309fd8b6613ce7}{\index{i2c\-\_\-util.\-h@{i2c\-\_\-util.\-h}!i2c\-\_\-util\-\_\-read\-\_\-bytes@{i2c\-\_\-util\-\_\-read\-\_\-bytes}}
+\index{i2c\-\_\-util\-\_\-read\-\_\-bytes@{i2c\-\_\-util\-\_\-read\-\_\-bytes}!i2c_util.h@{i2c\-\_\-util.\-h}}
+\subsubsection[{i2c\-\_\-util\-\_\-read\-\_\-bytes}]{\setlength{\rightskip}{0pt plus 5cm}int i2c\-\_\-util\-\_\-read\-\_\-bytes (
+\begin{DoxyParamCaption}
+\item[{struct {\bf i2c\-\_\-dev} $\ast$}]{i2c\-\_\-dev, }
+\item[{u8\-\_\-t}]{reg, }
+\item[{u8\-\_\-t $\ast$}]{data, }
+\item[{u32\-\_\-t}]{num\-\_\-bytes}
+\end{DoxyParamCaption}
+)}}\label{i2c__util_8h_a7510a339f80427d63e309fd8b6613ce7}
+\hypertarget{i2c__util_8h_a7879cbd3e3c4f64e2b36ef77aaf0ec85}{\index{i2c\-\_\-util.\-h@{i2c\-\_\-util.\-h}!i2c\-\_\-util\-\_\-test\-\_\-connection@{i2c\-\_\-util\-\_\-test\-\_\-connection}}
+\index{i2c\-\_\-util\-\_\-test\-\_\-connection@{i2c\-\_\-util\-\_\-test\-\_\-connection}!i2c_util.h@{i2c\-\_\-util.\-h}}
+\subsubsection[{i2c\-\_\-util\-\_\-test\-\_\-connection}]{\setlength{\rightskip}{0pt plus 5cm}int i2c\-\_\-util\-\_\-test\-\_\-connection (
+\begin{DoxyParamCaption}
+\item[{struct {\bf i2c\-\_\-dev} $\ast$}]{i2c\-\_\-dev}
+\end{DoxyParamCaption}
+)}}\label{i2c__util_8h_a7879cbd3e3c4f64e2b36ef77aaf0ec85}
+\hypertarget{i2c__util_8h_a9bdf91cfea8b14d68bc7d8819e7ba742}{\index{i2c\-\_\-util.\-h@{i2c\-\_\-util.\-h}!i2c\-\_\-util\-\_\-write\-\_\-bytes@{i2c\-\_\-util\-\_\-write\-\_\-bytes}}
+\index{i2c\-\_\-util\-\_\-write\-\_\-bytes@{i2c\-\_\-util\-\_\-write\-\_\-bytes}!i2c_util.h@{i2c\-\_\-util.\-h}}
+\subsubsection[{i2c\-\_\-util\-\_\-write\-\_\-bytes}]{\setlength{\rightskip}{0pt plus 5cm}int i2c\-\_\-util\-\_\-write\-\_\-bytes (
+\begin{DoxyParamCaption}
+\item[{struct {\bf i2c\-\_\-dev} $\ast$}]{i2c\-\_\-dev, }
+\item[{u8\-\_\-t}]{reg, }
+\item[{u8\-\_\-t $\ast$}]{data, }
+\item[{u32\-\_\-t}]{num\-\_\-bytes}
+\end{DoxyParamCaption}
+)}}\label{i2c__util_8h_a9bdf91cfea8b14d68bc7d8819e7ba742}

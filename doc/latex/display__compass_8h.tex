@@ -1,0 +1,100 @@
+\hypertarget{display__compass_8h}{\section{/home/israel/\-Dropbox/\-Ufal/2017.2/\-S\-E/06\-\_\-\-Projeto/include/display\-\_\-compass.h File Reference}
+\label{display__compass_8h}\index{/home/israel/\-Dropbox/\-Ufal/2017.\-2/\-S\-E/06\-\_\-\-Projeto/include/display\-\_\-compass.\-h@{/home/israel/\-Dropbox/\-Ufal/2017.\-2/\-S\-E/06\-\_\-\-Projeto/include/display\-\_\-compass.\-h}}
+}
+{\ttfamily \#include $<$display/mb\-\_\-display.\-h$>$}\\*
+{\ttfamily \#include $<$misc/printk.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}i2c\-\_\-util.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}display\-\_\-acc.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{display__compass_8h_abccb5e74c897dd9dcce9ae4e168e56d7}{C\-O\-M\-P\-A\-S\-S\-\_\-\-D\-E\-V\-\_\-\-A\-D\-D\-R}~0x0e
+\item 
+\#define \hyperlink{display__compass_8h_a9e1f5e9b731db6e056279abd7122c56c}{C\-O\-M\-P\-A\-S\-S\-\_\-\-W\-H\-O\-\_\-\-A\-M\-\_\-\-I\-\_\-\-R\-E\-G}~0x07
+\item 
+\#define \hyperlink{display__compass_8h_a3b1ebbde246d627e6b4ba0c52c86021f}{C\-O\-M\-P\-A\-S\-S\-\_\-\-T\-E\-S\-T\-\_\-\-V\-A\-L\-U\-E}~0x\-C4
+\item 
+\#define \hyperlink{display__compass_8h_a99257c6326af8de533d1e4ea03e38ae3}{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-X\-\_\-\-M\-S\-B}~0x01
+\item 
+\#define \hyperlink{display__compass_8h_ada0284ac378b792a69b7b3333c58c077}{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-Y\-\_\-\-M\-S\-B}~0x03
+\item 
+\#define \hyperlink{display__compass_8h_a4f6c26ef66e76da78de15bed31da8ae1}{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-Z\-\_\-\-M\-S\-B}~0x05
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{display__compass_8h_a79495a395675704032717577c2255273}{compass\-\_\-read} (struct \hyperlink{structi2c__dev}{i2c\-\_\-dev} compass, struct \hyperlink{structi2c__dev}{i2c\-\_\-dev} acc, struct mb\-\_\-display $\ast$disp, uint16\-\_\-t delay)
+\begin{DoxyCompactList}\small\item\em Get readings from the compass and shows interactive arrows on display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\-\_\-t \hyperlink{display__compass_8h_a295fbefa927da8a790f691bc1c6aff4b}{compass\-\_\-x\-\_\-data} \mbox{[}2\mbox{]}
+\item 
+uint8\-\_\-t \hyperlink{display__compass_8h_aab5a90682f44e003057ab0a46d825a4e}{compass\-\_\-y\-\_\-data} \mbox{[}2\mbox{]}
+\item 
+uint8\-\_\-t \hyperlink{display__compass_8h_ab209721218b2d6aa0b4679aa85e9e341}{compass\-\_\-z\-\_\-data} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{display__compass_8h_abccb5e74c897dd9dcce9ae4e168e56d7}{\index{display\-\_\-compass.\-h@{display\-\_\-compass.\-h}!C\-O\-M\-P\-A\-S\-S\-\_\-\-D\-E\-V\-\_\-\-A\-D\-D\-R@{C\-O\-M\-P\-A\-S\-S\-\_\-\-D\-E\-V\-\_\-\-A\-D\-D\-R}}
+\index{C\-O\-M\-P\-A\-S\-S\-\_\-\-D\-E\-V\-\_\-\-A\-D\-D\-R@{C\-O\-M\-P\-A\-S\-S\-\_\-\-D\-E\-V\-\_\-\-A\-D\-D\-R}!display_compass.h@{display\-\_\-compass.\-h}}
+\subsubsection[{C\-O\-M\-P\-A\-S\-S\-\_\-\-D\-E\-V\-\_\-\-A\-D\-D\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-M\-P\-A\-S\-S\-\_\-\-D\-E\-V\-\_\-\-A\-D\-D\-R~0x0e}}\label{display__compass_8h_abccb5e74c897dd9dcce9ae4e168e56d7}
+\hypertarget{display__compass_8h_a99257c6326af8de533d1e4ea03e38ae3}{\index{display\-\_\-compass.\-h@{display\-\_\-compass.\-h}!C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-X\-\_\-\-M\-S\-B@{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-X\-\_\-\-M\-S\-B}}
+\index{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-X\-\_\-\-M\-S\-B@{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-X\-\_\-\-M\-S\-B}!display_compass.h@{display\-\_\-compass.\-h}}
+\subsubsection[{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-X\-\_\-\-M\-S\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-X\-\_\-\-M\-S\-B~0x01}}\label{display__compass_8h_a99257c6326af8de533d1e4ea03e38ae3}
+\hypertarget{display__compass_8h_ada0284ac378b792a69b7b3333c58c077}{\index{display\-\_\-compass.\-h@{display\-\_\-compass.\-h}!C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-Y\-\_\-\-M\-S\-B@{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-Y\-\_\-\-M\-S\-B}}
+\index{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-Y\-\_\-\-M\-S\-B@{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-Y\-\_\-\-M\-S\-B}!display_compass.h@{display\-\_\-compass.\-h}}
+\subsubsection[{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-Y\-\_\-\-M\-S\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-Y\-\_\-\-M\-S\-B~0x03}}\label{display__compass_8h_ada0284ac378b792a69b7b3333c58c077}
+\hypertarget{display__compass_8h_a4f6c26ef66e76da78de15bed31da8ae1}{\index{display\-\_\-compass.\-h@{display\-\_\-compass.\-h}!C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-Z\-\_\-\-M\-S\-B@{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-Z\-\_\-\-M\-S\-B}}
+\index{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-Z\-\_\-\-M\-S\-B@{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-Z\-\_\-\-M\-S\-B}!display_compass.h@{display\-\_\-compass.\-h}}
+\subsubsection[{C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-Z\-\_\-\-M\-S\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-M\-P\-A\-S\-S\-\_\-\-O\-U\-T\-\_\-\-Z\-\_\-\-M\-S\-B~0x05}}\label{display__compass_8h_a4f6c26ef66e76da78de15bed31da8ae1}
+\hypertarget{display__compass_8h_a3b1ebbde246d627e6b4ba0c52c86021f}{\index{display\-\_\-compass.\-h@{display\-\_\-compass.\-h}!C\-O\-M\-P\-A\-S\-S\-\_\-\-T\-E\-S\-T\-\_\-\-V\-A\-L\-U\-E@{C\-O\-M\-P\-A\-S\-S\-\_\-\-T\-E\-S\-T\-\_\-\-V\-A\-L\-U\-E}}
+\index{C\-O\-M\-P\-A\-S\-S\-\_\-\-T\-E\-S\-T\-\_\-\-V\-A\-L\-U\-E@{C\-O\-M\-P\-A\-S\-S\-\_\-\-T\-E\-S\-T\-\_\-\-V\-A\-L\-U\-E}!display_compass.h@{display\-\_\-compass.\-h}}
+\subsubsection[{C\-O\-M\-P\-A\-S\-S\-\_\-\-T\-E\-S\-T\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-M\-P\-A\-S\-S\-\_\-\-T\-E\-S\-T\-\_\-\-V\-A\-L\-U\-E~0x\-C4}}\label{display__compass_8h_a3b1ebbde246d627e6b4ba0c52c86021f}
+\hypertarget{display__compass_8h_a9e1f5e9b731db6e056279abd7122c56c}{\index{display\-\_\-compass.\-h@{display\-\_\-compass.\-h}!C\-O\-M\-P\-A\-S\-S\-\_\-\-W\-H\-O\-\_\-\-A\-M\-\_\-\-I\-\_\-\-R\-E\-G@{C\-O\-M\-P\-A\-S\-S\-\_\-\-W\-H\-O\-\_\-\-A\-M\-\_\-\-I\-\_\-\-R\-E\-G}}
+\index{C\-O\-M\-P\-A\-S\-S\-\_\-\-W\-H\-O\-\_\-\-A\-M\-\_\-\-I\-\_\-\-R\-E\-G@{C\-O\-M\-P\-A\-S\-S\-\_\-\-W\-H\-O\-\_\-\-A\-M\-\_\-\-I\-\_\-\-R\-E\-G}!display_compass.h@{display\-\_\-compass.\-h}}
+\subsubsection[{C\-O\-M\-P\-A\-S\-S\-\_\-\-W\-H\-O\-\_\-\-A\-M\-\_\-\-I\-\_\-\-R\-E\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-M\-P\-A\-S\-S\-\_\-\-W\-H\-O\-\_\-\-A\-M\-\_\-\-I\-\_\-\-R\-E\-G~0x07}}\label{display__compass_8h_a9e1f5e9b731db6e056279abd7122c56c}
+
+
+\subsection{Function Documentation}
+\hypertarget{display__compass_8h_a79495a395675704032717577c2255273}{\index{display\-\_\-compass.\-h@{display\-\_\-compass.\-h}!compass\-\_\-read@{compass\-\_\-read}}
+\index{compass\-\_\-read@{compass\-\_\-read}!display_compass.h@{display\-\_\-compass.\-h}}
+\subsubsection[{compass\-\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}void compass\-\_\-read (
+\begin{DoxyParamCaption}
+\item[{struct {\bf i2c\-\_\-dev}}]{compass, }
+\item[{struct {\bf i2c\-\_\-dev}}]{acc, }
+\item[{struct mb\-\_\-display $\ast$}]{disp, }
+\item[{uint16\-\_\-t}]{delay}
+\end{DoxyParamCaption}
+)}}\label{display__compass_8h_a79495a395675704032717577c2255273}
+
+
+Get readings from the compass and shows interactive arrows on display. 
+
+Calibration with accelerometer
+
+Device positioning\-: Valid accelerometer range
+
+Thresholds for compass
+
+Display on L\-E\-D Matrix
+
+Device positioning\-: Offset for adjust accelerometer range
+
+X-\/\-Offsets to position the board
+
+Y-\/\-Offsets to position the board
+
+Display on L\-E\-D Matrix 
+
+\subsection{Variable Documentation}
+\hypertarget{display__compass_8h_a295fbefa927da8a790f691bc1c6aff4b}{\index{display\-\_\-compass.\-h@{display\-\_\-compass.\-h}!compass\-\_\-x\-\_\-data@{compass\-\_\-x\-\_\-data}}
+\index{compass\-\_\-x\-\_\-data@{compass\-\_\-x\-\_\-data}!display_compass.h@{display\-\_\-compass.\-h}}
+\subsubsection[{compass\-\_\-x\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t compass\-\_\-x\-\_\-data\mbox{[}2\mbox{]}}}\label{display__compass_8h_a295fbefa927da8a790f691bc1c6aff4b}
+\hypertarget{display__compass_8h_aab5a90682f44e003057ab0a46d825a4e}{\index{display\-\_\-compass.\-h@{display\-\_\-compass.\-h}!compass\-\_\-y\-\_\-data@{compass\-\_\-y\-\_\-data}}
+\index{compass\-\_\-y\-\_\-data@{compass\-\_\-y\-\_\-data}!display_compass.h@{display\-\_\-compass.\-h}}
+\subsubsection[{compass\-\_\-y\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t compass\-\_\-y\-\_\-data\mbox{[}2\mbox{]}}}\label{display__compass_8h_aab5a90682f44e003057ab0a46d825a4e}
+\hypertarget{display__compass_8h_ab209721218b2d6aa0b4679aa85e9e341}{\index{display\-\_\-compass.\-h@{display\-\_\-compass.\-h}!compass\-\_\-z\-\_\-data@{compass\-\_\-z\-\_\-data}}
+\index{compass\-\_\-z\-\_\-data@{compass\-\_\-z\-\_\-data}!display_compass.h@{display\-\_\-compass.\-h}}
+\subsubsection[{compass\-\_\-z\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t compass\-\_\-z\-\_\-data\mbox{[}2\mbox{]}}}\label{display__compass_8h_ab209721218b2d6aa0b4679aa85e9e341}

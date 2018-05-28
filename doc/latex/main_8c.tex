@@ -1,0 +1,239 @@
+\hypertarget{main_8c}{\section{/home/israel/\-Dropbox/\-Ufal/2017.2/\-S\-E/06\-\_\-\-Projeto/src/main.c File Reference}
+\label{main_8c}\index{/home/israel/\-Dropbox/\-Ufal/2017.\-2/\-S\-E/06\-\_\-\-Projeto/src/main.\-c@{/home/israel/\-Dropbox/\-Ufal/2017.\-2/\-S\-E/06\-\_\-\-Projeto/src/main.\-c}}
+}
+{\ttfamily \#include $<$pwm.\-h$>$}\\*
+{\ttfamily \#include $<$gpio.\-h$>$}\\*
+{\ttfamily \#include $<$board.\-h$>$}\\*
+{\ttfamily \#include $<$zephyr.\-h$>$}\\*
+{\ttfamily \#include $<$device.\-h$>$}\\*
+{\ttfamily \#include $<$misc/printk.\-h$>$}\\*
+{\ttfamily \#include $<$display/mb\-\_\-display.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}version.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}i2c\-\_\-util.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}display\-\_\-acc.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}display\-\_\-temp.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}display\-\_\-compass.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmstate__t}{mstate\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_8c_a87de23eb3c10daac23ed244058500257}{R\-E\-S\-E\-T\-\_\-\-A\-L\-L\-\_\-\-S\-E\-N\-S\-O\-R\-S}()
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248}{state\-\_\-t} \{ \\*
+\hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248ac53ac014098137680133891c7e9528c5}{Q1}, 
+\hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a2781d65c4ab431dab30a4ea450f50b37}{Q2}, 
+\hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a19bd87b11e82b9047ad750fb62711ba8}{Q3}, 
+\hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a56f69029367994c463a7d51e6f33acad}{Q4}, 
+\\*
+\hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a7502e63abded6dccd9ef46642a492bf0}{Q5}
+ \}
+\begin{DoxyCompactList}\small\item\em Base structures for the table-\/driven state machine. \end{DoxyCompactList}\item 
+enum \hyperlink{main_8c_a2fb9b58e4e5f14f40af8b4a1425841f8}{event\-\_\-t} \{ \hyperlink{main_8c_a2fb9b58e4e5f14f40af8b4a1425841f8afd6a0e4343048b10646dd2976cc5ad18}{I\-D\-L\-E}, 
+\hyperlink{main_8c_a2fb9b58e4e5f14f40af8b4a1425841f8aa26736999186daf8146f809e863712a1}{F\-O\-R\-W\-A\-R\-D}, 
+\hyperlink{main_8c_a2fb9b58e4e5f14f40af8b4a1425841f8afed2fca77e454294d6b8bda1bf2c9fd6}{B\-A\-C\-K\-W\-A\-R\-D}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8c_afd2574aa706fa275a0a7990327ca181f}{s1\-\_\-display} ()
+\begin{DoxyCompactList}\small\item\em The functions below handles the flags with state machine. \end{DoxyCompactList}\item 
+void \hyperlink{main_8c_ad0c3945059a27db01c9a93ceb4284924}{s2\-\_\-accelerometer} ()
+\item 
+void \hyperlink{main_8c_a781cd8a5a0999ca569e4972eaad72a80}{s3\-\_\-compass} ()
+\item 
+void \hyperlink{main_8c_a4b3b75e1557179f862d572ccc1dab7d9}{s4\-\_\-temperature} ()
+\item 
+void \hyperlink{main_8c_aee807b6a23d8ad758618a952939d0266}{s5\-\_\-bluetooth} ()
+\item 
+void \hyperlink{main_8c_a6288eba0f8e8ad3ab1544ad731eb7667}{main} (void)
+\begin{DoxyCompactList}\small\item\em Main execution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{main_8c_abeb54f3fa28ddf09414b02fe5d6e60e2}{acc\-\_\-enabled} = false
+\begin{DoxyCompactList}\small\item\em Sensor flags. \end{DoxyCompactList}\item 
+bool \hyperlink{main_8c_a48c9da2993003e403ac692895f90fc8c}{scroll\-\_\-enabled} = false
+\item 
+bool \hyperlink{main_8c_a971dc1c926eced5fe174629cd6a61d45}{compass\-\_\-enabled} = false
+\item 
+bool \hyperlink{main_8c_a17537c419f6615e6aa7e994a28706a81}{bluetooth\-\_\-enabled} = false
+\item 
+bool \hyperlink{main_8c_a8739967c4d9bdbab3c998ecbc08c1b9d}{temperature\-\_\-enabled} = false
+\item 
+\hyperlink{structmstate__t}{mstate\-\_\-t} \hyperlink{main_8c_a5d5145975b32dfd23989435654fc3943}{machine} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{main_8c_a87de23eb3c10daac23ed244058500257}{\index{main.\-c@{main.\-c}!R\-E\-S\-E\-T\-\_\-\-A\-L\-L\-\_\-\-S\-E\-N\-S\-O\-R\-S@{R\-E\-S\-E\-T\-\_\-\-A\-L\-L\-\_\-\-S\-E\-N\-S\-O\-R\-S}}
+\index{R\-E\-S\-E\-T\-\_\-\-A\-L\-L\-\_\-\-S\-E\-N\-S\-O\-R\-S@{R\-E\-S\-E\-T\-\_\-\-A\-L\-L\-\_\-\-S\-E\-N\-S\-O\-R\-S}!main.c@{main.\-c}}
+\subsubsection[{R\-E\-S\-E\-T\-\_\-\-A\-L\-L\-\_\-\-S\-E\-N\-S\-O\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-E\-S\-E\-T\-\_\-\-A\-L\-L\-\_\-\-S\-E\-N\-S\-O\-R\-S(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a87de23eb3c10daac23ed244058500257}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+(\{      \hyperlink{main_8c_abeb54f3fa28ddf09414b02fe5d6e60e2}{\(\backslash\)}
+\hyperlink{main_8c_abeb54f3fa28ddf09414b02fe5d6e60e2}{    acc\_enabled} = \textcolor{keyword}{false};        \hyperlink{main_8c_a48c9da2993003e403ac692895f90fc8c}{\(\backslash\)}
+\hyperlink{main_8c_a48c9da2993003e403ac692895f90fc8c}{    scroll\_enabled} = \textcolor{keyword}{false};      \hyperlink{main_8c_a971dc1c926eced5fe174629cd6a61d45}{\(\backslash\)}
+\hyperlink{main_8c_a971dc1c926eced5fe174629cd6a61d45}{    compass\_enabled} = \textcolor{keyword}{false};    \hyperlink{main_8c_a17537c419f6615e6aa7e994a28706a81}{\(\backslash\)}
+\hyperlink{main_8c_a17537c419f6615e6aa7e994a28706a81}{    bluetooth\_enabled} = \textcolor{keyword}{false};    \hyperlink{main_8c_a8739967c4d9bdbab3c998ecbc08c1b9d}{\(\backslash\)}
+\hyperlink{main_8c_a8739967c4d9bdbab3c998ecbc08c1b9d}{    temperature\_enabled} = \textcolor{keyword}{false};    \(\backslash\)
+\})
+\end{DoxyCode}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{main_8c_a2fb9b58e4e5f14f40af8b4a1425841f8}{\index{main.\-c@{main.\-c}!event\-\_\-t@{event\-\_\-t}}
+\index{event\-\_\-t@{event\-\_\-t}!main.c@{main.\-c}}
+\subsubsection[{event\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf event\-\_\-t}}}\label{main_8c_a2fb9b58e4e5f14f40af8b4a1425841f8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{I\-D\-L\-E@{I\-D\-L\-E}!main.\-c@{main.\-c}}\index{main.\-c@{main.\-c}!I\-D\-L\-E@{I\-D\-L\-E}}\item[{\em 
+\hypertarget{main_8c_a2fb9b58e4e5f14f40af8b4a1425841f8afd6a0e4343048b10646dd2976cc5ad18}{I\-D\-L\-E}\label{main_8c_a2fb9b58e4e5f14f40af8b4a1425841f8afd6a0e4343048b10646dd2976cc5ad18}
+}]\index{F\-O\-R\-W\-A\-R\-D@{F\-O\-R\-W\-A\-R\-D}!main.\-c@{main.\-c}}\index{main.\-c@{main.\-c}!F\-O\-R\-W\-A\-R\-D@{F\-O\-R\-W\-A\-R\-D}}\item[{\em 
+\hypertarget{main_8c_a2fb9b58e4e5f14f40af8b4a1425841f8aa26736999186daf8146f809e863712a1}{F\-O\-R\-W\-A\-R\-D}\label{main_8c_a2fb9b58e4e5f14f40af8b4a1425841f8aa26736999186daf8146f809e863712a1}
+}]\index{B\-A\-C\-K\-W\-A\-R\-D@{B\-A\-C\-K\-W\-A\-R\-D}!main.\-c@{main.\-c}}\index{main.\-c@{main.\-c}!B\-A\-C\-K\-W\-A\-R\-D@{B\-A\-C\-K\-W\-A\-R\-D}}\item[{\em 
+\hypertarget{main_8c_a2fb9b58e4e5f14f40af8b4a1425841f8afed2fca77e454294d6b8bda1bf2c9fd6}{B\-A\-C\-K\-W\-A\-R\-D}\label{main_8c_a2fb9b58e4e5f14f40af8b4a1425841f8afed2fca77e454294d6b8bda1bf2c9fd6}
+}]\end{description}
+\end{Desc}
+\hypertarget{main_8c_aa0aafed44fec19806d8f9ad834be1248}{\index{main.\-c@{main.\-c}!state\-\_\-t@{state\-\_\-t}}
+\index{state\-\_\-t@{state\-\_\-t}!main.c@{main.\-c}}
+\subsubsection[{state\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf state\-\_\-t}}}\label{main_8c_aa0aafed44fec19806d8f9ad834be1248}
+
+
+Base structures for the table-\/driven state machine. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Q1@{Q1}!main.\-c@{main.\-c}}\index{main.\-c@{main.\-c}!Q1@{Q1}}\item[{\em 
+\hypertarget{main_8c_aa0aafed44fec19806d8f9ad834be1248ac53ac014098137680133891c7e9528c5}{Q1}\label{main_8c_aa0aafed44fec19806d8f9ad834be1248ac53ac014098137680133891c7e9528c5}
+}]\index{Q2@{Q2}!main.\-c@{main.\-c}}\index{main.\-c@{main.\-c}!Q2@{Q2}}\item[{\em 
+\hypertarget{main_8c_aa0aafed44fec19806d8f9ad834be1248a2781d65c4ab431dab30a4ea450f50b37}{Q2}\label{main_8c_aa0aafed44fec19806d8f9ad834be1248a2781d65c4ab431dab30a4ea450f50b37}
+}]\index{Q3@{Q3}!main.\-c@{main.\-c}}\index{main.\-c@{main.\-c}!Q3@{Q3}}\item[{\em 
+\hypertarget{main_8c_aa0aafed44fec19806d8f9ad834be1248a19bd87b11e82b9047ad750fb62711ba8}{Q3}\label{main_8c_aa0aafed44fec19806d8f9ad834be1248a19bd87b11e82b9047ad750fb62711ba8}
+}]\index{Q4@{Q4}!main.\-c@{main.\-c}}\index{main.\-c@{main.\-c}!Q4@{Q4}}\item[{\em 
+\hypertarget{main_8c_aa0aafed44fec19806d8f9ad834be1248a56f69029367994c463a7d51e6f33acad}{Q4}\label{main_8c_aa0aafed44fec19806d8f9ad834be1248a56f69029367994c463a7d51e6f33acad}
+}]\index{Q5@{Q5}!main.\-c@{main.\-c}}\index{main.\-c@{main.\-c}!Q5@{Q5}}\item[{\em 
+\hypertarget{main_8c_aa0aafed44fec19806d8f9ad834be1248a7502e63abded6dccd9ef46642a492bf0}{Q5}\label{main_8c_aa0aafed44fec19806d8f9ad834be1248a7502e63abded6dccd9ef46642a492bf0}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8c_a6288eba0f8e8ad3ab1544ad731eb7667}{\index{main.\-c@{main.\-c}!main@{main}}
+\index{main@{main}!main.c@{main.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}void main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a6288eba0f8e8ad3ab1544ad731eb7667}
+
+
+Main execution. 
+
+Version info
+
+Starting general variables
+
+Initializing and enabling thermometer sensor
+
+Initializing and enabling magnetometer sensor
+
+Initializing and enabling accelerometer sensor
+
+$<$ Scroll a text on L\-E\-D Matrix
+
+$<$ Avoid unwanted disp. flush
+
+$<$ Accelerometer flag is enabled
+
+$<$ Compass flag is enabled
+
+$<$ Thermometer flag is enabled
+
+$<$ Bluetooth flag is enabled \hypertarget{main_8c_afd2574aa706fa275a0a7990327ca181f}{\index{main.\-c@{main.\-c}!s1\-\_\-display@{s1\-\_\-display}}
+\index{s1\-\_\-display@{s1\-\_\-display}!main.c@{main.\-c}}
+\subsubsection[{s1\-\_\-display}]{\setlength{\rightskip}{0pt plus 5cm}void s1\-\_\-display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8c_afd2574aa706fa275a0a7990327ca181f}
+
+
+The functions below handles the flags with state machine. 
+
+$<$ Show some scrolling text \hypertarget{main_8c_ad0c3945059a27db01c9a93ceb4284924}{\index{main.\-c@{main.\-c}!s2\-\_\-accelerometer@{s2\-\_\-accelerometer}}
+\index{s2\-\_\-accelerometer@{s2\-\_\-accelerometer}!main.c@{main.\-c}}
+\subsubsection[{s2\-\_\-accelerometer}]{\setlength{\rightskip}{0pt plus 5cm}void s2\-\_\-accelerometer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8c_ad0c3945059a27db01c9a93ceb4284924}
+$<$ Enable the accelerometer with L\-E\-D Matrix \hypertarget{main_8c_a781cd8a5a0999ca569e4972eaad72a80}{\index{main.\-c@{main.\-c}!s3\-\_\-compass@{s3\-\_\-compass}}
+\index{s3\-\_\-compass@{s3\-\_\-compass}!main.c@{main.\-c}}
+\subsubsection[{s3\-\_\-compass}]{\setlength{\rightskip}{0pt plus 5cm}void s3\-\_\-compass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a781cd8a5a0999ca569e4972eaad72a80}
+$<$ Enable the compass and point to the north \hypertarget{main_8c_a4b3b75e1557179f862d572ccc1dab7d9}{\index{main.\-c@{main.\-c}!s4\-\_\-temperature@{s4\-\_\-temperature}}
+\index{s4\-\_\-temperature@{s4\-\_\-temperature}!main.c@{main.\-c}}
+\subsubsection[{s4\-\_\-temperature}]{\setlength{\rightskip}{0pt plus 5cm}void s4\-\_\-temperature (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a4b3b75e1557179f862d572ccc1dab7d9}
+$<$ Enable the thermometer and scroll the temperature \hypertarget{main_8c_aee807b6a23d8ad758618a952939d0266}{\index{main.\-c@{main.\-c}!s5\-\_\-bluetooth@{s5\-\_\-bluetooth}}
+\index{s5\-\_\-bluetooth@{s5\-\_\-bluetooth}!main.c@{main.\-c}}
+\subsubsection[{s5\-\_\-bluetooth}]{\setlength{\rightskip}{0pt plus 5cm}void s5\-\_\-bluetooth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8c_aee807b6a23d8ad758618a952939d0266}
+$<$ Enable the bluetooth and transmit some data 
+
+\subsection{Variable Documentation}
+\hypertarget{main_8c_abeb54f3fa28ddf09414b02fe5d6e60e2}{\index{main.\-c@{main.\-c}!acc\-\_\-enabled@{acc\-\_\-enabled}}
+\index{acc\-\_\-enabled@{acc\-\_\-enabled}!main.c@{main.\-c}}
+\subsubsection[{acc\-\_\-enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool acc\-\_\-enabled = false}}\label{main_8c_abeb54f3fa28ddf09414b02fe5d6e60e2}
+
+
+Sensor flags. 
+
+\hypertarget{main_8c_a17537c419f6615e6aa7e994a28706a81}{\index{main.\-c@{main.\-c}!bluetooth\-\_\-enabled@{bluetooth\-\_\-enabled}}
+\index{bluetooth\-\_\-enabled@{bluetooth\-\_\-enabled}!main.c@{main.\-c}}
+\subsubsection[{bluetooth\-\_\-enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool bluetooth\-\_\-enabled = false}}\label{main_8c_a17537c419f6615e6aa7e994a28706a81}
+\hypertarget{main_8c_a971dc1c926eced5fe174629cd6a61d45}{\index{main.\-c@{main.\-c}!compass\-\_\-enabled@{compass\-\_\-enabled}}
+\index{compass\-\_\-enabled@{compass\-\_\-enabled}!main.c@{main.\-c}}
+\subsubsection[{compass\-\_\-enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool compass\-\_\-enabled = false}}\label{main_8c_a971dc1c926eced5fe174629cd6a61d45}
+\hypertarget{main_8c_a5d5145975b32dfd23989435654fc3943}{\index{main.\-c@{main.\-c}!machine@{machine}}
+\index{machine@{machine}!main.c@{main.\-c}}
+\subsubsection[{machine}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mstate\-\_\-t} machine\mbox{[}$\,$\mbox{]}}}\label{main_8c_a5d5145975b32dfd23989435654fc3943}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \{ 
+    \{ .events=\{\hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248ac53ac014098137680133891c7e9528c5}{Q1}, \hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a2781d65c4ab431dab30a4ea450f50b37}{Q2}, \hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a7502e63abded6dccd9ef46642a492bf0}{Q5}\}, .action=\hyperlink{main_8c_afd2574aa706fa275a0a7990327ca181f}{s1\_display}\},
+    \{ .events=\{\hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a2781d65c4ab431dab30a4ea450f50b37}{Q2}, \hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a19bd87b11e82b9047ad750fb62711ba8}{Q3}, \hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248ac53ac014098137680133891c7e9528c5}{Q1}\}, .action=\hyperlink{main_8c_ad0c3945059a27db01c9a93ceb4284924}{s2\_accelerometer}\},
+    \{ .events=\{\hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a19bd87b11e82b9047ad750fb62711ba8}{Q3}, \hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a56f69029367994c463a7d51e6f33acad}{Q4}, \hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a2781d65c4ab431dab30a4ea450f50b37}{Q2}\}, .action=\hyperlink{main_8c_a781cd8a5a0999ca569e4972eaad72a80}{s3\_compass}\},
+    \{ .events=\{\hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a56f69029367994c463a7d51e6f33acad}{Q4}, \hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a7502e63abded6dccd9ef46642a492bf0}{Q5}, \hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a19bd87b11e82b9047ad750fb62711ba8}{Q3}\}, .action=\hyperlink{main_8c_a4b3b75e1557179f862d572ccc1dab7d9}{s4\_temperature}\},
+    \{ .events=\{\hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a7502e63abded6dccd9ef46642a492bf0}{Q5}, \hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248ac53ac014098137680133891c7e9528c5}{Q1}, \hyperlink{main_8c_aa0aafed44fec19806d8f9ad834be1248a56f69029367994c463a7d51e6f33acad}{Q4}\}, .action=\hyperlink{main_8c_aee807b6a23d8ad758618a952939d0266}{s5\_bluetooth}\}
+\}
+\end{DoxyCode}
+\hypertarget{main_8c_a48c9da2993003e403ac692895f90fc8c}{\index{main.\-c@{main.\-c}!scroll\-\_\-enabled@{scroll\-\_\-enabled}}
+\index{scroll\-\_\-enabled@{scroll\-\_\-enabled}!main.c@{main.\-c}}
+\subsubsection[{scroll\-\_\-enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool scroll\-\_\-enabled = false}}\label{main_8c_a48c9da2993003e403ac692895f90fc8c}
+\hypertarget{main_8c_a8739967c4d9bdbab3c998ecbc08c1b9d}{\index{main.\-c@{main.\-c}!temperature\-\_\-enabled@{temperature\-\_\-enabled}}
+\index{temperature\-\_\-enabled@{temperature\-\_\-enabled}!main.c@{main.\-c}}
+\subsubsection[{temperature\-\_\-enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool temperature\-\_\-enabled = false}}\label{main_8c_a8739967c4d9bdbab3c998ecbc08c1b9d}
