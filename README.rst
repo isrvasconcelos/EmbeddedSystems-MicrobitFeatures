@@ -39,4 +39,4 @@ This project is based on bbc_microbit microcontroller and brings funcionalities 
 # Set environment variables at .bashrc (sudo gedit .bashrc on home folder)
 	export ZEPHYR_TOOLCHAIN_VARIANT=zephyr
 	export ZEPHYR_SDK_INSTALL_DIR=/opt/zephyr-sdk/ #default
-	source /home/israel/zephyr/zephyr-env.sh
+	source /home/<username>/zephyr/zephyr-env.sh
